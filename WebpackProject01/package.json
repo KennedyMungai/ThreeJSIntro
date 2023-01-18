@@ -1,6 +1,21 @@
 {
+<<<<<<< HEAD
   "dependencies": {
     "@babel/core": "^7.20.12",
+=======
+  "name": "webpackproject01",
+  "version": "1.0.0",
+  "description": "A simple webpack projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kennedy Mungai",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+>>>>>>> fbca793 (Added packages to the project)
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
