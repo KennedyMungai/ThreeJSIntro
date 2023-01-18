@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 node_modules/
 WebpackProject01/package-lock.json
+=======
+WebpackProject/node_modules
+WebpackProject01/node_modules
+>>>>>>> f9c6830 (Added the node_modules folder was added to the gitignore file)
