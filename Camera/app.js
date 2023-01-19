@@ -22,7 +22,7 @@ const size = {
     y: window.innerWidth
 }
 
-const camera = new THREE.PerspectiveCamera(75, size.y / size.x, 1, 1000)
+const camera = new THREE.PerspectiveCamera(75, size.y / size.x, 0.00001, 1000)
 camera.position.set(2, 2, 10)
 scene.add(camera)
 
