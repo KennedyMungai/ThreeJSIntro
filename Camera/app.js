@@ -10,9 +10,9 @@ const cursor = {
 
 window.addEventListener('mousemove', (e) =>
 {
-    cursor.x = e.clientX / size.x - 0.5
-    cursor.y = e.clientY
-    console.log(cursor.x)
+    cursor.x = e.clientX / size.x
+    cursor.y = e.clientY / size.y
+    console.log(cursor)
 })
 
 const scene = new THREE.Scene()
