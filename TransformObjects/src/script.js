@@ -39,7 +39,7 @@ const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height)
 camera.position.set(1, 1, 3)
 scene.add(camera)
 
-camera.lookAt(new THREE.Vector3(0, 0, 0))
+camera.lookAt(mesh.position)
 
 /**
  * Renderer
