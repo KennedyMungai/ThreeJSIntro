@@ -30,6 +30,7 @@ group.add(cube2)
 group.add(cube3)
 
 group.position.set(0, 1, 0)
+group.rotation.set(75, 75, 75)
 
 scene.add(group)
 
