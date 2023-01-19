@@ -12,6 +12,7 @@ const cube1 = new THREE.Mesh(
     new THREE.MeshBasicMaterial({ color: 0x00ff00 })
 )
 
+group.add(cube1)
 scene.add(cube1)
 
 /**
