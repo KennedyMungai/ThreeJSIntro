@@ -14,8 +14,8 @@ const axesHelper = new THREE.AxesHelper(5)
 scene.add(axesHelper)
 
 const size = {
-    x: window.innerHeight,
-    y: window.innerWidth
+    x: window.innerHeight - 10,
+    y: window.innerWidth - 10
 }
 
 const camera = new THREE.PerspectiveCamera(75, size.y / size.x)
