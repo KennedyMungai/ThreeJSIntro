@@ -17,10 +17,17 @@ const cube2 = new THREE.Mesh(
     new THREE.MeshBasicMaterial({ color: 0xff0000 })
 )
 
+const cube3 = new THREE.Mesh(
+    new THREE.BoxGeometry(1, 1, 1),
+    new THREE.MeshBasicMaterial({ color: 0x0000ff })
+)
+
 cube2.position.set(1.5, 0, 0)
+cube3.position.set(3, 0, 0)
 
 group.add(cube1)
 group.add(cube2)
+group.add(cube3)
 
 scene.add(group)
 
