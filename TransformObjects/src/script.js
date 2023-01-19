@@ -29,6 +29,8 @@ group.add(cube1)
 group.add(cube2)
 group.add(cube3)
 
+group.position.set(0, 1, 0)
+
 scene.add(group)
 
 /**
