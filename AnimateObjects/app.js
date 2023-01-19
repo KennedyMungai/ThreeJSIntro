@@ -50,7 +50,7 @@ const tick = () =>
     // console.log(deltaTime)
 
     // Update objects
-    cube1.rotation.y += 0.001
+    cube1.rotation.y = elapsedTime
 
     renderer.render(scene, camera)
 
