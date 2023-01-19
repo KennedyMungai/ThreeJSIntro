@@ -26,6 +26,8 @@ renderer.render(scene, camera)
 const tick = () => 
 {
     console.log('tick')
+
+    window.requestAnimationFrame(tick)
 }
 
 tick()
