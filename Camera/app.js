@@ -10,9 +10,9 @@ const cursor = {
 
 window.addEventListener('mousemove', (e) =>
 {
-    cursor.x = e.clientX
+    cursor.x = e.clientX / size.x - 0.5
     cursor.y = e.clientY
-    // console.log(e.clientX, e.clientY)
+    console.log(cursor.x)
 })
 
 const scene = new THREE.Scene()
@@ -58,7 +58,7 @@ const tick = () =>
 {
     // Clock
     const elapsedTime = clock.getElapsedTime()
-    console.log(elapsedTime)
+    // console.log(elapsedTime)
 
     // const currentTime = Date.now()
     // const deltaTime = currentTime - time
