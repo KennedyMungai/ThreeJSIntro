@@ -40,6 +40,8 @@ const tick = () =>
     const deltaTime = currentTime - time
     time = currentTime
 
+    console.log(deltaTime)
+
     // Update objects
     cube1.rotation.y += 0.1
 
