@@ -3,6 +3,8 @@ canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 
 // Cursor
+const cursor = {}
+
 window.addEventListener('mousemove', (e) =>
 {
     console.log(e.clientX, e.clientY)
