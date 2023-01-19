@@ -5,6 +5,26 @@
     }
   ],
   "settings": {
-    "cSpell.words": ["webgl"]
+    "cSpell.words": [
+      "adius",
+      "bbox",
+      "gsap",
+      "GSAP",
+      "initialised",
+      "initted",
+      "Initted",
+      "nums",
+      "Nums",
+      "Playhead",
+      "recache",
+      "Tweening",
+      "tweens",
+      "Tweens",
+      "uncache",
+      "Uncache",
+      "webgl",
+      "yoyo",
+      "Yoyo"
+    ]
   }
 }
