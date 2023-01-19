@@ -7,6 +7,13 @@ const scene = new THREE.Scene()
 const group = new THREE.Group()
 scene.add(group)
 
+const cube1 = new THREE.Mesh(
+    new THREE.BoxGeometry(1, 1, 1),
+    new THREE.MeshBasicMaterial({ color: 0x00ff00 })
+)
+
+scene.add(cube1)
+
 /**
  * Objects
  */
