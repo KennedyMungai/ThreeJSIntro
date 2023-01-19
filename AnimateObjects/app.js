@@ -27,10 +27,7 @@ const tick = () =>
 {
     console.log('tick')
 
-    setTimeout(() =>
-    {
-        window.requestAnimationFrame(tick)
-    }, 1000);
+    window.requestAnimationFrame(tick)
 }
 
 tick()
