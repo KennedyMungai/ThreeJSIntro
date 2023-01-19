@@ -21,6 +21,7 @@ cube2.position.set(1, 1, 1)
 
 group.add(cube1)
 group.add(cube2)
+
 scene.add(group)
 
 /**
