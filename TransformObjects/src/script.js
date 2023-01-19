@@ -1,5 +1,6 @@
-import './style.css'
 import * as THREE from 'three'
+
+console.log("Iko sawa")
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
