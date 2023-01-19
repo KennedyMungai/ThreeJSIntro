@@ -10,7 +10,9 @@ const cursor = {
 
 window.addEventListener('mousemove', (e) =>
 {
-    console.log(e.clientX, e.clientY)
+    cursor.x = e.clientX
+    cursor.y = e.clientY
+    // console.log(e.clientX, e.clientY)
 })
 
 const scene = new THREE.Scene()
