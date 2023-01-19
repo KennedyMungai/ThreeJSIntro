@@ -25,7 +25,7 @@ renderer.render(scene, camera)
 // Animations
 const tick = () => 
 {
-
+    console.log('tick')
 }
 
 tick()
