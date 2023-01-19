@@ -10,7 +10,7 @@ const cube1 = new THREE.Mesh(
     new THREE.MeshBasicMaterial({ color: 0x0000ff })
 )
 
-cube1.position.set(3, 3, 3)
+cube1.position.set(0, 0, 3)
 
 scene.add(cube1)
 
@@ -54,9 +54,9 @@ const tick = () =>
     // console.log(deltaTime)
 
     // Update objects
-    cube1.position.y = Math.sin(elapsedTime)
-    cube1.position.x = Math.cos(elapsedTime)
-    camera.lookAt(cube1.position)
+    // cube1.position.y = Math.sin(elapsedTime)
+    // cube1.position.x = Math.cos(elapsedTime)
+    // camera.lookAt(cube1.position)
 
     renderer.render(scene, camera)
 
