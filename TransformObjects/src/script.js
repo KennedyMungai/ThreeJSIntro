@@ -17,7 +17,8 @@ scene.add(mesh)
 
 mesh.position.set(0.7, 1.2, 1)
 // mesh.scale.set(5, 1.5, 1.5)
-mesh.rotation.set(45, 45, 45)
+// mesh.rotation.reorder('YXZ')
+mesh.rotation.set(45, 60, 45)
 
 // Axes helper
 const axesHelper = new THREE.AxesHelper(3)
