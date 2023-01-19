@@ -52,6 +52,7 @@ const tick = () =>
     // Update objects
     cube1.position.y = Math.sin(elapsedTime)
     cube1.position.x = Math.cos(elapsedTime)
+    camera.lookAt(cube1.position)
 
     renderer.render(scene, camera)
 
