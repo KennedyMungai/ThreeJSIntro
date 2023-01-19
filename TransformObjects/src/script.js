@@ -17,7 +17,7 @@ const cube2 = new THREE.Mesh(
     new THREE.MeshBasicMaterial({ color: 0xff0000 })
 )
 
-cube2.position.set(1, 1, 1)
+cube2.position.set(1.5, 0, 0)
 
 group.add(cube1)
 group.add(cube2)
