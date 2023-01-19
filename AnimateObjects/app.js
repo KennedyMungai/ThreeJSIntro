@@ -32,7 +32,7 @@ renderer.setSize(size.y, size.x)
 const tick = () => 
 {
     // Update objects
-    cube1.rotation.y += 0.1
+    cube1.position.x += 0.01
 
     renderer.render(scene, camera)
 
