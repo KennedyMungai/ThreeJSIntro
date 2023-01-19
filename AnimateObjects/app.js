@@ -12,6 +12,7 @@ const size = {
 }
 
 const camera = new THREE.PerspectiveCamera(75, size.y / size.x)
+camera.position.set(2, 2, 10)
 scene.add(camera)
 
 const renderer = new THREE.WebGLRenderer({
