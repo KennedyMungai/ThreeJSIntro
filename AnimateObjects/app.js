@@ -50,8 +50,8 @@ const tick = () =>
     // console.log(deltaTime)
 
     // Update objects
-    cube1.position.y = Math.sin(elapsedTime)
-    cube1.position.x = Math.cos(elapsedTime)
+    camera.position.y = Math.sin(elapsedTime)
+    camera.position.x = Math.cos(elapsedTime)
 
     renderer.render(scene, camera)
 
