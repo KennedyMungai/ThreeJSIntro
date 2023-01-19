@@ -17,6 +17,10 @@ scene.add(mesh)
 
 mesh.position.set(0.7, -0.6, 1)
 
+// Axes helper
+const axesHelper = new THREE.AxesHelper()
+scene.add(axesHelper)
+
 /**
  * Sizes
 */
