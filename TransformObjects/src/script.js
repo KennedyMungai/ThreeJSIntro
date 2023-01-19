@@ -28,7 +28,7 @@ const sizes = {
  * Camera
 */
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height)
-mesh.position.normalize(camera.position)
+mesh.position.normalize()
 camera.position.z = 3
 scene.add(camera)
 
