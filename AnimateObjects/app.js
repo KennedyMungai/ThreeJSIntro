@@ -39,6 +39,9 @@ const clock = new THREE.Clock()
 // Animations
 const tick = () => 
 {
+    // Clock
+    const elapsedTime = clock
+
     // const currentTime = Date.now()
     // const deltaTime = currentTime - time
     // time = currentTime
