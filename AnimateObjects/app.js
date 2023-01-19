@@ -31,19 +31,19 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(size.y, size.x)
 
 // Time
-let time = Date.now()
+// let time = Date.now()
 
 // Animations
 const tick = () => 
 {
-    const currentTime = Date.now()
-    const deltaTime = currentTime - time
-    time = currentTime
+    // const currentTime = Date.now()
+    // const deltaTime = currentTime - time
+    // time = currentTime
 
-    console.log(deltaTime)
+    // console.log(deltaTime)
 
     // Update objects
-    cube1.rotation.y += 0.001 * deltaTime
+    cube1.rotation.y += 0.001
 
     renderer.render(scene, camera)
 
