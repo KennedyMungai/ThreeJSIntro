@@ -25,7 +25,6 @@ renderer.setSize(size.y, size.x)
 const tick = () => 
 {
     renderer.render(scene, camera)
-    console.log('tick')
 
     window.requestAnimationFrame(tick)
 }
