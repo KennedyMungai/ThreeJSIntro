@@ -3,6 +3,13 @@ const canvas = document.getElementById('webgl')
 const scene = new THREE.Scene()
 const group = new THREE.Group()
 
+const cube1 = new THREE.Mesh(
+    new THREE.BoxGeometry(0.5, 0.5, 0.5),
+    new THREE.MeshBasicMaterial({ color: 0x0000ff })
+)
+
+scene.add(cube1)
+
 const axesHelper = new THREE.AxesHelper(5)
 scene.add(axesHelper)
 
@@ -24,6 +31,9 @@ renderer.setSize(size.y, size.x)
 // Animations
 const tick = () => 
 {
+    // Update objects
+    cube1.position += new THREE.Vector3(0.1, 0.1, 0.1)
+
     renderer.render(scene, camera)
 
     window.requestAnimationFrame(tick)
