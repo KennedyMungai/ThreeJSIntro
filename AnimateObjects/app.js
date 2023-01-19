@@ -30,6 +30,9 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setSize(size.y, size.x)
 
+// Clock
+const clock = new THREE.Clock()
+
 // Time
 // let time = Date.now()
 
