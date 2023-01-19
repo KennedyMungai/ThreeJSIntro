@@ -1,5 +1,3 @@
-console.log("Iko sawa")
-
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
 
