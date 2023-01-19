@@ -33,6 +33,8 @@ renderer.setSize(size.y, size.x)
 // Animations
 const tick = () => 
 {
+    const time = new Date.now()
+
     // Update objects
     cube1.rotation.y += 0.1
 
