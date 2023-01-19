@@ -43,7 +43,7 @@ const tick = () =>
     console.log(deltaTime)
 
     // Update objects
-    cube1.rotation.y += 0.1
+    cube1.rotation.y += 0.1 * deltaTime
 
     renderer.render(scene, camera)
 
