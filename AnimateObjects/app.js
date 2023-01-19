@@ -40,7 +40,8 @@ const clock = new THREE.Clock()
 const tick = () => 
 {
     // Clock
-    const elapsedTime = clock
+    const elapsedTime = clock.getElapsedTime()
+    console.log(elapsedTime)
 
     // const currentTime = Date.now()
     // const deltaTime = currentTime - time
