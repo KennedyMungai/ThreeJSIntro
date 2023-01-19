@@ -1,4 +1,6 @@
 const canvas = document.getElementById('webgl')
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
 
 const scene = new THREE.Scene()
 const group = new THREE.Group()
@@ -16,8 +18,8 @@ const axesHelper = new THREE.AxesHelper(5)
 scene.add(axesHelper)
 
 const size = {
-    x: window.innerHeight - 10,
-    y: window.innerWidth - 10
+    x: window.innerHeight,
+    y: window.innerWidth
 }
 
 const camera = new THREE.PerspectiveCamera(75, size.y / size.x)
