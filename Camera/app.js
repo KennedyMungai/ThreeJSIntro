@@ -22,8 +22,11 @@ const size = {
     y: window.innerWidth
 }
 
+const aspectRatio = size.y / size.x
+
 // const camera = new THREE.PerspectiveCamera(75, size.y / size.x)
-camera.position.set(2, 2, 10)
+const camera = new THREE.OrthographicCamera(-1,)
+camera.position.set(2, 2, 1000)
 scene.add(camera)
 
 const renderer = new THREE.WebGLRenderer({
