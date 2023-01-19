@@ -2,6 +2,12 @@ const canvas = document.getElementById('webgl')
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 
+// Cursor
+window.addEventListener('mousemove', (e) =>
+{
+    console.log(e.clientX, e.clientY)
+})
+
 const scene = new THREE.Scene()
 const group = new THREE.Group()
 
