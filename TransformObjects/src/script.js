@@ -15,8 +15,9 @@ scene.add(mesh)
 // mesh.position.y = -0.6
 // mesh.position.z = 1
 
-mesh.position.set(0.7, -0.6, 1)
-mesh.scale.set(5, 1.5, 1.5)
+mesh.position.set(0.7, 1.2, 1)
+// mesh.scale.set(5, 1.5, 1.5)
+mesh.rotation.set(45, 45, 45)
 
 // Axes helper
 const axesHelper = new THREE.AxesHelper(3)
