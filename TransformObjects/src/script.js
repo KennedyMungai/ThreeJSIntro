@@ -5,6 +5,7 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 const group = new THREE.Group()
+scene.add(group)
 
 /**
  * Objects
