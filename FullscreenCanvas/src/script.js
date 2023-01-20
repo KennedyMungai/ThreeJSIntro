@@ -25,6 +25,10 @@ scene.add(mesh)
 const axesHelper = new THREE.AxesHelper(10)
 scene.add(axesHelper)
 
+// Grid Helper
+const gridHelper = new THREE.GridHelper(10)
+scene.add(gridHelper)
+
 /**
  * Sizes
 */
