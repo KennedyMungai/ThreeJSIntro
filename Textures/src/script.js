@@ -27,6 +27,7 @@ const loadingManager = new THREE.LoadingManager()
 
 const textureLoader = new THREE.TextureLoader(loadingManager)
 
+const checkerboardTexture = textureLoader.load('/textures/checkerboard-1024x1024.png')
 const colorTexture = textureLoader.load('/textures/door/color.jpg')
 const alphaTexture = textureLoader.load('/textures/door/alpha.jpg')
 const heightTexture = textureLoader.load('/textures/door/height.jpg')
@@ -63,7 +64,7 @@ const scene = new THREE.Scene()
 const geometry = new THREE.BoxBufferGeometry(1, 1, 1)
 const material = new THREE.MeshBasicMaterial(
     {
-        map: colorTexture
+        map: checkerboardTexture
     }
 )
 const mesh = new THREE.Mesh(geometry, material)
