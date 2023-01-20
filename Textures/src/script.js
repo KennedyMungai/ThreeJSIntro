@@ -69,7 +69,7 @@ const scene = new THREE.Scene()
 const geometry = new THREE.BoxBufferGeometry(1, 1, 1)
 const material = new THREE.MeshBasicMaterial(
     {
-        map: minecraftTexture
+        map: colorTexture
     }
 )
 const mesh = new THREE.Mesh(geometry, material)
