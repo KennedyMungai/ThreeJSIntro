@@ -25,7 +25,7 @@ const parameters =
     color: 0xfff000,
     spin: () =>
     {
-        console.log('spin')
+        gsap.to(mesh.rotation, { duration: 1, y: mesh.rotation.y + 10 })
     }
 }
 
