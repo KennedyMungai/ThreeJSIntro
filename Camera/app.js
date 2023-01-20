@@ -64,8 +64,8 @@ const tick = () =>
     // time = currentTime
 
     // Update Camera
-    camera.position.x = -cursor.x * 10
-    camera.position.y = cursor.y * 10
+    camera.position.x = -cursor.x * 3
+    camera.position.y = cursor.y * 3
 
     // console.log(deltaTime)
 
