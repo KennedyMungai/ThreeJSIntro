@@ -15,6 +15,11 @@ loadingManager.onLoaded = () =>
     console.log('onLoaded')
 }
 
+loadingManager.onProgress = () =>
+{
+    console.log('onProgress')
+}
+
 const textureLoader = new THREE.TextureLoader(loadingManager)
 const texture = textureLoader.load(
     '/textures/door/color.jpg',
