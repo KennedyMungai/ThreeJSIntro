@@ -31,6 +31,7 @@ geometry.vertices.push(vertex2)
 const vertex3 = new THREE.Vector3(1, 0, 0,)
 geometry.vertices.push(vertex3)
 
+// The parameters are indices of the vertices
 const face = new THREE.Face3(0, 1, 2)
 geometry.faces.push(face)
 
