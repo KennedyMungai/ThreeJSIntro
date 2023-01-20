@@ -40,6 +40,11 @@ const camera = new THREE.PerspectiveCamera(75, size.y / size.x)
 camera.position.set(0, 0, 10)
 scene.add(camera)
 
+// Added some controls to the 3D scene
+const controls = new OrbitControls(camera, canvas)
+controls.target.y = 2
+controls.update()
+
 const renderer = new THREE.WebGLRenderer({
     canvas
 })
