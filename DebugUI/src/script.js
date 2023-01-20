@@ -32,6 +32,10 @@ gui
     .max(3)
     .step(0.01)
     .name('Red Cube Y')
+
+gui
+    .add(mesh, 'visible')
+
 // gui.add(mesh.position, 'z', -3, 3, 0.01)
 
 /**
