@@ -28,7 +28,7 @@ geometry.mergeVertices.push(vertex1)
 const vertex2 = new THREE.Vector3(0, 1, 0,)
 geometry.mergeVertices.push(vertex2)
 
-const vertex3 = new THREE.Vector3(0, 0, 1,)
+const vertex3 = new THREE.Vector3(1, 0, 0,)
 geometry.mergeVertices.push(vertex3)
 
 const material = new THREE.MeshBasicMaterial(
