@@ -36,6 +36,9 @@ gui
 gui
     .add(mesh, 'visible')
 
+gui
+    .add(material, 'wireframe')
+
 // gui.add(mesh.position, 'z', -3, 3, 0.01)
 
 /**
