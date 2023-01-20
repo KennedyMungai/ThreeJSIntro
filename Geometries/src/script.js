@@ -13,11 +13,11 @@ const scene = new THREE.Scene()
 
 // Axes helper
 const axesHelper = new THREE.AxesHelper(50)
-scene.add(axesHelper)
+// scene.add(axesHelper)
 
 // Grid Helper
 const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
-scene.add(gridHelper)
+// scene.add(gridHelper)
 
 // Object
 const geometry = new THREE.BoxGeometry(1, 2, 3, 2, 2, 2)
