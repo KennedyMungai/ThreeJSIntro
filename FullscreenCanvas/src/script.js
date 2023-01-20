@@ -22,11 +22,11 @@ const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
 
 // Axes Helper
-const axesHelper = new THREE.AxesHelper(10)
+const axesHelper = new THREE.AxesHelper(50)
 scene.add(axesHelper)
 
 // Grid Helper
-const gridHelper = new THREE.GridHelper(10)
+const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 scene.add(gridHelper)
 
 /**
