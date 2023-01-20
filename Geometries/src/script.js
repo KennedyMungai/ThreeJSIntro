@@ -27,9 +27,9 @@ for (let i = 0; i < 50; i++)
     for (let j = 0; j < 3; j++)
     {
         geometry.vertices.push(new THREE.Vector3(
-            Math.random(),
-            Math.random(),
-            Math.random()
+            Math.random() - 0.5,
+            Math.random() - 0.5,
+            Math.random() - 0.5
         ))
     }
 
