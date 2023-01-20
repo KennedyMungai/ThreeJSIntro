@@ -21,6 +21,10 @@ const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
 
+// Axes Helper
+const axesHelper = new THREE.AxesHelper(10)
+scene.add(axesHelper)
+
 /**
  * Sizes
 */
