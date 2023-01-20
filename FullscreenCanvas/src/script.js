@@ -15,7 +15,7 @@ const scene = new THREE.Scene()
 
 /**
  * Object
- */
+*/
 const geometry = new THREE.BoxGeometry(1, 1, 1)
 const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
 const mesh = new THREE.Mesh(geometry, material)
@@ -23,11 +23,22 @@ scene.add(mesh)
 
 /**
  * Sizes
- */
+*/
 const sizes = {
     width: canvas.width,
     height: canvas.height
 }
+
+window.addEventListener('resize', () =>
+{
+    sizes.width = window.innerWidth
+    sizes.height = window.innerHeight
+
+    // Updating the camera
+    camera.aspect = sizes.width / sizes.height
+    camera.updateProjectionMatrix()
+    renderer.setSize(sizes.width, sizes.height)
+})
 
 /**
  * Camera
