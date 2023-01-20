@@ -26,6 +26,15 @@ scene.add(mesh)
 
 // Debug
 // gui.add(mesh.position, 'x', -3, 3, 0.01)
+
+const parameters =
+{
+    color: 0xff0000
+}
+
+gui
+    .addColor(parameters, 'color')
+
 gui
     .add(mesh.position, 'y')
     .min(-3)
