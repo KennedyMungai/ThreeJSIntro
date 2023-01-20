@@ -7,6 +7,7 @@ const image = new Image()
 image.onload = () => 
 {
     const texture = new THREE.Texture(image)
+    console.log(texture)
 }
 image.src = '/textures/door/color.jpg'
 
