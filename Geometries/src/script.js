@@ -21,7 +21,12 @@ scene.add(gridHelper)
 
 // Object
 const geometry = new THREE.BoxGeometry(1, 2, 3, 2, 2, 2)
-const material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true })
+const material = new THREE.MeshBasicMaterial(
+    {
+        color: 0x00ff00,
+        wireframe: true
+    }
+)
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
 
