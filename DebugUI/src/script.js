@@ -6,7 +6,7 @@ import * as dat from 'dat.gui'
 
 // Debug
 const gui = new dat.GUI()
-gui.hide()
+gui.close()
 
 /**
  * Base
