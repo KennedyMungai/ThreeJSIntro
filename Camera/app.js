@@ -75,6 +75,9 @@ const tick = () =>
     // camera.position.y = cursor.y * 20
     // camera.lookAt(cube1.position)
 
+    // Update controls
+    controls.update()
+
     // console.log(deltaTime)
 
     // Update objects
