@@ -22,18 +22,25 @@ const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 // Object
 const geometry = new THREE.Geometry()
 
-const vertex1 = new THREE.Vector3(0, 0, 0,)
-geometry.vertices.push(vertex1)
+for (let i = 0; i < 50; i++)
+{
+    for (let j = 0; j < 3; j++)
+    {
+        geometry.vertices.push(new THREE.Vector3(
+            Math.random(),
+            Math.random(),
+            Math.random()
+        ))
+    }
 
-const vertex2 = new THREE.Vector3(0, 1, 0,)
-geometry.vertices.push(vertex2)
+    const verticesIndex = i * 3
 
-const vertex3 = new THREE.Vector3(1, 0, 0,)
-geometry.vertices.push(vertex3)
-
-// The parameters are indices of the vertices
-const face = new THREE.Face3(0, 1, 2)
-geometry.faces.push(face)
+    geometry.faces.push(new THREE.Face3(
+        verticesIndex,
+        verticesIndex + 1,
+        verticesIndex + 2
+    ))
+}
 
 const material = new THREE.MeshBasicMaterial(
     {
