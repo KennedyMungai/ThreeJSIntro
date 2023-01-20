@@ -27,6 +27,7 @@ const loadingManager = new THREE.LoadingManager()
 
 const textureLoader = new THREE.TextureLoader(loadingManager)
 
+const minecraftTexture = textureLoader.load('/textures/minecraft.png')
 const checkerboardTexture = textureLoader.load('/textures/checkerboard-8x8.png')
 const colorTexture = textureLoader.load('/textures/door/color.jpg')
 const alphaTexture = textureLoader.load('/textures/door/alpha.jpg')
@@ -49,6 +50,9 @@ const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
 // colorTexture.center.x = 0.5
 // colorTexture.center.y = 0.5
 
+// checkerboardTexture.minFilter = THREE.NearestFilter
+minecraftTexture.magFilter = THREE.NearestFilter
+
 /**
  * Base
  */
@@ -64,7 +68,7 @@ const scene = new THREE.Scene()
 const geometry = new THREE.BoxBufferGeometry(1, 1, 1)
 const material = new THREE.MeshBasicMaterial(
     {
-        map: checkerboardTexture
+        map: minecraftTexture
     }
 )
 const mesh = new THREE.Mesh(geometry, material)
