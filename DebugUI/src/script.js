@@ -22,7 +22,11 @@ const scene = new THREE.Scene()
 
 const parameters =
 {
-    color: 0xfff000
+    color: 0xfff000,
+    spin: () =>
+    {
+        console.log('spin')
+    }
 }
 
 const geometry = new THREE.BoxBufferGeometry(1, 1, 1)
