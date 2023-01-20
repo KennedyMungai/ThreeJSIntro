@@ -19,18 +19,19 @@ const scene = new THREE.Scene()
 /**
  * Object
  */
+
+const parameters =
+{
+    color: 0xfff000
+}
+
 const geometry = new THREE.BoxBufferGeometry(1, 1, 1)
-const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
+const material = new THREE.MeshBasicMaterial({ color: parameters.color })
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
 
 // Debug
 // gui.add(mesh.position, 'x', -3, 3, 0.01)
-
-const parameters =
-{
-    color: 0xff0000
-}
 
 gui
     .addColor(parameters, 'color')
