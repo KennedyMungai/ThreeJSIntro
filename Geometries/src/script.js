@@ -21,12 +21,15 @@ const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 
 // Object
 const geometry = new THREE.Geometry()
-const vertice1 = new THREE.Vector3(0, 0, 0,)
-geometry.mergeVertices.push(vertice1)
-const vertice2 = new THREE.Vector3(0, 1, 0,)
-geometry.mergeVertices.push(vertice2)
-const vertice3 = new THREE.Vector3(0, 0, 1,)
-geometry.mergeVertices.push(vertice3)
+
+const vertex1 = new THREE.Vector3(0, 0, 0,)
+geometry.mergeVertices.push(vertex1)
+
+const vertex2 = new THREE.Vector3(0, 1, 0,)
+geometry.mergeVertices.push(vertex2)
+
+const vertex3 = new THREE.Vector3(0, 0, 1,)
+geometry.mergeVertices.push(vertex3)
 
 const material = new THREE.MeshBasicMaterial(
     {
