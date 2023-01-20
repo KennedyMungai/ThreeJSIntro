@@ -26,21 +26,7 @@ loadingManager.onError = () =>
 }
 
 const textureLoader = new THREE.TextureLoader(loadingManager)
-const texture = textureLoader.load(
-    '/textures/door/color.jpg',
-    () =>
-    {
-        console.log('load')
-    },
-    () =>
-    {
-        console.log('progress')
-    },
-    () =>
-    {
-        console.log('error')
-    },
-)
+const colorTexture = textureLoader.load('/textures/door/color.jpg')
 
 /**
  * Base
@@ -57,7 +43,7 @@ const scene = new THREE.Scene()
 const geometry = new THREE.BoxBufferGeometry(1, 1, 1)
 const material = new THREE.MeshBasicMaterial(
     {
-        map: texture
+        map: colorTexture
     }
 )
 const mesh = new THREE.Mesh(geometry, material)
