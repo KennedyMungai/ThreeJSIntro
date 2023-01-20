@@ -50,7 +50,8 @@ const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
 // colorTexture.center.x = 0.5
 // colorTexture.center.y = 0.5
 
-// checkerboardTexture.minFilter = THREE.NearestFilter
+minecraftTexture.generateMipmaps = false
+minecraftTexture.minFilter = THREE.NearestFilter
 minecraftTexture.magFilter = THREE.NearestFilter
 
 /**
