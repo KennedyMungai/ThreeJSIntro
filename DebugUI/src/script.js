@@ -25,7 +25,7 @@ const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
 
 // Debug
-gui.add(mesh.position, 'y')
+gui.add(mesh.position, 'y', -3, 3, 0.01)
 
 /**
  * Sizes
