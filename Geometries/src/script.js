@@ -23,7 +23,9 @@ const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 // const geometry = new THREE.BoxGeometry(1, 1, 1)
 
 const positionsArray = new Float32Array([
-    0, 0, 0, 0, 1, 0, 1, 0, 0
+    0, 0, 0,
+    0, 1, 0,
+    1, 0, 0
 ])
 
 const material = new THREE.MeshBasicMaterial(
