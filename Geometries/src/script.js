@@ -31,6 +31,9 @@ geometry.vertices.push(vertex2)
 const vertex3 = new THREE.Vector3(1, 0, 0,)
 geometry.vertices.push(vertex3)
 
+const face = new THREE.Face3(0, 1, 3)
+geometry.faces.push(face)
+
 const material = new THREE.MeshBasicMaterial(
     {
         color: 0x00ff00,
