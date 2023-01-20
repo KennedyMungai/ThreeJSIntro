@@ -5,8 +5,8 @@ import gsap from 'gsap'
 import * as dat from 'dat.gui'
 
 // Debug
-const gui = new dat.GUI()
-gui.close()
+const gui = new dat.GUI({ closed: true, width: 400 })
+// gui.close()
 
 /**
  * Base
