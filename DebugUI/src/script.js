@@ -57,6 +57,9 @@ gui
 gui
     .add(material, 'wireframe')
 
+gui
+    .add(parameters, 'spin')
+
 // gui.add(mesh.position, 'z', -3, 3, 0.01)
 
 /**
