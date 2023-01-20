@@ -7,6 +7,8 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
  */
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
 
 // Scene
 const scene = new THREE.Scene()
@@ -23,8 +25,8 @@ scene.add(mesh)
  * Sizes
  */
 const sizes = {
-    width: 800,
-    height: 600
+    width: canvas.width,
+    height: canvas.height
 }
 
 /**
