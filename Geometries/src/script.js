@@ -20,28 +20,7 @@ const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 // scene.add(gridHelper)
 
 // Object
-const geometry = new THREE.Geometry()
-
-for (let i = 0; i < 50; i++)
-{
-    for (let j = 0; j < 3; j++)
-    {
-        geometry.vertices.push(new THREE.Vector3(
-            Math.random() - 0.5,
-            Math.random() - 0.5,
-            Math.random() - 0.5
-        ))
-    }
-
-    const verticesIndex = i * 3
-
-    geometry.faces.push(new THREE.Face3(
-        verticesIndex,
-        verticesIndex + 1,
-        verticesIndex + 2
-    ))
-}
-
+const geometry = new THREE.BoxGeometry(1, 1, 1)
 const material = new THREE.MeshBasicMaterial(
     {
         color: 0x00ff00,
