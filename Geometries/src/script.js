@@ -20,7 +20,7 @@ const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 // scene.add(gridHelper)
 
 // Object
-const geometry = new THREE.BoxGeometry(1, 2, 3, 2, 2, 2)
+const geometry = new THREE.Geometry()
 const material = new THREE.MeshBasicMaterial(
     {
         color: 0x00ff00,
