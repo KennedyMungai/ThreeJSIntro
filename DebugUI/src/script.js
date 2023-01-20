@@ -31,6 +31,7 @@ gui
     .min(-3)
     .max(3)
     .step(0.01)
+    .name('Elevation')
 // gui.add(mesh.position, 'z', -3, 3, 0.01)
 
 /**
