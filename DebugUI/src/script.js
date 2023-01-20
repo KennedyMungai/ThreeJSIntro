@@ -34,6 +34,10 @@ const parameters =
 
 gui
     .addColor(parameters, 'color')
+    .onChange(() =>
+    {
+        material.color.set(parameters.color)
+    })
 
 gui
     .add(mesh.position, 'y')
