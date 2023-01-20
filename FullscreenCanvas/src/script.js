@@ -26,7 +26,7 @@ const axesHelper = new THREE.AxesHelper(50)
 scene.add(axesHelper)
 
 // Grid Helper
-const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
+const gridHelper = new THREE.GridHelper(100, 100, 'red', 'gray')
 scene.add(gridHelper)
 
 /**
