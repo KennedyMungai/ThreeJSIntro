@@ -44,6 +44,8 @@ scene.add(gridHelper)
 // material.alphaMap = doorAlphaTexture
 // material.side = THREE.DoubleSide
 
+const material = new THREE.MeshNormalMaterial()
+
 
 // Added a sphere
 const sphere = new THREE.Mesh(
