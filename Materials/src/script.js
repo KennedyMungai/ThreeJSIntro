@@ -70,6 +70,7 @@ scene.add(gridHelper)
 // material.gradientMap = gradientTexture
 
 const material = new THREE.MeshStandardMaterial()
+material.map = doorColorTexture
 
 gui
     .add(material, 'metalness')
