@@ -60,6 +60,7 @@ scene.add(gridHelper)
 // material.specular = new THREE.Color(0x0000ff)
 
 const material = new THREE.MeshToonMaterial()
+material.gradientMap = gradientTexture
 
 // Added a sphere
 const sphere = new THREE.Mesh(
