@@ -42,6 +42,7 @@ material.color.set('magenta')
 material.transparent = true
 // material.opacity = 0.5
 material.alphaMap = doorAlphaTexture
+material.side = THREE.DoubleSide
 
 // Added a sphere
 const sphere = new THREE.Mesh(
