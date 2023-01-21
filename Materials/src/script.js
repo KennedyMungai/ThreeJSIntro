@@ -93,16 +93,22 @@ const sphere = new THREE.Mesh(
 
 sphere.position.set(-2, 0, 0)
 
+sphere.geometry.setAttribute('uv2', new THREE.BufferAttribute(sphere.geometry.attributes.array, 2))
+
 // Added a plane
 const plane = new THREE.Mesh(
     new THREE.PlaneBufferGeometry(1, 1),
     material
 )
 
+plane.geometry.setAttribute('uv2', new THREE.BufferAttribute(plane.geometry.attributes.array, 2))
+
 const torus = new THREE.Mesh(
     new THREE.TorusBufferGeometry(0.3, 0.2, 16, 32),
     material
 )
+
+torus.geometry.setAttribute('uv2', new THREE.BufferAttribute(torus.geometry.attributes.array, 2))
 
 torus.position.set(2, 0, 0)
 
