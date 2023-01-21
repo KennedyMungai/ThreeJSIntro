@@ -20,6 +20,8 @@ const metalnessTexture = textureLoader.load('/textures/door/metalness.jpg')
 const normalTexture = textureLoader.load('/textures/door/normal.jpg')
 const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
 
+const gradient1 = textureLoader.load('/textures/gradients/3.jpg')
+
 // Scene
 const scene = new THREE.Scene()
 
