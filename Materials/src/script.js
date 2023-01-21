@@ -78,17 +78,17 @@ material.alphaMap = doorAlphaTexture
 material.metalnessMap = doorMetalnessTexture
 material.roughnessMap = doorRoughnessTexture
 
-gui
-    .add(material, 'metalness')
-    .min(0)
-    .max(1)
-    .step(0.01)
+// gui
+//     .add(material, 'metalness')
+//     .min(0)
+//     .max(1)
+//     .step(0.01)
 
-gui
-    .add(material, 'roughness')
-    .min(0)
-    .max(1)
-    .step(0.01)
+// gui
+//     .add(material, 'roughness')
+//     .min(0)
+//     .max(1)
+//     .step(0.01)
 
 gui
     .add(material, "aoMapIntensity")
