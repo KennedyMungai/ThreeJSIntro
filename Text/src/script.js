@@ -25,8 +25,9 @@ scene.add(gridHelper)
 
 /**
  * Textures
- */
+*/
 const textureLoader = new THREE.TextureLoader()
+const matcapMaterial = textureLoader.load('/textures/matcap/1.png')
 
 // Fonts
 const fontloader = new THREE.FontLoader()
