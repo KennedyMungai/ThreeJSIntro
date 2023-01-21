@@ -92,6 +92,8 @@ material.map = doorColorTexture
 // material.metalnessMap = doorMetalnessTexture
 // material.roughnessMap = doorRoughnessTexture
 
+material.envMap = environmentMapTexture
+
 
 gui
     .add(material, 'metalness')
