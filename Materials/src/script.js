@@ -1,6 +1,7 @@
 import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import * as dat from 'dat.gui'
 
 /**
  * Base
@@ -99,7 +100,6 @@ const pointLight = new THREE.PointLight(0xffffff, 0.5)
 pointLight.position.set(2, 3, 4)
 scene.add(pointLight)
 
-// Debug UI
 
 /**
  * Sizes
