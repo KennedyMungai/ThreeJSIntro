@@ -50,6 +50,8 @@ fontloader.load(
             }
         )
 
+        textGeometry.computeBoundingBox()
+
         const textMaterial = new THREE.MeshBasicMaterial(
             {
                 color: 0x000fff,
