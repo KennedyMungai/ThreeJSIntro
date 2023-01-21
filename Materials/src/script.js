@@ -31,6 +31,17 @@ const matcapTexture = textureLoader.load('/textures/matcaps/3.png')
 // gradientTexture.magFilter = THREE.NearestFilter
 // gradientTexture.generateMipmaps = false
 
+const environmentMapTexture = cubeTextureLoader.load(
+    [
+        '/textures/environmentMaps/0/px.jpx',
+        '/textures/environmentMaps/0/py.jpx',
+        '/textures/environmentMaps/0/pz.jpx',
+        '/textures/environmentMaps/0/nx.jpx',
+        '/textures/environmentMaps/0/ny.jpx',
+        '/textures/environmentMaps/0/nz.jpx',
+    ]
+)
+
 // Scene
 const scene = new THREE.Scene()
 
