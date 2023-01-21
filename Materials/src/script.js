@@ -70,8 +70,12 @@ scene.add(gridHelper)
 // material.gradientMap = gradientTexture
 
 const material = new THREE.MeshStandardMaterial()
-material.metalness = 1
-material.roughness = 0
+
+gui
+    .add(material, 'metalness')
+    .min(0)
+    .max(1)
+    .step(50)
 
 // Added a sphere
 const sphere = new THREE.Mesh(
