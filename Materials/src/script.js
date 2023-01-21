@@ -52,7 +52,7 @@ scene.add(gridHelper)
 // const material = new THREE.MeshMatcapMaterial()
 // material.matcap = matcapTexture
 
-const material = new THREE.MeshDepthMaterial()
+// const material = new THREE.MeshDepthMaterial()
 
 
 // Added a sphere
