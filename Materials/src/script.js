@@ -39,6 +39,15 @@ const plane = new THREE.Mesh(
 
 scene.add(plane)
 
+const torus = new THREE.Mesh(
+    new THREE.TorusBufferGeometry(0.3, 0.2, 16, 32),
+    material
+)
+
+scene.add(torus)
+
+torus.position.set(2, 0, 0)
+
 /**
  * Sizes
  */
