@@ -72,6 +72,7 @@ scene.add(gridHelper)
 const material = new THREE.MeshStandardMaterial()
 material.map = doorColorTexture
 material.aoMap = doorAmbientOcclusionTexture
+material.aoMapIntensity = 2
 material.normalMap = doorNormalTexture
 material.alphaMap = doorAlphaTexture
 material.metalnessMap = doorMetalnessTexture
