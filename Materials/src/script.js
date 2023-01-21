@@ -19,12 +19,14 @@ scene.add(axesHelper)
 const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 scene.add(gridHelper)
 
-const material = new THREE.MeshBasicMaterial('red')
+const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
 
 const sphere = new THREE.Mesh(
     new THREE.SphereBufferGeometry(0.5, 16, 16),
     material
 )
+
+scene.add(sphere)
 
 /**
  * Sizes
