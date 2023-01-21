@@ -73,6 +73,9 @@ const material = new THREE.MeshStandardMaterial()
 material.map = doorColorTexture
 material.aoMap = doorAmbientOcclusionTexture
 material.normalMap = doorNormalTexture
+material.alphaMap = doorAlphaTexture
+material.metalnessMap = doorMetalnessTexture
+material.roughnessMap = doorRoughnessTexture
 
 gui
     .add(material, 'metalness')
