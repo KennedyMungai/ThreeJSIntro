@@ -75,7 +75,7 @@ material.aoMap = doorAmbientOcclusionTexture
 material.aoMapIntensity = 1
 material.normalMap = doorNormalTexture
 // material.normalScale.set(0.5, 0.5)
-material.transparent = true
+// material.transparent = true
 material.alphaMap = doorAlphaTexture
 material.metalnessMap = doorMetalnessTexture
 material.roughnessMap = doorRoughnessTexture
