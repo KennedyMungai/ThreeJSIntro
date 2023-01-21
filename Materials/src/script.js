@@ -49,8 +49,10 @@ scene.add(gridHelper)
 // material.wireframe = true
 // material.flatShading = true
 
-const material = new THREE.MeshMatcapMaterial()
-material.matcap = matcapTexture
+// const material = new THREE.MeshMatcapMaterial()
+// material.matcap = matcapTexture
+
+const material = new THREE.MeshDepthMaterial()
 
 
 // Added a sphere
