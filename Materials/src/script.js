@@ -15,6 +15,7 @@ const canvas = document.querySelector('canvas.webgl')
 const loadingManager = new THREE.LoadingManager()
 
 const textureLoader = new THREE.TextureLoader(loadingManager)
+const cubeTextureLoader = new THREE.CubeTextureLoader()
 
 const doorColorTexture = textureLoader.load('/textures/door/color.jpg')
 const doorAlphaTexture = textureLoader.load('/textures/door/alpha.jpg')
@@ -80,7 +81,6 @@ material.map = doorColorTexture
 // material.metalnessMap = doorMetalnessTexture
 // material.roughnessMap = doorRoughnessTexture
 
-const cubeTextureLoader = new THREE.CubeTextureLoader()
 
 gui
     .add(material, 'metalness')
