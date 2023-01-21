@@ -71,6 +71,7 @@ scene.add(gridHelper)
 
 const material = new THREE.MeshStandardMaterial()
 material.map = doorColorTexture
+material.aoMap = doorAmbientOcclusionTexture
 
 gui
     .add(material, 'metalness')
