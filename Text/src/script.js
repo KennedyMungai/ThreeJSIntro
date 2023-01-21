@@ -41,7 +41,7 @@ fontloader.load(
                 font,
                 size: 0.5,
                 height: 0.5,
-                curveSegments: 12,
+                curveSegments: 6,
                 bevelEnabled: true,
                 bevelThickness: 0.03,
                 bevelSize: 0.02,
@@ -52,7 +52,7 @@ fontloader.load(
 
         const textMaterial = new THREE.MeshBasicMaterial(
             {
-                color: 0x0000ff,
+                color: 0x000fff,
                 // wireframe: true
             }
         )
