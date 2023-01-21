@@ -57,6 +57,7 @@ scene.add(gridHelper)
 // const material = new THREE.MeshLambertMaterial()
 const material = new THREE.MeshPhongMaterial()
 material.shininess = 100
+material.specular = new THREE.Color(0x0000ff)
 
 // Added a sphere
 const sphere = new THREE.Mesh(
