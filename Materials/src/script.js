@@ -54,7 +54,8 @@ scene.add(gridHelper)
 
 // const material = new THREE.MeshDepthMaterial()
 
-const material = new THREE.MeshLambertMaterial()
+// const material = new THREE.MeshLambertMaterial()
+const material = new THREE.MeshPhongMaterial()
 
 
 // Added a sphere
