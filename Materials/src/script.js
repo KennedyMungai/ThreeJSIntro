@@ -34,9 +34,9 @@ scene.add(axesHelper)
 const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 scene.add(gridHelper)
 
-// const material = new THREE.MeshBasicMaterial()
+const material = new THREE.MeshBasicMaterial()
 // material.map = doorColorTexture
-// material.color = new THREE.Color('magenta')
+material.color = new THREE.Color('magenta')
 // material.color.set('magenta')
 // material.wireframe = true
 // material.transparent = true
