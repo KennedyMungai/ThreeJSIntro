@@ -70,15 +70,15 @@ scene.add(gridHelper)
 // material.gradientMap = gradientTexture
 
 const material = new THREE.MeshStandardMaterial()
-material.map = doorColorTexture
-material.aoMap = doorAmbientOcclusionTexture
-material.aoMapIntensity = 1
-material.normalMap = doorNormalTexture
+// material.map = doorColorTexture
+// material.aoMap = doorAmbientOcclusionTexture
+// material.aoMapIntensity = 1
+// material.normalMap = doorNormalTexture
 // material.normalScale.set(0.5, 0.5)
 // material.transparent = true
-material.alphaMap = doorAlphaTexture
-material.metalnessMap = doorMetalnessTexture
-material.roughnessMap = doorRoughnessTexture
+// material.alphaMap = doorAlphaTexture
+// material.metalnessMap = doorMetalnessTexture
+// material.roughnessMap = doorRoughnessTexture
 
 // gui
 //     .add(material, 'metalness')
