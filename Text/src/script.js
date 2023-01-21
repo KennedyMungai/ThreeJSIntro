@@ -50,7 +50,12 @@ fontloader.load(
             }
         )
 
-        const textMaterial = new THREE.MeshBasicMaterial({ color: 0xfff000 })
+        const textMaterial = new THREE.MeshBasicMaterial(
+            {
+                color: 0xffff00,
+                wireframe: true
+            }
+        )
         const text = new THREE.Mesh(textGeometry, textMaterial)
         scene.add(text)
     }
