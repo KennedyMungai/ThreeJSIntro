@@ -27,7 +27,7 @@ scene.add(gridHelper)
  * Textures
 */
 const textureLoader = new THREE.TextureLoader()
-const matcapMaterial = textureLoader.load('/textures/matcaps/1.png')
+const matcap = textureLoader.load('/textures/matcaps/1.png')
 
 // Fonts
 const fontloader = new THREE.FontLoader()
@@ -60,10 +60,9 @@ fontloader.load(
 
         textGeometry.center()
 
-        const textMaterial = new THREE.MeshBasicMaterial(
+        const textMaterial = new THREE.MeshMatcapMaterial(
             {
-                color: 0x000fff,
-                // wireframe: true
+                matcap
             }
         )
         const text = new THREE.Mesh(textGeometry, textMaterial)
