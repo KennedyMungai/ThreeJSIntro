@@ -56,7 +56,7 @@ scene.add(gridHelper)
 
 // const material = new THREE.MeshLambertMaterial()
 const material = new THREE.MeshPhongMaterial()
-material.shininess = 100
+material.shininess = 1000
 
 // Added a sphere
 const sphere = new THREE.Mesh(
