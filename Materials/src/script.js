@@ -34,8 +34,8 @@ scene.add(axesHelper)
 const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 scene.add(gridHelper)
 
-const material = new THREE.MeshBasicMaterial()
-material.map = doorColorTexture
+// const material = new THREE.MeshBasicMaterial()
+// material.map = doorColorTexture
 // material.color = new THREE.Color('magenta')
 // material.color.set('magenta')
 // material.wireframe = true
@@ -53,6 +53,8 @@ material.map = doorColorTexture
 // material.matcap = matcapTexture
 
 // const material = new THREE.MeshDepthMaterial()
+
+const material = new THREE.MeshLambertMaterial()
 
 
 // Added a sphere
