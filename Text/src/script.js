@@ -20,6 +20,9 @@ const scene = new THREE.Scene()
  */
 const textureLoader = new THREE.TextureLoader()
 
+// Fonts
+const fontloader = new THREE.FontLoader()
+
 /**
  * Object
  */
