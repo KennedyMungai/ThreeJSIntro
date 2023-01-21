@@ -99,6 +99,8 @@ const pointLight = new THREE.PointLight(0xffffff, 0.5)
 pointLight.position.set(2, 3, 4)
 scene.add(pointLight)
 
+// Debug UI
+
 /**
  * Sizes
  */
