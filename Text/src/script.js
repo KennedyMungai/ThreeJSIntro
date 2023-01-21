@@ -46,7 +46,7 @@ fontloader.load(
                 bevelThickness: 0.03,
                 bevelSize: 0.02,
                 bevelOffset: 0,
-                bevelSegments: 5
+                bevelSegments: 4
             }
         )
 
