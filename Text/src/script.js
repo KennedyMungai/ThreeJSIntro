@@ -57,16 +57,6 @@ fontloader.load(
 )
 
 /**
- * Object
- */
-const cube = new THREE.Mesh(
-    new THREE.BoxBufferGeometry(1, 1, 1),
-    new THREE.MeshBasicMaterial()
-)
-
-scene.add(cube)
-
-/**
  * Sizes
  */
 const sizes = {
