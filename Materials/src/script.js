@@ -90,6 +90,12 @@ gui
     .max(1)
     .step(0.01)
 
+gui
+    .add(material, "aoMapIntensity")
+    .min(1)
+    .max(5)
+    .step(0.1)
+
 // Added a sphere
 const sphere = new THREE.Mesh(
     new THREE.SphereBufferGeometry(0.5, 16, 16),
