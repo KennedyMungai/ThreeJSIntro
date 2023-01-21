@@ -23,6 +23,14 @@ const textureLoader = new THREE.TextureLoader()
 // Fonts
 const fontloader = new THREE.FontLoader()
 
+fontloader.load(
+    '/fonts/helvetiker_regular.typeface.json',
+    () => 
+    {
+        console.log("Font loaded")
+    }
+)
+
 /**
  * Object
  */
