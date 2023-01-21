@@ -21,6 +21,7 @@ const normalTexture = textureLoader.load('/textures/door/normal.jpg')
 const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
 
 const gradient1 = textureLoader.load('/textures/gradients/3.jpg')
+const matcap1 = textureLoader.load('/textures/matcaps/4.png')
 
 // Scene
 const scene = new THREE.Scene()
