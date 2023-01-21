@@ -39,8 +39,8 @@ material.map = doorColorTexture
 material.color = new THREE.Color('magenta')
 material.color.set('magenta')
 // material.wireframe = true
-material.transparent = true
-material.opacity = 0.5
+// material.transparent = true
+// material.opacity = 0.5
 
 // Added a sphere
 const sphere = new THREE.Mesh(
