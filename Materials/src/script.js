@@ -22,9 +22,9 @@ const doorRoughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
 
 const gradientTexture = textureLoader.load('/textures/gradients/5.jpg')
 const matcapTexture = textureLoader.load('/textures/matcaps/3.png')
-gradientTexture.minFilter = THREE.NearestFilter
-gradientTexture.magFilter = THREE.NearestFilter
-gradientTexture.generateMipmaps = false
+// gradientTexture.minFilter = THREE.NearestFilter
+// gradientTexture.magFilter = THREE.NearestFilter
+// gradientTexture.generateMipmaps = false
 
 // Scene
 const scene = new THREE.Scene()
@@ -66,8 +66,8 @@ scene.add(gridHelper)
 // material.gradientMap = gradientTexture
 
 const material = new THREE.MeshStandardMaterial()
-material.metalness = 0.45
-material.roughness = 0.65
+material.metalness = 1
+material.roughness = 0
 
 // Added a sphere
 const sphere = new THREE.Mesh(
