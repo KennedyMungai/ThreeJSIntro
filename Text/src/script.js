@@ -15,13 +15,13 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 
-// Axes Helper
-const axesHelper = new THREE.AxesHelper(50)
-scene.add(axesHelper)
+// // Axes Helper
+// const axesHelper = new THREE.AxesHelper(50)
+// scene.add(axesHelper)
 
-// GridHelper
-const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
-scene.add(gridHelper)
+// // GridHelper
+// const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
+// scene.add(gridHelper)
 
 /**
  * Textures
