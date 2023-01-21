@@ -80,6 +80,8 @@ material.map = doorColorTexture
 // material.metalnessMap = doorMetalnessTexture
 // material.roughnessMap = doorRoughnessTexture
 
+const cubeTextureLoader = new THREE.CubeTextureLoader()
+
 gui
     .add(material, 'metalness')
     .min(0)
