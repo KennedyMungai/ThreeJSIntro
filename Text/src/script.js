@@ -68,7 +68,6 @@ fontloader.load(
         const text = new THREE.Mesh(textGeometry, textMaterial)
         scene.add(text)
 
-        console.time("Donuts")
         for (let i = 0; i < 250; i++)
         {
             const donutGeometry = new THREE.TorusBufferGeometry(0.3, 0.2, 20, 45)
@@ -95,8 +94,6 @@ fontloader.load(
 
             scene.add(donut)
         }
-
-        console.timeEnd("Donuts")
     }
 )
 
