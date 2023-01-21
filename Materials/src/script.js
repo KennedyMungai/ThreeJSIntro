@@ -71,7 +71,7 @@ scene.add(gridHelper)
 
 const material = new THREE.MeshStandardMaterial()
 material.map = doorColorTexture
-// material.aoMap = doorAmbientOcclusionTexture
+material.aoMap = doorAmbientOcclusionTexture
 
 gui
     .add(material, 'metalness')
@@ -93,7 +93,7 @@ const sphere = new THREE.Mesh(
 
 sphere.position.set(-2, 0, 0)
 
-sphere.geometry.setAttribute('uv2', new THREE.BufferAttribute(sphere.geometry.attributes.array, 2))
+sphere.geometry.setAttribute('uv2', new THREE.BufferAttribute(sphere.geometry.attributes.uv.array, 2))
 
 // Added a plane
 const plane = new THREE.Mesh(
@@ -101,14 +101,14 @@ const plane = new THREE.Mesh(
     material
 )
 
-plane.geometry.setAttribute('uv2', new THREE.BufferAttribute(plane.geometry.attributes.array, 2))
+plane.geometry.setAttribute('uv2', new THREE.BufferAttribute(plane.geometry.attributes.uv.array, 2))
 
 const torus = new THREE.Mesh(
     new THREE.TorusBufferGeometry(0.3, 0.2, 16, 32),
     material
 )
 
-torus.geometry.setAttribute('uv2', new THREE.BufferAttribute(torus.geometry.attributes.array, 2))
+torus.geometry.setAttribute('uv2', new THREE.BufferAttribute(torus.geometry.attributes.uv.array, 2))
 
 torus.position.set(2, 0, 0)
 
