@@ -34,11 +34,8 @@ scene.add(axesHelper)
 const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 scene.add(gridHelper)
 
-const material = new THREE.MeshBasicMaterial(
-    {
-        map: doorColorTexture
-    }
-)
+const material = new THREE.MeshBasicMaterial()
+material.map = doorColorTexture
 
 // Added a sphere
 const sphere = new THREE.Mesh(
