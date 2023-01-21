@@ -38,6 +38,7 @@ const material = new THREE.MeshBasicMaterial()
 material.map = doorColorTexture
 // material.color = new THREE.Color('magenta')
 material.color.set('magenta')
+material.wireframe = true
 
 // Added a sphere
 const sphere = new THREE.Mesh(
