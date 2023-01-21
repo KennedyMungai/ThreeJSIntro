@@ -88,9 +88,9 @@ fontloader.load(
             )
 
             donut.scale.set(
-                Math.random() * 5 - 2.5,
-                Math.random() * 5 - 2.5,
-                Math.random() * 2,
+                Math.random() * 3.5 + 2.5,
+                Math.random() * 3.5 + 2.5,
+                Math.random() * 4.5 + 1.5,
             )
 
             scene.add(donut)
