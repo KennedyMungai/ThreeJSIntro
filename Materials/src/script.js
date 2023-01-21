@@ -21,12 +21,21 @@ scene.add(gridHelper)
 
 const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
 
+// Added a sphere
 const sphere = new THREE.Mesh(
     new THREE.SphereBufferGeometry(0.5, 16, 16),
     material
 )
 
 scene.add(sphere)
+
+// Added a plane
+const plane = new THREE.Mesh(
+    new THREE.PlaneBufferGeometry(5, 5),
+    material
+)
+
+scene.add(plane)
 
 /**
  * Sizes
