@@ -37,7 +37,7 @@ fontloader.load(
     (font) => 
     {
         const textGeometry = new THREE.TextBufferGeometry(
-            'Sent from heaven',
+            'Welcome To Donut Heaven',
             {
                 font,
                 size: 0.5,
@@ -69,7 +69,7 @@ fontloader.load(
         scene.add(text)
 
         console.time("Donuts")
-        for (let i = 0; i < 200; i++)
+        for (let i = 0; i < 250; i++)
         {
             const donutGeometry = new THREE.TorusBufferGeometry(0.3, 0.2, 20, 45)
             const donutMaterial = new THREE.MeshMatcapMaterial({ matcap })
@@ -90,7 +90,7 @@ fontloader.load(
             donut.scale.set(
                 Math.random() * 5 - 2.5,
                 Math.random() * 5 - 2.5,
-                Math.random() * 5 - 2.5,
+                Math.random() * 2,
             )
 
             scene.add(donut)
