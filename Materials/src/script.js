@@ -75,7 +75,7 @@ gui
     .add(material, 'metalness')
     .min(0)
     .max(1)
-    .step(50)
+    .step(0.01)
 
 // Added a sphere
 const sphere = new THREE.Mesh(
