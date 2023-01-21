@@ -34,9 +34,9 @@ scene.add(axesHelper)
 const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 scene.add(gridHelper)
 
-const material = new THREE.MeshBasicMaterial()
+// const material = new THREE.MeshBasicMaterial()
 // material.map = doorColorTexture
-material.color = new THREE.Color('magenta')
+// material.color = new THREE.Color('magenta')
 // material.color.set('magenta')
 // material.wireframe = true
 // material.transparent = true
@@ -52,7 +52,7 @@ material.color = new THREE.Color('magenta')
 // const material = new THREE.MeshMatcapMaterial()
 // material.matcap = matcapTexture
 
-// const material = new THREE.MeshDepthMaterial()
+const material = new THREE.MeshDepthMaterial()
 
 
 // Added a sphere
@@ -77,6 +77,12 @@ const torus = new THREE.Mesh(
 torus.position.set(2, 0, 0)
 
 scene.add(sphere, plane, torus)
+
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
+scene.add(ambientLight)
+
+const pointLight = new THREE.PointLight(0xffffff, 0.5)
+scene.add(pointLight)
 
 /**
  * Sizes
