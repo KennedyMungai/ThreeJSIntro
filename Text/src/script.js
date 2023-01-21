@@ -19,6 +19,10 @@ const scene = new THREE.Scene()
 const axesaHelper = new THREE.AxesHelper(50)
 scene.add(axesaHelper)
 
+// GridHelper
+const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
+scene.add(gridHelper)
+
 /**
  * Textures
  */
