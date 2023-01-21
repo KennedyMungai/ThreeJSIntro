@@ -67,6 +67,27 @@ fontloader.load(
         )
         const text = new THREE.Mesh(textGeometry, textMaterial)
         scene.add(text)
+
+        for (let i = 0; i < 200; i++)
+        {
+            const donutGeometry = new THREE.TorusBufferGeometry(0.3, 0.2, 20, 45)
+            const donutMaterial = new THREE.MeshMatcapMaterial({ matcap })
+            const donut = new THREE.Mesh(donutGeometry, donutMaterial)
+
+            donut.position.set(
+                Math.random() * 40 - 20,
+                Math.random() * 40 - 20,
+                Math.random() * 40 - 20
+            )
+
+            donut.rotation.set(
+                Math.random() * 90 - 45,
+                Math.random() * 90 - 45,
+                Math.random() * 90 - 45,
+            )
+
+            scene.add(donut)
+        }
     }
 )
 
