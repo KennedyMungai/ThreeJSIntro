@@ -34,7 +34,7 @@ scene.add(axesHelper)
 const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 scene.add(gridHelper)
 
-const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
+const material = new THREE.MeshBasicMaterial({ color: 'magenta' })
 
 // Added a sphere
 const sphere = new THREE.Mesh(
