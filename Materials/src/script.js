@@ -35,14 +35,15 @@ const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 scene.add(gridHelper)
 
 const material = new THREE.MeshBasicMaterial()
-material.map = doorColorTexture
-material.color = new THREE.Color('magenta')
-material.color.set('magenta')
+// material.map = doorColorTexture
+// material.color = new THREE.Color('magenta')
+// material.color.set('magenta')
 // material.wireframe = true
-material.transparent = true
+// material.transparent = true
 // material.opacity = 0.5
-material.alphaMap = doorAlphaTexture
+// material.alphaMap = doorAlphaTexture
 // material.side = THREE.DoubleSide
+
 
 // Added a sphere
 const sphere = new THREE.Mesh(
