@@ -63,8 +63,6 @@ const sphere = new THREE.Mesh(
 
 sphere.position.set(-2, 0, 0)
 
-scene.add(sphere)
-
 // Added a plane
 const plane = new THREE.Mesh(
     new THREE.PlaneBufferGeometry(1, 1),
