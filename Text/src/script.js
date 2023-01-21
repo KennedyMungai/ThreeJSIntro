@@ -37,7 +37,7 @@ fontloader.load(
     (font) => 
     {
         const textGeometry = new THREE.TextBufferGeometry(
-            'Welcome To Donut Heaven',
+            'Welcome To \n Donut Heaven',
             {
                 font,
                 size: 0.5,
