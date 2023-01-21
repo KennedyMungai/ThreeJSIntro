@@ -24,6 +24,7 @@ const gradientTexture = textureLoader.load('/textures/gradients/5.jpg')
 const matcapTexture = textureLoader.load('/textures/matcaps/3.png')
 gradientTexture.minFilter = THREE.NearestFilter
 gradientTexture.magFilter = THREE.NearestFilter
+gradientTexture.generateMipmaps = false
 
 // Scene
 const scene = new THREE.Scene()
