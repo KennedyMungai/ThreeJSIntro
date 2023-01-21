@@ -46,7 +46,8 @@ scene.add(gridHelper)
 
 const material = new THREE.MeshNormalMaterial()
 // material.normalMap = doorNormalTexture
-material.wireframe = true
+// material.wireframe = true
+material.flatShading = true
 
 
 // Added a sphere
