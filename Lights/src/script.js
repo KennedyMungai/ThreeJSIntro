@@ -15,6 +15,14 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 
+// Axes Helper
+const axesHelper = new THREE.AxesHelper(50)
+scene.add(axesHelper)
+
+// Grid Helper
+const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
+scene.add(gridHelper)
+
 /**
  * Lights
  */
@@ -36,8 +44,8 @@ scene.add(ambientLight)
 
 // Rect Area Light
 const rectAreaLight = new THREE.RectAreaLight(0x0ffffc, 10, 10, 5)
-// rectAreaLight.position.set(0, 1, 1)
-// rectAreaLight.rotation.set(Math.PI * 2, 0, 0)
+rectAreaLight.position.set(0, 1, 1)
+rectAreaLight.rotation.set(Math.PI * 2, 0, 0)
 scene.add(rectAreaLight)
 
 /**
