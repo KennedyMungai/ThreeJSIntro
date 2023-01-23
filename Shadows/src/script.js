@@ -46,6 +46,8 @@ directionalLight.shadow.camera.near = 1
 const directionalLightCameraHelper = new THREE.CameraHelper(directionalLight.shadow.camera)
 scene.add(directionalLightCameraHelper)
 
+directionalLightCameraHelper.visible = false
+
 /**
  * Materials
  */
