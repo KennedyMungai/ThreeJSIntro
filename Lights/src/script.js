@@ -62,7 +62,7 @@ scene.add(hemisphereLight)
 // Helpers
 // const hemisphereLightHelper = new THREE.HemisphereLightHelper(hemisphereLight, 2, 'green')
 // scene.add(hemisphereLightHelper)
-const pointLightHelper = new THREE.PointLightHelper(pointLight, 1, 'green')
+const pointLightHelper = new THREE.PointLightHelper(pointLight, 0.5)
 scene.add(pointLightHelper)
 
 /**
