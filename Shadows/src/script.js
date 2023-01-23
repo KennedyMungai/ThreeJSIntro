@@ -14,6 +14,7 @@ const canvas = document.querySelector('canvas.webgl')
 
 const textureLoader = new THREE.TextureLoader()
 const bakedShadow = textureLoader.load('/textures/bakedShadow.jpg')
+const simpleShadow = textureLoader.load('/textures/simpleShadow.jpg')
 
 // Scene
 const scene = new THREE.Scene()
