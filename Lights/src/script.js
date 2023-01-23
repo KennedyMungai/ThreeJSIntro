@@ -69,6 +69,13 @@ const sizes = {
     height: window.innerHeight
 }
 
+// Tweaks
+gui
+    .add(ambientLight, "intensity")
+    .min(0)
+    .max(1)
+    .step(0.01)
+
 window.addEventListener('resize', () =>
 {
     // Update sizes
