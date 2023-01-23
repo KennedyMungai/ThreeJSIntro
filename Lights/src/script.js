@@ -67,8 +67,8 @@ scene.add(spotLight)
 // scene.add(pointLightHelper)
 // const directionalLightHelper = new THREE.DirectionalLightHelper(directionalLight, 0.2)
 // scene.add(directionalLightHelper)
-const spotLightHelper = new THREE.SpotLightHelper(spotLight, 0.2)
-scene.add(spotLightHelper)
+// const spotLightHelper = new THREE.SpotLightHelper(spotLight, 0.2)
+// scene.add(spotLightHelper)
 
 window.requestAnimationFrame(() =>
 {
