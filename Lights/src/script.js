@@ -33,9 +33,9 @@ scene.add(gridHelper)
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
 scene.add(ambientLight)
 
-// const pointLight = new THREE.PointLight(0xffffff, 0.5)
-// pointLight.position.set(2, 3, 4)  
-// scene.add(pointLight)
+const pointLight = new THREE.PointLight(0xffffff, 0.5)
+pointLight.position.set(2, 3, 4)
+scene.add(pointLight)
 
 // Directional light
 // const directionalLight = new THREE.DirectionalLight(0x0ffffc, 0.3)
@@ -60,8 +60,10 @@ scene.add(hemisphereLight)
 // scene.add(spotLight)
 
 // Helpers
-const hemisphereLightHelper = new THREE.HemisphereLightHelper(hemisphereLight, 2, 'green')
-scene.add(hemisphereLightHelper)
+// const hemisphereLightHelper = new THREE.HemisphereLightHelper(hemisphereLight, 2, 'green')
+// scene.add(hemisphereLightHelper)
+const pointLightHelper = new THREE.PointLightHelper(pointLight, 1, 'green')
+scene.add(pointLightHelper)
 
 /**
  * Objects
