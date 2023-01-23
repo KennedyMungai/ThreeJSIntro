@@ -33,8 +33,8 @@ scene.add(ambientLight)
 // scene.add(directionalLight)
 
 // Hemisphere Light
-const hemisphereLight = new THREE.HemisphereLight(0x0ffffc, 0xfff50c, 0.5)
-scene.add(hemisphereLight)
+// const hemisphereLight = new THREE.HemisphereLight(0x0ffffc, 0xfff50c, 0.5)
+// scene.add(hemisphereLight)
 
 /**
  * Objects
