@@ -51,8 +51,9 @@ directionalLightCameraHelper.visible = false
 
 // Spot Light
 const spotLight = new THREE.SpotLight(0xffffff, 0.3, 10, Math.PI * 0.3)
-scene.add(spotLight)
 spotLight.castShadow = true
+spotLight.position.set(0, 2, 2)
+scene.add(spotLight)
 
 /**
  * Materials
