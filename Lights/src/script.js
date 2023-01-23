@@ -48,8 +48,7 @@ scene.add(ambientLight)
 
 // Rect Area Light
 const rectAreaLight = new THREE.RectAreaLight(0x0ffffc, 10, 10, 5)
-rectAreaLight.position.set(0, 1, 1)
-rectAreaLight.rotation.set(Math.PI * 2, 0, 0)
+rectAreaLight.position.set(-1.5, 0, 1.5)
 scene.add(rectAreaLight)
 
 /**
