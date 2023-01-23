@@ -84,7 +84,8 @@ const plane = new THREE.Mesh(
 plane.rotation.x = - Math.PI * 0.5
 plane.position.y = - 0.65
 
-scene.add(sphere, cube, torus, plane)
+items.add(sphere, cube, torus, plane)
+items.position.set(0, 1, 0)
 
 /**
  * Sizes
