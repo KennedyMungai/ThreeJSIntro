@@ -71,6 +71,9 @@ pointLight.castShadow = true
 pointLight.position.set(-1, 3, 0)
 scene.add(pointLight)
 
+const pointLightCameraHelper = new THREE.CameraHelper(pointLight.shadow.camera)
+scene.add(pointLightCameraHelper)
+
 /**
  * Materials
  */
