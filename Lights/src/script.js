@@ -47,10 +47,14 @@ scene.add(ambientLight)
 // scene.add(hemisphereLight)
 
 // Rect Area Light
-const rectAreaLight = new THREE.RectAreaLight(0x0ffffc, 10, 10, 5)
-rectAreaLight.position.set(-1.5, 0, 1.5)
-rectAreaLight.lookAt(new THREE.Vector3(0, 0, 0))
-scene.add(rectAreaLight)
+// const rectAreaLight = new THREE.RectAreaLight(0x0ffffc, 10, 10, 5)
+// rectAreaLight.position.set(-1.5, 0, 1.5)
+// rectAreaLight.lookAt(new THREE.Vector3(0, 0, 0))
+// scene.add(rectAreaLight)
+
+// Spot Light
+const spotLight = new THREE.SpotLight(0x0ffffc, 0.5, 10, Math.PI * 0.1, 0.25, 1)
+scene.add(spotLight)
 
 /**
  * Objects
