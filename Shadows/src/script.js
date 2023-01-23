@@ -69,6 +69,8 @@ directionalLightCameraHelper.visible = false
 const pointLight = new THREE.PointLight(0xffffff, 0.5)
 pointLight.castShadow = true
 pointLight.position.set(-1, 3, 0)
+pointLight.shadow.mapSize.width = 1024
+pointLight.shadow.mapSize.width = 1024
 pointLight.shadow.camera.near = 1
 pointLight.shadow.camera.far = 5
 pointLight.shadow.camera.fov = 90
