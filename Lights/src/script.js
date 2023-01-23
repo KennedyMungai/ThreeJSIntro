@@ -35,7 +35,7 @@ scene.add(ambientLight)
 // scene.add(hemisphereLight)
 
 // Rect Area Light
-const rectAreaLight = new THREE.RectAreaLight(0x0ffffc, 1, 8, 2)
+const rectAreaLight = new THREE.RectAreaLight(0x0ffffc, 10, 8, 2)
 rectAreaLight.position.set(0, 1, 1)
 rectAreaLight.rotation.set(Math.PI * 2, 0, 0)
 scene.add(rectAreaLight)
