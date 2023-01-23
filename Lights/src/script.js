@@ -70,6 +70,11 @@ scene.add(spotLight)
 const spotLightHelper = new THREE.SpotLightHelper(spotLight, 0.2)
 scene.add(spotLightHelper)
 
+window.requestAnimationFrame(() =>
+{
+    spotLightHelper.update()
+})
+
 /**
  * Objects
  */
