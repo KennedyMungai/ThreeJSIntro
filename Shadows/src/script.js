@@ -32,6 +32,8 @@ gui.add(directionalLight.position, 'y').min(- 5).max(5).step(0.001)
 gui.add(directionalLight.position, 'z').min(- 5).max(5).step(0.001)
 scene.add(directionalLight)
 
+directionalLight.castShadow = true
+
 /**
  * Materials
  */
