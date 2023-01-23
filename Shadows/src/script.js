@@ -54,6 +54,7 @@ const spotLight = new THREE.SpotLight(0xffffff, 0.3, 10, Math.PI * 0.3)
 spotLight.castShadow = true
 spotLight.position.set(0, 2, 2)
 scene.add(spotLight)
+scene.add(spotLight.target)
 
 /**
  * Materials
