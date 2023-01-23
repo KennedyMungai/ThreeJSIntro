@@ -113,6 +113,16 @@ plane.receiveShadow = true
 
 scene.add(sphere, plane)
 
+const sphereShadow = new THREE.Mesh(
+    new THREE.PlaneBufferGeometry(1.5, 1.5),
+    new THREE.MeshBasicMaterial({
+        color: 0xff0000
+    })
+)
+sphereShadow.rotation.x = Math.PI / 2
+
+scene.add(sphereShadow)
+
 /**
  * Sizes
  */
