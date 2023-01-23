@@ -32,7 +32,7 @@ gui.add(directionalLight.position, 'y').min(- 5).max(5).step(0.001)
 gui.add(directionalLight.position, 'z').min(- 5).max(5).step(0.001)
 scene.add(directionalLight)
 
-directionalLight.castShadow = true
+// directionalLight.castShadow = true
 
 directionalLight.shadow.mapSize.width = 1024 / 4
 directionalLight.shadow.mapSize.height = 1024 / 4
@@ -52,6 +52,7 @@ directionalLightCameraHelper.visible = false
 // Spot Light
 const spotLight = new THREE.SpotLight(0xffffff, 0.3, 10, Math.PI * 0.3)
 scene.add(spotLight)
+spotLight.castShadow = true
 
 /**
  * Materials
