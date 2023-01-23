@@ -34,7 +34,9 @@ scene.add(ambientLight)
 // const hemisphereLight = new THREE.HemisphereLight(0x0ffffc, 0xfff50c, 0.5)
 // scene.add(hemisphereLight)
 
-
+// Rect Area Light
+const rectAreaLight = new THREE.RectAreaLight(0xffffff, 0.5, 8, 2)
+scene.add(rectAreaLight)
 
 /**
  * Objects
