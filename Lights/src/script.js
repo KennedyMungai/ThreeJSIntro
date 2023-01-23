@@ -28,7 +28,7 @@ scene.add(ambientLight)
 // scene.add(pointLight)
 
 // Directional light
-const directionalLight = new THREE.DirectionalLight(0xffffff, 0.1)
+const directionalLight = new THREE.DirectionalLight(0x0ffffc, 0.3)
 scene.add(directionalLight)
 directionalLight.position.set(0, 5, 0)
 
