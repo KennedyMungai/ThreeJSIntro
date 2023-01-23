@@ -54,6 +54,7 @@ scene.add(ambientLight)
 
 // Spot Light
 const spotLight = new THREE.SpotLight(0x0ffffc, 0.5, 10, Math.PI * 0.1, 0.25, 1)
+spotLight.position.set(0, 2, 3)
 scene.add(spotLight)
 
 /**
