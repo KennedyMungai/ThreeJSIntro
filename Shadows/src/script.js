@@ -103,7 +103,7 @@ sphere.castShadow = true
 
 const plane = new THREE.Mesh(
     new THREE.PlaneBufferGeometry(5, 5),
-    material
+    new THREE.MeshBasicMaterial({ map: bakedShadow })
 )
 plane.rotation.x = - Math.PI * 0.5
 plane.position.y = - 0.5
