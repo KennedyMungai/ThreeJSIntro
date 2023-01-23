@@ -43,8 +43,8 @@ scene.add(ambientLight)
 // scene.add(directionalLight)
 
 // Hemisphere Light
-// const hemisphereLight = new THREE.HemisphereLight(0x0ffffc, 0xfff50c, 0.5)
-// scene.add(hemisphereLight)
+const hemisphereLight = new THREE.HemisphereLight(0x0ffffc, 0xfff50c, 0.5)
+scene.add(hemisphereLight)
 
 // Rect Area Light
 // const rectAreaLight = new THREE.RectAreaLight(0x0ffffc, 10, 10, 5)
@@ -53,11 +53,15 @@ scene.add(ambientLight)
 // scene.add(rectAreaLight)
 
 // Spot Light
-const spotLight = new THREE.SpotLight(0x0ffffc, 1, 10, Math.PI * 0.1, 0.25, 1)
-spotLight.position.set(0, 2, 3)
-spotLight.target.position.x = -1.75
-scene.add(spotLight.target)
-scene.add(spotLight)
+// const spotLight = new THREE.SpotLight(0x0ffffc, 1, 10, Math.PI * 0.1, 0.25, 1)
+// spotLight.position.set(0, 2, 3)
+// spotLight.target.position.x = -1.75
+// scene.add(spotLight.target)
+// scene.add(spotLight)
+
+// Helpers
+const hemisphereLightHelper = new THREE.HemisphereLightHelper(hemisphereLight, 2, 'green')
+scene.add(hemisphereLightHelper)
 
 /**
  * Objects
