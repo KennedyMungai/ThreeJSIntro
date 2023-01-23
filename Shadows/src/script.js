@@ -67,6 +67,7 @@ directionalLightCameraHelper.visible = false
 
 // Point Light
 const pointLight = new THREE.PointLight(0xffffff, 0.5)
+pointLight.castShadow = true
 scene.add(pointLight)
 
 /**
