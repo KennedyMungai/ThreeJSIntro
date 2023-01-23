@@ -44,6 +44,7 @@ scene.add(ambientLight)
 
 // Hemisphere Light
 const hemisphereLight = new THREE.HemisphereLight(0x0ffffc, 0xfff50c, 0.5)
+hemisphereLight.position.set(0, 2, 0)
 scene.add(hemisphereLight)
 
 // Rect Area Light
@@ -60,7 +61,7 @@ scene.add(hemisphereLight)
 // scene.add(spotLight)
 
 // Helpers
-const hemisphereLightHelper = new THREE.HemisphereLightHelper(hemisphereLight, 2)
+const hemisphereLightHelper = new THREE.HemisphereLightHelper(hemisphereLight, 0.2)
 scene.add(hemisphereLightHelper)
 // const pointLightHelper = new THREE.PointLightHelper(pointLight, 0.5)
 // scene.add(pointLightHelper)
