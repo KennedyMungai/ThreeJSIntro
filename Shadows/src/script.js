@@ -61,8 +61,8 @@ spotLight.shadow.camera.far = 10
 scene.add(spotLight)
 scene.add(spotLight.target)
 
-const spotLightCameraHelper = new THREE.CameraHelper(spotLight.shadow.camera)
-scene.add(spotLightCameraHelper)
+// const spotLightCameraHelper = new THREE.CameraHelper(spotLight.shadow.camera)
+// scene.add(spotLightCameraHelper)
 
 /**
  * Materials
