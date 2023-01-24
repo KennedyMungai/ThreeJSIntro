@@ -28,6 +28,9 @@ scene.add(gridHelper)
  */
 const textureLoader = new THREE.TextureLoader()
 
+// Loading in the textures
+const colorTexture = textureLoader.load('/textures/door/color.jpg')
+
 /**
  * House
  */
