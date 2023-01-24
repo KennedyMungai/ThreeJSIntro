@@ -63,7 +63,12 @@ const generateGalaxy = () =>
         const i3 = i * 3
 
         const radius = Math.random() * parameters.radius
-        const branchAngle = i % parameters.branches
+        const branchAngle = ((i % parameters.branches) / parameters.branches) * (Math.PI * 2)
+
+        if (i < 20)
+        {
+            console.log(i, branchAngle)
+        }
 
         positions[i3 + 0] = radius
         positions[i3 + 1] = 0
