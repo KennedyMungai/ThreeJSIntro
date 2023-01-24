@@ -73,7 +73,7 @@ const generateGalaxy = () =>
         const randomZ = Math.random() * parameters.randomness
 
         positions[i3 + 0] = Math.cos(branchAngle + spinAngle) * radius + randomX
-        positions[i3 + 1] = 0 + randomY
+        positions[i3 + 1] = randomY
         positions[i3 + 2] = Math.sin(branchAngle + spinAngle) * radius + randomZ
     }
 
