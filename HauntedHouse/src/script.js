@@ -270,7 +270,7 @@ doorLight.position.set(0, 2.15, 3.8)
 house.add(doorLight)
 
 // Ghosts
-const ghost1 = new THREE.PointLight(0xB9D5FF, 2, 3)
+const ghost1 = new THREE.PointLight(0xff00ff, 2, 3)
 scene.add(ghost1)
 
 /**
