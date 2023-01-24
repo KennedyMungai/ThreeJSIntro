@@ -264,6 +264,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 renderer.shadowMap.enabled = true
 renderer.shadowMap.type = THREE.PCFShadowMap
+renderer.setClearColor('#262837')
 
 /**
  * Animate
