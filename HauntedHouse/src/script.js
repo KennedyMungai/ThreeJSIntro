@@ -186,7 +186,7 @@ for (let i = 0; i < 50; i++)
 
     const grave = new THREE.Mesh(graveGeometry, graveMaterial)
     grave.position.set(x, 0.4, z)
-    grave.rotation.y = (Math.random() - 0.5) * 0.4
+    grave.rotation.y = (Math.random() - 0.5) * 0.6
     graves.add(grave)
 }
 
