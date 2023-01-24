@@ -37,6 +37,9 @@ const particlesMaterial = new THREE.PointsMaterial()
 particlesMaterial.size = 0.02
 particlesMaterial.sizeAttenuation = true
 
+// Points
+
+
 /**
  * Sizes
  */
