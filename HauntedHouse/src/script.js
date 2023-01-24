@@ -64,6 +64,11 @@ const walls = new THREE.Mesh(
     })
 )
 
+walls.geometry.setAttribute(
+    'uv2',
+    new THREE.Float32BufferAttribute(walls.geometry.attributes.uv.array, 2)
+)
+
 walls.position.y = 3 / 2
 
 house.add(walls)
