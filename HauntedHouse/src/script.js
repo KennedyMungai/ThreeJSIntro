@@ -177,6 +177,15 @@ scene.add(graves)
 const graveGeometry = new THREE.BoxBufferGeometry(0.6, 0.8, 0.2)
 const graveMaterial = new THREE.MeshStandardMaterial({ color: 0xb2b6b1 })
 
+for (let i = 0; i < 50; i++)
+{
+    const angle = Math.random() * (Math.PI * 2)
+    const x = Math.sin(angle)
+    const z = Math.cos(angle)
+
+    const grave = new THREE.Mesh(graveGeometry, graveMaterial)
+}
+
 /**
  * Lights
  */
