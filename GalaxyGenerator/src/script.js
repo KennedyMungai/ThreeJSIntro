@@ -71,6 +71,7 @@ const generateGalaxy = () =>
     /**
      * Points
      */
+    const points = new THREE.Points(geometry, material)
 }
 
 generateGalaxy()
