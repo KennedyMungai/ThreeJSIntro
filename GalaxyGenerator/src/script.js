@@ -64,6 +64,7 @@ const generateGalaxy = () =>
         const i3 = i * 3
 
         const radius = Math.random() * parameters.radius
+        const spinAngle = radius * parameters.spin
         const branchAngle = ((i % parameters.branches) / parameters.branches) * (Math.PI * 2)
 
         positions[i3 + 0] = Math.cos(branchAngle) * radius
