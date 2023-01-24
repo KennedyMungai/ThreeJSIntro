@@ -26,6 +26,11 @@ scene.add(gridHelper)
 /**
  * Galaxy Generator
  */
+const parameters =
+{
+
+}
+
 const generateGalaxy = () => 
 {
     console.log('Generate the galaxy')
