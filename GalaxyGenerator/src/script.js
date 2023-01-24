@@ -34,23 +34,11 @@ const parameters =
 parameters.count = 1000
 parameters.size = 0.02
 
-gui
-    .add(parameters, "count")
-    .min(500)
-    .max(10000)
-    .step(10)
-
-gui
-    .add(parameters, "size")
-    .min(0.0001)
-    .max(0.1)
-    .step(0.00001)
-
 const generateGalaxy = () => 
 {
     /**
      * Geometry
-     */
+    */
     const geometry = new THREE.BufferGeometry()
     const positions = new Float32Array(parameters.count * 3)
 
@@ -70,7 +58,7 @@ const generateGalaxy = () =>
 
     /**
      * Material
-     */
+    */
     const material = new THREE.PointsMaterial(
         {
             size: parameters.size,
@@ -82,12 +70,27 @@ const generateGalaxy = () =>
 
     /**
      * Points
-     */
+    */
     const points = new THREE.Points(geometry, material)
     scene.add(points)
 }
 
 generateGalaxy()
+
+gui
+    .add(parameters, "count")
+    .min(500)
+    .max(10000)
+    .step(10)
+    .onFinishChange(generateGalaxy)
+
+gui
+    .add(parameters, "size")
+    .min(0.0001)
+    .max(0.1)
+    .step(0.00001)
+    .onFinishChange(generateGalaxy)
+
 
 /**
  * Sizes
