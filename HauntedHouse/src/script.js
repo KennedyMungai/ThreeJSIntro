@@ -134,7 +134,31 @@ const bush4 = new THREE.Mesh(
 bush4.position.set(-2, 0.5, 8)
 bush4.scale.set(0.5, 0.5, 0.5)
 
-house.add(bush1, bush2, bush3, bush4)
+const bush5 = new THREE.Mesh(
+    new THREE.SphereBufferGeometry(1, 16, 16),
+    new THREE.MeshStandardMaterial(
+        {
+            color: 0x89c854
+        }
+    )
+)
+
+bush5.position.set(-2, 0.3, 8.5)
+bush5.scale.set(0.25, 0.25, 0.25)
+
+const bush6 = new THREE.Mesh(
+    new THREE.SphereBufferGeometry(1, 16, 16),
+    new THREE.MeshStandardMaterial(
+        {
+            color: 0x89c854
+        }
+    )
+)
+
+bush6.position.set(3.5, 0.3, 8.5)
+bush6.scale.set(0.25, 0.25, 0.25)
+
+house.add(bush1, bush2, bush3, bush4, bush5, bush6)
 
 door.position.z = 3.7555
 door.position.y = 1.75 / 2
