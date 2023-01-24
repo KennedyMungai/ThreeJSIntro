@@ -34,6 +34,18 @@ const parameters =
 parameters.count = 1000
 parameters.size = 0.02
 
+gui
+    .add(parameters, "count")
+    .min(500)
+    .max(10000)
+    .step(10)
+
+gui
+    .add(parameters, "size")
+    .min(0.0001)
+    .max(0.1)
+    .step(0.00001)
+
 const generateGalaxy = () => 
 {
     /**
