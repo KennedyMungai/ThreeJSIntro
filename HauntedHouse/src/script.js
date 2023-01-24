@@ -67,6 +67,19 @@ const roof = new THREE.Mesh(
     })
 )
 
+//Door
+const door = new THREE.Mesh(
+    new THREE.PlaneBufferGeometry(0.75, 1.75),
+    new THREE.MeshStandardMaterial({
+        map: colorTexture
+    })
+)
+
+door.position.z = 3.7555
+door.position.y = 1.75 / 2
+
+house.add(door)
+
 roof.position.y = house.position.x + 3.75
 roof.rotation.y = Math.PI / 4
 
