@@ -76,7 +76,12 @@ const roof = new THREE.Mesh(
 const door = new THREE.Mesh(
     new THREE.PlaneBufferGeometry(0.75, 1.75),
     new THREE.MeshStandardMaterial({
-        map: colorTexture
+        map: colorTexture,
+        alphaMap: alphaTexture,
+        normalMap: normalTexture,
+        aoMap: ambientOcclusionTexture,
+        metalnessMap: metalnessTexture,
+        roughnessMap: roughnessTexture
     })
 )
 
