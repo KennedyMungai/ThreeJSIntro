@@ -170,6 +170,10 @@ roof.rotation.y = Math.PI / 4
 
 house.add(roof)
 
+// Graves
+const graves = new THREE.Group()
+scene.add(graves)
+
 /**
  * Lights
  */
