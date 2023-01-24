@@ -125,6 +125,13 @@ gui
     .step(1)
     .onFinishChange(generateGalaxy)
 
+gui
+    .add(parameters, "spin")
+    .min(-7.5)
+    .max(7.5)
+    .step(0.1)
+    .onFinishChange(generateGalaxy)
+
 
 /**
  * Sizes
