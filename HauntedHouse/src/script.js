@@ -20,12 +20,12 @@ const fog = new THREE.Fog('#262837', 1, 7.5)
 scene.fog = fog
 
 // Axes Helper
-const axesHelper = new THREE.AxesHelper(50)
-scene.add(axesHelper)
+// const axesHelper = new THREE.AxesHelper(50)
+// scene.add(axesHelper)
 
 // Grid Helper
-const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
-scene.add(gridHelper)
+// const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
+// scene.add(gridHelper)
 
 /**
  * Textures
