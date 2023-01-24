@@ -90,6 +90,11 @@ const door = new THREE.Mesh(
     })
 )
 
+door.geometry.setAttribute(
+    'uv2',
+    new THREE.Float32BufferAttribute(door.geometry.attributes.uv.array, 2)
+)
+
 // Bushes
 const bush1 = new THREE.Mesh(
     new THREE.SphereBufferGeometry(1, 16, 16),
