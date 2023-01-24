@@ -24,13 +24,12 @@ const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 scene.add(gridHelper)
 
 /**
- * Test cube
+ * Galaxy Generator
  */
-const cube = new THREE.Mesh(
-    new THREE.BoxBufferGeometry(1, 1, 1),
-    new THREE.MeshBasicMaterial()
-)
-scene.add(cube)
+const galaxyGenerator = () => 
+{
+
+}
 
 /**
  * Sizes
