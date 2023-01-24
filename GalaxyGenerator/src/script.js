@@ -31,6 +31,8 @@ const parameters =
 
 }
 
+parameters.count = 1000
+
 const generateGalaxy = () => 
 {
     console.log('Generate the galaxy')
