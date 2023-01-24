@@ -28,14 +28,7 @@ scene.add(gridHelper)
  */
 const textureLoader = new THREE.TextureLoader()
 
-/**
- * Test cube
- */
-const cube = new THREE.Mesh(
-    new THREE.BoxBufferGeometry(1, 1, 1),
-    new THREE.MeshBasicMaterial()
-)
-scene.add(cube)
+
 
 /**
  * Sizes
