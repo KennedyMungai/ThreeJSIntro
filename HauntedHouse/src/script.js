@@ -16,7 +16,7 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 // Fog
-const fog = new THREE.Fog('#880000', 2, 6)
+const fog = new THREE.Fog('#ff0000', 1, 7.5)
 scene.fog = fog
 
 // Axes Helper
