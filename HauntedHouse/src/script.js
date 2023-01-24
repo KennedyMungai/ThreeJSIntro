@@ -155,7 +155,7 @@ const bush6 = new THREE.Mesh(
     )
 )
 
-bush6.position.set(3.5, 0.3, 8.5)
+bush6.position.set(3.25, 0.3, 8.25)
 bush6.scale.set(0.25, 0.25, 0.25)
 
 house.add(bush1, bush2, bush3, bush4, bush5, bush6)
