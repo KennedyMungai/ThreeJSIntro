@@ -207,6 +207,11 @@ gui.add(moonLight.position, 'y').min(- 5).max(5).step(0.001)
 gui.add(moonLight.position, 'z').min(- 5).max(5).step(0.001)
 scene.add(moonLight)
 
+// Door Light
+const doorLight = new THREE.PointLight(0xffffff, 5, 4.5, 5)
+doorLight.position.set(0, 2.15, 3.8)
+house.add(doorLight)
+
 /**
  * Sizes
  */
