@@ -52,6 +52,11 @@ const grassAOTexture = textureLoader.load('/textures/grass/ambientOcclusion.jpg'
 const grassNormalTexture = textureLoader.load('/textures/grass/normal.jpg')
 const grassRoughnessTexture = textureLoader.load('/textures/grass/roughness.jpg')
 
+grassColorTexture.repeat.set(8, 8)
+grassAOTexture.repeat.set(8, 8)
+grassNormalTexture.repeat.set(8, 8)
+grassRoughnessTexture.repeat.set(8, 8)
+
 /**
  * House
  */
