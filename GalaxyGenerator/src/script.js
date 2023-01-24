@@ -33,6 +33,7 @@ const parameters =
 
 parameters.count = 100000
 parameters.size = 0.01
+parameters.radius = 5
 
 let geometry = null
 let material = null
