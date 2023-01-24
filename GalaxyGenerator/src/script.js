@@ -67,9 +67,9 @@ const generateGalaxy = () =>
         const spinAngle = radius * parameters.spin
         const branchAngle = ((i % parameters.branches) / parameters.branches) * (Math.PI * 2)
 
-        positions[i3 + 0] = Math.cos(branchAngle) * radius
+        positions[i3 + 0] = Math.cos(branchAngle + spinAngle) * radius
         positions[i3 + 1] = 0
-        positions[i3 + 2] = Math.sin(branchAngle) * radius
+        positions[i3 + 2] = Math.sin(branchAngle + spinAngle) * radius
     }
 
     geometry.setAttribute(
@@ -128,8 +128,8 @@ gui
 
 gui
     .add(parameters, "spin")
-    .min(-5)
-    .max(5)
+    .min(-2)
+    .max(2)
     .step(0.001)
     .onFinishChange(generateGalaxy)
 
