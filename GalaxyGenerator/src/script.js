@@ -41,6 +41,16 @@ let points = null
 const generateGalaxy = () => 
 {
     /**
+     * Destoy the old galaxy
+     */
+    if (geometry !== null)
+    {
+        geometry.dispose()
+        material.dispose()
+        scene.remove(points)
+    }
+
+    /**
      * Geometry
     */
     geometry = new THREE.BufferGeometry()
