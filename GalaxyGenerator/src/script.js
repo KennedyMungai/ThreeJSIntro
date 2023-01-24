@@ -108,7 +108,7 @@ gui
 
 gui
     .add(parameters, "radius")
-    .min(0.5)
+    .min(0.1)
     .max(10)
     .step(0.1)
     .onFinishChange(generateGalaxy)
