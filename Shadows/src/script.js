@@ -119,7 +119,9 @@ const sphereShadow = new THREE.Mesh(
         color: 0xff0000
     })
 )
+
 sphereShadow.rotation.x = -Math.PI / 2
+sphereShadow.position.y = plane.position.y + 0.0001
 
 scene.add(sphereShadow)
 
