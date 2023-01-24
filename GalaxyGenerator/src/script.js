@@ -106,6 +106,13 @@ gui
     .step(0.00001)
     .onFinishChange(generateGalaxy)
 
+gui
+    .add(parameters, "radius")
+    .min(0.5)
+    .max(10)
+    .step(0.1)
+    .onFinishChange(generateGalaxy)
+
 
 /**
  * Sizes
