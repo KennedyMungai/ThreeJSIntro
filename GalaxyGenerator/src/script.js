@@ -61,7 +61,9 @@ const generateGalaxy = () =>
      * Geometry
     */
     geometry = new THREE.BufferGeometry()
+
     const positions = new Float32Array(parameters.count * 3)
+    const colors = new Float32Array(parameters.count * 3)
 
     for (let i = 0; i < parameters.count; i++)
     {
