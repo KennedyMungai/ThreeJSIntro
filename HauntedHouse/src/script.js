@@ -57,7 +57,10 @@ scene.add(house)
 const walls = new THREE.Mesh(
     new THREE.BoxBufferGeometry(7.5, 3, 7.5),
     new THREE.MeshStandardMaterial({
-        color: 0xac8e82
+        map: brickColorTexture,
+        normalMap: brickNormalTexture,
+        roughness: brickRoughnessTexture,
+        aoMap: brickAOTexture
     })
 )
 
