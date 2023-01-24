@@ -41,7 +41,7 @@ let points = null
 const generateGalaxy = () => 
 {
     /**
-     * Destoy the old galaxy
+     * Destroy the old galaxy
      */
     if (geometry !== null)
     {
