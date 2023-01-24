@@ -33,12 +33,12 @@ const parameters =
 
 parameters.count = 10000
 
-const generateGalaxy = (parameters) => 
+const generateGalaxy = () => 
 {
-    console.log(parameters.count)
+
 }
 
-generateGalaxy(parameters)
+generateGalaxy()
 
 /**
  * Sizes
