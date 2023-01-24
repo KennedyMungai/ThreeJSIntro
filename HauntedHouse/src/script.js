@@ -46,6 +46,12 @@ const brickNormalTexture = textureLoader.load('/textures/bricks/normal.jpg')
 const brickRoughnessTexture = textureLoader.load('/textures/bricks/roughness.jpg')
 const brickAOTexture = textureLoader.load('/textures/bricks/ambientOcclusion.jpg')
 
+// Loading the grass textures
+const grassColorTexture = textureLoader.load('/textures/grass/color.jpg')
+const grassAOTexture = textureLoader.load('/textures/grass/ambientOcclusion.jpg')
+const grassNormalTexture = textureLoader.load('/textures/grass/normal.jpg')
+const grassRoughnessTexture = textureLoader.load('/textures/grass/roughness.jpg')
+
 /**
  * House
  */
