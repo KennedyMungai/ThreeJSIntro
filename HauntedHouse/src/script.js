@@ -60,7 +60,7 @@ scene.add(floor)
 const roof = new THREE.Mesh(
     new THREE.ConeBufferGeometry(7, 2.75, 4, 1),
     new THREE.MeshStandardMaterial({
-        color: 0xacedfe
+        color: 0xb35f45
     })
 )
 
