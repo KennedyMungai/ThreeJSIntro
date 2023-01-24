@@ -26,12 +26,12 @@ scene.add(gridHelper)
 /**
  * Galaxy Generator
  */
-const galaxyGenerator = () => 
+const generateGalaxy = () => 
 {
 
 }
 
-galaxyGenerator()
+generateGalaxy()
 
 /**
  * Sizes
