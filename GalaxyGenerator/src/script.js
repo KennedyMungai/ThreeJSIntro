@@ -35,7 +35,19 @@ parameters.count = 10000
 
 const generateGalaxy = () => 
 {
+    const geometry = new THREE.BufferGeometry()
+    const positions = new Float32Array(parameters.count * 3)
 
+    for (let i = 0; i < parameters.count; i++)
+    {
+        const i3 = i * 3
+
+        positions[i3 + 0] = Math.random()
+        positions[i3 + 1] = Math.random()
+        positions[i3 + 2] = Math.random()
+    }
+
+    console.log(positions)
 }
 
 generateGalaxy()
