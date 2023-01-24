@@ -7,7 +7,7 @@ import * as dat from 'dat.gui'
  * Base
  */
 // Debug
-const gui = new dat.GUI()
+const gui = new dat.GUI({ width: 400 })
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
