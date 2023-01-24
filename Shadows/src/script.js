@@ -190,6 +190,10 @@ const tick = () =>
     sphere.position.z = Math.sin(elapsedTime) * 1.5
     sphere.position.y = Math.abs(Math.sin(elapsedTime * 5)) * 0.5
 
+    // Update the shadow
+    sphereShadow.position.x = sphere.position.x
+    sphereShadow.position.z = sphere.position.z
+
     // Update controls
     controls.update()
 
