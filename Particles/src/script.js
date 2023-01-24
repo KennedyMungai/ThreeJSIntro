@@ -38,7 +38,8 @@ particlesMaterial.size = 0.02
 particlesMaterial.sizeAttenuation = true
 
 // Points
-
+const particles = new THREE.Points(particlesGeometry, particlesMaterial)
+scene.add(particles)
 
 /**
  * Sizes
