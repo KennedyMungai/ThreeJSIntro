@@ -94,7 +94,7 @@ generateGalaxy()
 gui
     .add(parameters, "count")
     .min(500)
-    .max(10000)
+    .max(100000)
     .step(10)
     .onFinishChange(generateGalaxy)
 
