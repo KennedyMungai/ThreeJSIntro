@@ -82,8 +82,20 @@ house.add(walls)
 // Floor
 const floor = new THREE.Mesh(
     new THREE.PlaneBufferGeometry(50, 50),
-    new THREE.MeshStandardMaterial({ color: '#a9c388' })
+    new THREE.MeshStandardMaterial(
+        {
+            map: grassColorTexture,
+            normalMap: grassNormalTexture,
+            aoMap: grassAOTexture,
+            roughnessMap: grassRoughnessTexture
+        })
 )
+
+floor.geometry.setAttribute(
+    'uv2',
+    new THREE.Float32BufferAttribute(floor.attributes.uv.array, 2)
+)
+
 floor.rotation.x = - Math.PI * 0.5
 floor.position.y = 0
 scene.add(floor)
