@@ -118,8 +118,8 @@ gui
 
 gui
     .add(parameters, "branches")
-    .min(1)
-    .max(7)
+    .min(2)
+    .max(15)
     .step(1)
     .onFinishChange(generateGalaxy)
 
