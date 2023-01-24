@@ -37,6 +37,7 @@ parameters.radius = 4
 parameters.branches = 4
 parameters.spin = 1
 parameters.randomness = 0.4
+parameters.randomnessPower = 3
 
 let geometry = null
 let material = null
