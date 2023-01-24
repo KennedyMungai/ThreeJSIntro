@@ -70,9 +70,9 @@ const generateGalaxy = () =>
             console.log(i, branchAngle)
         }
 
-        positions[i3 + 0] = Math.cos(branchAngle)
+        positions[i3 + 0] = Math.cos(branchAngle) * radius
         positions[i3 + 1] = 0
-        positions[i3 + 2] = Math.sin(branchAngle)
+        positions[i3 + 2] = Math.sin(branchAngle) * radius
     }
 
     geometry.setAttribute(
