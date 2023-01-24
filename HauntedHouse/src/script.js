@@ -31,7 +31,8 @@ const textureLoader = new THREE.TextureLoader()
 /**
  * House
  */
-
+const house = new THREE.Group()
+scene.add(house)
 
 // Floor
 const floor = new THREE.Mesh(
