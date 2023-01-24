@@ -37,13 +37,13 @@ scene.add(house)
 
 // Walls
 const walls = new THREE.Mesh(
-    new THREE.BoxBufferGeometry(4, 2.5, 4),
+    new THREE.BoxBufferGeometry(4, 3, 4),
     new THREE.MeshStandardMaterial({
         color: 0xac8e82
     })
 )
 
-walls.position.y = 1.25
+walls.position.y = 3 / 2
 
 house.add(walls)
 
