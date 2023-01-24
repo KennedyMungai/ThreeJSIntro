@@ -33,10 +33,10 @@ const parameters =
 
 parameters.count = 100000
 parameters.size = 0.01
-parameters.radius = 5
-parameters.branches = 3
+parameters.radius = 4
+parameters.branches = 4
 parameters.spin = 1
-parameters.randomness = 0.2
+parameters.randomness = 0.4
 
 let geometry = null
 let material = null
