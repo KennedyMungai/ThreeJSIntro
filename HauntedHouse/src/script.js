@@ -56,6 +56,19 @@ floor.rotation.x = - Math.PI * 0.5
 floor.position.y = 0
 scene.add(floor)
 
+// Roof
+const roof = new THREE.Mesh(
+    new THREE.ConeBufferGeometry(7, 2.75, 4, 1),
+    new THREE.MeshStandardMaterial({
+        color: 0xacedfe
+    })
+)
+
+roof.position.y = house.position.x + 3.75
+roof.rotation.y = Math.PI / 4
+
+house.add(roof)
+
 /**
  * Lights
  */
