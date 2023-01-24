@@ -92,7 +92,6 @@ const generateGalaxy = () =>
             sizeAttenuation: true,
             depthWrite: false,
             blending: THREE.AdditiveBlending,
-            color: 0xff5588
         }
     )
 
