@@ -28,7 +28,10 @@ scene.add(gridHelper)
  */
 const textureLoader = new THREE.TextureLoader()
 
-
+/**
+ * Particles
+ */
+const particlesGeometry = new THREE.SphereBufferGeometry(1, 32, 32)
 
 /**
  * Sizes
