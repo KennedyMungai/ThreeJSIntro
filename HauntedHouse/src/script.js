@@ -93,7 +93,7 @@ const floor = new THREE.Mesh(
 
 floor.geometry.setAttribute(
     'uv2',
-    new THREE.Float32BufferAttribute(floor.attributes.uv.array, 2)
+    new THREE.Float32BufferAttribute(floor.geometry.attributes.uv.array, 2)
 )
 
 floor.rotation.x = - Math.PI * 0.5
