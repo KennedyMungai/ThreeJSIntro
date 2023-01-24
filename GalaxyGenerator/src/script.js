@@ -94,6 +94,7 @@ const generateGalaxy = () =>
             sizeAttenuation: true,
             depthWrite: false,
             blending: THREE.AdditiveBlending,
+            vertexColors: true,
         }
     )
 
