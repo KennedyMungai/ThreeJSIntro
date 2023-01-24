@@ -31,6 +31,7 @@ const textureLoader = new THREE.TextureLoader()
 /**
  * House
  */
+// Group
 const house = new THREE.Group()
 scene.add(house)
 
