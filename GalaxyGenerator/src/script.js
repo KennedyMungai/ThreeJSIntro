@@ -127,9 +127,9 @@ gui
 
 gui
     .add(parameters, "spin")
-    .min(-7.5)
-    .max(7.5)
-    .step(0.1)
+    .min(5)
+    .max(5)
+    .step(0.001)
     .onFinishChange(generateGalaxy)
 
 
