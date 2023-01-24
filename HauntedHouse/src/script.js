@@ -174,6 +174,9 @@ house.add(roof)
 const graves = new THREE.Group()
 scene.add(graves)
 
+const graveGeometry = new THREE.BoxBufferGeometry(0.6, 0.8, 0.2)
+const graveMaterial = new THREE.MeshStandardMaterial({ color: 0xb2b6b1 })
+
 /**
  * Lights
  */
