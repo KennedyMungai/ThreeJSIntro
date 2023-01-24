@@ -91,6 +91,7 @@ walls.geometry.setAttribute(
 )
 
 walls.position.y = 3 / 2
+walls.castShadow = true
 
 house.add(walls)
 
@@ -113,6 +114,7 @@ floor.geometry.setAttribute(
 
 floor.rotation.x = - Math.PI * 0.5
 floor.position.y = 0
+floor.receiveShadow = true
 scene.add(floor)
 
 // Roof
@@ -122,6 +124,8 @@ const roof = new THREE.Mesh(
         color: 0xb35f45
     })
 )
+
+roof.castShadow = true
 
 //Door
 const door = new THREE.Mesh(
@@ -154,6 +158,7 @@ const bush1 = new THREE.Mesh(
 
 bush1.position.set(-2, 0.5, 5.5)
 bush1.scale.set(0.5, 0.5, 0.5)
+bush1.castShadow = true
 
 const bush2 = new THREE.Mesh(
     new THREE.SphereBufferGeometry(1, 16, 16),
@@ -166,6 +171,7 @@ const bush2 = new THREE.Mesh(
 
 bush2.position.set(3, 0.5, 5.5)
 bush2.scale.set(0.5, 0.5, 0.5)
+bush2.castShadow = true
 
 const bush3 = new THREE.Mesh(
     new THREE.SphereBufferGeometry(1, 16, 16),
@@ -178,6 +184,7 @@ const bush3 = new THREE.Mesh(
 
 bush3.position.set(3, 0.5, 8)
 bush3.scale.set(0.5, 0.5, 0.5)
+bush3.castShadow = true
 
 const bush4 = new THREE.Mesh(
     new THREE.SphereBufferGeometry(1, 16, 16),
@@ -190,6 +197,7 @@ const bush4 = new THREE.Mesh(
 
 bush4.position.set(-2, 0.5, 8)
 bush4.scale.set(0.5, 0.5, 0.5)
+bush4.castShadow = true
 
 const bush5 = new THREE.Mesh(
     new THREE.SphereBufferGeometry(1, 16, 16),
@@ -202,6 +210,7 @@ const bush5 = new THREE.Mesh(
 
 bush5.position.set(-2, 0.3, 8.5)
 bush5.scale.set(0.25, 0.25, 0.25)
+bush5.castShadow = true
 
 const bush6 = new THREE.Mesh(
     new THREE.SphereBufferGeometry(1, 16, 16),
@@ -214,6 +223,7 @@ const bush6 = new THREE.Mesh(
 
 bush6.position.set(3.25, 0.3, 8.25)
 bush6.scale.set(0.25, 0.25, 0.25)
+bush6.castShadow = true
 
 house.add(bush1, bush2, bush3, bush4, bush5, bush6)
 
@@ -224,6 +234,8 @@ house.add(door)
 
 roof.position.y = house.position.x + 3.75
 roof.rotation.y = Math.PI / 4
+
+roof.castShadow = true
 
 house.add(roof)
 
@@ -244,6 +256,7 @@ for (let i = 0; i < 50; i++)
     const grave = new THREE.Mesh(graveGeometry, graveMaterial)
     grave.position.set(x, 0.36, z)
     grave.rotation.y = (Math.random() - 0.5) * 0.6
+    grave.castShadow = true
     graves.add(grave)
 }
 
@@ -262,17 +275,22 @@ gui.add(moonLight, 'intensity').min(0).max(1).step(0.001)
 gui.add(moonLight.position, 'x').min(- 5).max(5).step(0.001)
 gui.add(moonLight.position, 'y').min(- 5).max(5).step(0.001)
 gui.add(moonLight.position, 'z').min(- 5).max(5).step(0.001)
+moonLight.castShadow = true
 scene.add(moonLight)
 
 // Door Light
 const doorLight = new THREE.PointLight(0xffffff, 5, 4.5, 5)
 doorLight.position.set(0, 2.15, 3.8)
+doorLight.castShadow = true
 house.add(doorLight)
 
 // Ghosts
 const ghost1 = new THREE.PointLight(0xff00ff, 2, 3)
+ghost1.castShadow = true
 const ghost2 = new THREE.PointLight(0x00ffff, 2, 3)
+ghost2.castShadow = true
 const ghost3 = new THREE.PointLight(0xffff00, 2, 3)
+ghost3.castShadow = true
 scene.add(ghost1, ghost2, ghost3)
 
 /**
