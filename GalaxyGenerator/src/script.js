@@ -116,6 +116,13 @@ gui
     .step(0.1)
     .onFinishChange(generateGalaxy)
 
+gui
+    .add(parameters, "branches")
+    .min(1)
+    .max(7)
+    .step(1)
+    .onFinishChange(generateGalaxy)
+
 
 /**
  * Sizes
