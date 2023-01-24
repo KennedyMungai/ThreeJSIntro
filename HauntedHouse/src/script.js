@@ -33,12 +33,12 @@ scene.add(gridHelper)
 const textureLoader = new THREE.TextureLoader()
 
 // Loading in the textures
-const colorTexture = textureLoader.load('/textures/door/color.jpg')
-const alphaTexture = textureLoader.load('/textures/door/alpha.jpg')
-const normalTexture = textureLoader.load('/textures/door/normal.jpg')
-const ambientOcclusionTexture = textureLoader.load('/textures/door/ambientOcclusion.jpg')
-const metalnessTexture = textureLoader.load('/textures/door/metalness.jpg')
-const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
+const doorColorTexture = textureLoader.load('/textures/door/color.jpg')
+const doorAlphaTexture = textureLoader.load('/textures/door/alpha.jpg')
+const doorNormalTexture = textureLoader.load('/textures/door/normal.jpg')
+const doorAmbientOcclusionTexture = textureLoader.load('/textures/door/ambientOcclusion.jpg')
+const doorMetalnessTexture = textureLoader.load('/textures/door/metalness.jpg')
+const doorRoughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
 
 /**
  * House
@@ -80,12 +80,12 @@ const roof = new THREE.Mesh(
 const door = new THREE.Mesh(
     new THREE.PlaneBufferGeometry(2, 2),
     new THREE.MeshStandardMaterial({
-        map: colorTexture,
-        alphaMap: alphaTexture,
-        normalMap: normalTexture,
-        aoMap: ambientOcclusionTexture,
-        metalnessMap: metalnessTexture,
-        roughnessMap: roughnessTexture
+        map: doorColorTexture,
+        alphaMap: doorAlphaTexture,
+        normalMap: doorNormalTexture,
+        aoMap: doorAmbientOcclusionTexture,
+        metalnessMap: doorMetalnessTexture,
+        roughnessMap: doorRoughnessTexture
     })
 )
 
