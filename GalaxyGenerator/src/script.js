@@ -93,6 +93,11 @@ const generateGalaxy = () =>
         new THREE.BufferAttribute(positions, 3)
     )
 
+    geometry.setAttribute(
+        'color',
+        new THREE.BufferAttribute(colors, 3)
+    )
+
     /**
      * Material
     */
