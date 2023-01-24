@@ -85,6 +85,21 @@ const door = new THREE.Mesh(
     })
 )
 
+// Bushes
+const bush1 = new THREE.Mesh(
+    new THREE.SphereBufferGeometry(1, 16, 16),
+    new THREE.MeshStandardMaterial(
+        {
+            color: 0x89c854
+        }
+    )
+)
+
+bush1.position.set(-2, 0.5, 5.5)
+bush1.scale.set(0.5, 0.5, 0.5)
+
+house.add(bush1)
+
 door.position.z = 3.7555
 door.position.y = 1.75 / 2
 
