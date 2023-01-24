@@ -61,6 +61,8 @@ const generateGalaxy = () =>
     {
         const i3 = i * 3
 
+        const radius = Math.random() * parameters.radius
+
         positions[i3 + 0] = (Math.random() - 0.5) * 3
         positions[i3 + 1] = (Math.random() - 0.5) * 3
         positions[i3 + 2] = (Math.random() - 0.5) * 3
