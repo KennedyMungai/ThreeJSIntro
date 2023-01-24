@@ -37,7 +37,7 @@ scene.add(house)
 
 // Walls
 const walls = new THREE.Mesh(
-    new THREE.BoxBufferGeometry(4, 3, 4),
+    new THREE.BoxBufferGeometry(7.5, 3, 7.5),
     new THREE.MeshStandardMaterial({
         color: 0xac8e82
     })
@@ -49,7 +49,7 @@ house.add(walls)
 
 // Floor
 const floor = new THREE.Mesh(
-    new THREE.PlaneBufferGeometry(20, 20),
+    new THREE.PlaneBufferGeometry(50, 50),
     new THREE.MeshStandardMaterial({ color: '#a9c388' })
 )
 floor.rotation.x = - Math.PI * 0.5
