@@ -134,6 +134,13 @@ gui
     .step(0.001)
     .onFinishChange(generateGalaxy)
 
+gui
+    .add(parameters, "randomness")
+    .min(0)
+    .max(1)
+    .step(0.001)
+    .onFinishChange(generateGalaxy)
+
 
 /**
  * Sizes
