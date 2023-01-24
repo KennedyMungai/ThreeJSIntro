@@ -65,6 +65,9 @@ const generateGalaxy = () =>
     const positions = new Float32Array(parameters.count * 3)
     const colors = new Float32Array(parameters.count * 3)
 
+    const colorInside = new THREE.Color(parameters.insideColor)
+    const colorOutside = new THREE.Color(parameters.outsideColor)
+
     for (let i = 0; i < parameters.count; i++)
     {
         const i3 = i * 3
