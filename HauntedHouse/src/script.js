@@ -181,8 +181,8 @@ for (let i = 0; i < 50; i++)
 {
     const angle = Math.random() * (Math.PI * 2)
     const radius = 3 + Math.random() * 6
-    const x = Math.sin(angle) * 10
-    const z = Math.cos(angle) * 10
+    const x = Math.sin(angle) * radius
+    const z = Math.cos(angle) * radius
 
     const grave = new THREE.Mesh(graveGeometry, graveMaterial)
     grave.position.set(x, 0.4, z)
