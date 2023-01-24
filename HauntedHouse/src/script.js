@@ -184,6 +184,7 @@ for (let i = 0; i < 50; i++)
     const z = Math.cos(angle)
 
     const grave = new THREE.Mesh(graveGeometry, graveMaterial)
+    grave.position.set(x, 0, z)
     graves.add(grave)
 }
 
