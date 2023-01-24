@@ -67,6 +67,10 @@ const generateGalaxy = () =>
             blending: THREE.AdditiveBlending
         }
     )
+
+    /**
+     * Points
+     */
 }
 
 generateGalaxy()
