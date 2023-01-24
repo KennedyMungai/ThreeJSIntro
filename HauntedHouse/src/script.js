@@ -186,6 +186,7 @@ bush3.position.set(3, 0.5, 8)
 bush3.scale.set(0.5, 0.5, 0.5)
 bush3.castShadow = true
 
+
 const bush4 = new THREE.Mesh(
     new THREE.SphereBufferGeometry(1, 16, 16),
     new THREE.MeshStandardMaterial(
@@ -276,21 +277,31 @@ gui.add(moonLight.position, 'x').min(- 5).max(5).step(0.001)
 gui.add(moonLight.position, 'y').min(- 5).max(5).step(0.001)
 gui.add(moonLight.position, 'z').min(- 5).max(5).step(0.001)
 moonLight.castShadow = true
+moonLight.shadow.mapSize.width = 256
+moonLight.shadow.mapSize.height = 256
 scene.add(moonLight)
 
 // Door Light
 const doorLight = new THREE.PointLight(0xffffff, 5, 4.5, 5)
 doorLight.position.set(0, 2.15, 3.8)
 doorLight.castShadow = true
+doorLight.shadow.mapSize.width = 256
+doorLight.shadow.mapSize.height = 256
 house.add(doorLight)
 
 // Ghosts
 const ghost1 = new THREE.PointLight(0xff00ff, 2, 3)
 ghost1.castShadow = true
+ghost1.shadow.mapSize.width = 256
+ghost1.shadow.mapSize.height = 256
 const ghost2 = new THREE.PointLight(0x00ffff, 2, 3)
 ghost2.castShadow = true
+ghost2.shadow.mapSize.width = 256
+ghost2.shadow.mapSize.height = 256
 const ghost3 = new THREE.PointLight(0xffff00, 2, 3)
 ghost3.castShadow = true
+ghost3.shadow.mapSize.height = 256
+ghost3.shadow.mapSize.width = 256
 scene.add(ghost1, ghost2, ghost3)
 
 /**
