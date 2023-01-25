@@ -116,6 +116,8 @@ const tick = () =>
     raycaster.set(rayOrigin, rayDirection)
 
     const objects = [object1, object2, object3]
+    const intersects = raycaster.intersectObjects(objects)
+    console.log(intersects)
 
     // Update controls
     controls.update()
