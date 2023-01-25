@@ -74,6 +74,11 @@ window.addEventListener('resize', () =>
 })
 
 /**
+ * Mouse 
+ */
+const mouse = new THREE.Vector2()
+
+/**
  * Camera
  */
 // Base camera
