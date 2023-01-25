@@ -118,6 +118,11 @@ const tick = () =>
     const objects = [object1, object2, object3]
     const intersects = raycaster.intersectObjects(objects)
 
+    objects.forEach((object) =>
+    {
+        object.material.color.set('#ff0000')
+    })
+
     intersects.forEach((intersect) =>
     {
         intersect.object.material.color.set('#ff8855')
