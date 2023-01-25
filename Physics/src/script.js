@@ -13,11 +13,11 @@ const debugObject = {}
 debugObject.createSphere = () =>
 {
     createSphere(
-        0.5,
+        Math.random() * 0.5 + 0.25,
         {
-            x: 0,
+            x: (Math.random() - 0.5) * 3,
             y: 3,
-            z: 0
+            z: (Math.random() - 0.5) * 3
         }
     )
 }
