@@ -2,7 +2,7 @@ import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
-import CANNON from 'cannon'
+import CANNON, { Vec3 } from 'cannon'
 
 /**
  * Debug
@@ -184,6 +184,17 @@ const createSphere = (radius, position) =>
     mesh.position.copy(position)
 
     scene.add(mesh)
+
+    // Cannon JS Body
+    const shape = new CANNON.Sphere(radius)
+    const body = new CANNON.Body({
+        mass: 1,
+        position: new Vec3(0, 3, 0),
+        shape,
+        material: defaultMaterial
+    })
+
+    body.position.copy(mesh.position)
 }
 
 /**
