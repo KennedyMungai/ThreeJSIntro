@@ -50,6 +50,11 @@ particlesGeometry.setAttribute(
     new THREE.BufferAttribute(positions, 3)
 )
 
+particlesGeometry.setAttribute(
+    'color',
+    new THREE.BufferAttribute(positions, 3)
+)
+
 const particlesMaterial = new THREE.PointsMaterial()
 particlesMaterial.size = 0.1
 particlesMaterial.sizeAttenuation = true
