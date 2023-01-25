@@ -8,6 +8,14 @@ import CANNON, { Vec3 } from 'cannon'
  * Debug
  */
 const gui = new dat.GUI()
+const debugObject = {}
+
+debugObject.createSphere = () =>
+{
+    createSphere(0.5, { x: 0, y: 3, z: 0 })
+}
+
+gui.add(debugObject, 'createSphere')
 
 /**
  * Base
