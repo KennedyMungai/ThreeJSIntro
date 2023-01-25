@@ -31,7 +31,7 @@ const textureLoader = new THREE.TextureLoader()
 /**
  * Particles
  */
-const particlesGeometry = new THREE.SphereBufferGeometry(1, 32, 32)
+const particlesGeometry = new THREE.BufferGeometry(1, 32, 32)
 const count = 500
 
 const particlesMaterial = new THREE.PointsMaterial()
