@@ -139,11 +139,11 @@ const tick = () =>
 
     if (intersects.length)
     {
-        console.log("Something being hovered")
+        currentIntersect = intersects[0]
     }
     else
     {
-        console.log("Nothing being hovered")
+        currentIntersect = null
     }
 
     // Update controls
