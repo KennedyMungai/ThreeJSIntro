@@ -104,9 +104,9 @@ const tick = () =>
     const elapsedTime = clock.getElapsedTime()
 
     // Giving the spheres a wave animation
-    // object1.position.y = Math.sin(elapsedTime + 0.5)
-    // object2.position.y = Math.sin(elapsedTime + 1.0)
-    // object3.position.y = Math.sin(elapsedTime + 1.5)
+    object1.position.y = Math.sin(elapsedTime + 0.5)
+    object2.position.y = Math.sin(elapsedTime + 1.0)
+    object3.position.y = Math.sin(elapsedTime + 1.5)
 
     // // Ray stuff
     // const rayOrigin = new THREE.Vector3(-3, 0, 0)
