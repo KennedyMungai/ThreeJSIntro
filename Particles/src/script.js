@@ -41,6 +41,11 @@ for (let i = 0; i < count * 3; i++)
     positions[i] = Math.random()
 }
 
+particlesGeometry.setAttribute(
+    'position',
+    new THREE.BufferAttribute(positions, 3)
+)
+
 const particlesMaterial = new THREE.PointsMaterial()
 particlesMaterial.size = 0.02
 particlesMaterial.sizeAttenuation = true
