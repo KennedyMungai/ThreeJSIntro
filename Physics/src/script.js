@@ -159,6 +159,9 @@ const tick = () =>
     // Update physics world
     world.step(1 / 60, deltaTime, 3)
 
+    // Matching the physical meshes to the physics meshes
+    sphere.position.copy(sphereBody.position)
+
     // Update controls
     controls.update()
 
