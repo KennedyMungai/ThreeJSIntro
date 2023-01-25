@@ -195,6 +195,8 @@ const createSphere = (radius, position) =>
     })
 
     body.position.copy(mesh.position)
+
+    world.addBody(body)
 }
 
 /**
