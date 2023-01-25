@@ -137,6 +137,15 @@ const tick = () =>
         intersect.object.material.color.set('#ff8855')
     })
 
+    if (intersects.length)
+    {
+        console.log("Something being hovered")
+    }
+    else
+    {
+        console.log("Nothing being hovered")
+    }
+
     // Update controls
     controls.update()
 
