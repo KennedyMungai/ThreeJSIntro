@@ -184,6 +184,12 @@ const createSphere = (radius, position) =>
     body.position.copy(mesh.position)
 
     world.addBody(body)
+
+    // Save in projects to update
+    objectsToUpdate.push({
+        mesh: mesh,
+        body: body
+    })
 }
 
 createSphere(0.5, { x: 0, y: 3, z: 0 })
