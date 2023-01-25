@@ -165,8 +165,9 @@ renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 /**
- * Sphere generator
+ * Utils
  */
+//Sphere
 const createSphere = () =>
 {
 
