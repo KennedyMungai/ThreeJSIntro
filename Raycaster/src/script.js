@@ -148,6 +148,11 @@ const tick = () =>
     }
     else
     {
+        if (currentIntersect)
+        {
+            console.log('Mouse leave')
+        }
+
         currentIntersect = null
     }
 
