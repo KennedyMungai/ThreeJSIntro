@@ -139,6 +139,11 @@ const tick = () =>
 
     if (intersects.length)
     {
+        if (currentIntersect === null)
+        {
+            console.log('Mouse enter')
+        }
+
         currentIntersect = intersects[0]
     }
     else
