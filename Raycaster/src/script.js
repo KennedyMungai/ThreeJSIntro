@@ -74,9 +74,14 @@ window.addEventListener('resize', () =>
 })
 
 /**
- * Mouse 
+ * Mouse Events
  */
 const mouse = new THREE.Vector2()
+
+window.addEventListener('mousemove', () =>
+{
+
+})
 
 /**
  * Camera
