@@ -130,7 +130,7 @@ const tick = () =>
 
     for (let i = 0; i < count; i++)
     {
-
+        const i3 = i * 3
     }
 
     // Update controls
