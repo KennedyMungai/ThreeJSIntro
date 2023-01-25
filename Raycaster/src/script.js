@@ -50,7 +50,8 @@ scene.add(object1, object2, object3)
  */
 const raycaster = new THREE.Raycaster()
 const rayOrigin = new THREE.Vector3(-3, 0, 0)
-const rayDirection = new THREE.Vector3(1, 0, 0)
+const rayDirection = new THREE.Vector3(10, 0, 0)
+rayDirection.normalize()
 // raycaster.set =
 
 /**
