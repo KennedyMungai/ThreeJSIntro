@@ -187,8 +187,8 @@ const createSphere = (radius, position) =>
 
     // Save in projects to update
     objectsToUpdate.push({
-        mesh: mesh,
-        body: body
+        mesh,
+        body
     })
 }
 
