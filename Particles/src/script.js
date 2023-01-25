@@ -32,7 +32,7 @@ const textureLoader = new THREE.TextureLoader()
  * Particles
  */
 const particlesGeometry = new THREE.BufferGeometry(1, 32, 32)
-const count = 500
+const count = 5000
 
 const positions = new Float32Array(count * 3)
 
