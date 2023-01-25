@@ -34,6 +34,11 @@ const environmentMapTexture = cubeTextureLoader.load([
 ])
 
 /**
+ * Physics
+ */
+const world = new CANNON.World()
+
+/**
  * Test sphere
  */
 const sphere = new THREE.Mesh(
