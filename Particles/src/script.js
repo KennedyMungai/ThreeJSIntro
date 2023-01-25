@@ -38,7 +38,7 @@ const positions = new Float32Array(count * 3)
 
 for (let i = 0; i < count * 3; i++)
 {
-    positions[i] = Math.random()
+    positions[i] = (Math.random() - 0.5) * 10
 }
 
 particlesGeometry.setAttribute(
