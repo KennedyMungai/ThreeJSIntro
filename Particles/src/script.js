@@ -28,7 +28,7 @@ scene.add(gridHelper)
  */
 const textureLoader = new THREE.TextureLoader()
 
-const particleTexture = textureLoader.load('/textures/particles/2.jpg')
+const particleTexture = textureLoader.load('/textures/particles/2.png')
 
 /**
  * Particles
