@@ -64,6 +64,8 @@ const sphereBody = new CANNON.Body({
     shape: sphereShape,
 })
 
+sphereBody.applyLocalForce(new CANNON.Vec3(150, 0, 0), new CANNON.Vec3(0, 0, 0))
+
 world.addBody(sphereBody)
 
 // Floor
