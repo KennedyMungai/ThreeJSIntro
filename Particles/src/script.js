@@ -47,7 +47,7 @@ particlesGeometry.setAttribute(
 )
 
 const particlesMaterial = new THREE.PointsMaterial()
-particlesMaterial.size = 0.01
+particlesMaterial.size = 0.1
 particlesMaterial.sizeAttenuation = true
 
 // Points
