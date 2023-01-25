@@ -221,6 +221,7 @@ const createBoxes = (length, width, height, position) =>
     // Three JS Box
     const box = new THREE.Mesh(boxGeometry, boxMaterial)
     box.castShadow = true
+    box.scale.set(width, height, length)
     box.position.copy(position)
     scene.add(box)
 
