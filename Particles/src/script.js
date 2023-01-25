@@ -36,6 +36,11 @@ const count = 500
 
 const positions = new Float32Array(count * 3)
 
+for (let i = 0; i < count * 3; i++)
+{
+    positions[i] = Math.random()
+}
+
 const particlesMaterial = new THREE.PointsMaterial()
 particlesMaterial.size = 0.02
 particlesMaterial.sizeAttenuation = true
