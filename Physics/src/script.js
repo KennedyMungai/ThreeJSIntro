@@ -57,6 +57,11 @@ const floorBody = new CANNON.Body({
     shape: floorShape
 })
 
+floorBody.quaternion.setFromAxisAngle(
+    new CANNON.Vec3(-1, 0, 0),
+    Math.PI * 0.5
+)
+
 world.addBody(floorBody)
 
 /**
