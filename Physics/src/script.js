@@ -71,21 +71,6 @@ floorBody.quaternion.setFromAxisAngle(
 world.addBody(floorBody)
 
 /**
- * Test sphere
- */
-const sphere = new THREE.Mesh(
-    new THREE.SphereBufferGeometry(0.5, 32, 32),
-    new THREE.MeshStandardMaterial({
-        metalness: 0.3,
-        roughness: 0.4,
-        envMap: environmentMapTexture
-    })
-)
-sphere.castShadow = true
-sphere.position.y = 0.5
-scene.add(sphere)
-
-/**
  * Floor
  */
 const floor = new THREE.Mesh(
