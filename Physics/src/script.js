@@ -53,8 +53,7 @@ world.addBody(sphereBody)
 // Floor
 const floorShape = new CANNON.Plane(10, 10)
 const floorBody = new CANNON.Body({
-    mass: 1,
-    position: new CANNON.Vec3(0, 0, 0),
+    mass: 0,
     shape: floorShape
 })
 
