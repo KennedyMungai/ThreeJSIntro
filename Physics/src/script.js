@@ -48,6 +48,8 @@ const sphereBody = new CANNON.Body({
     shape: sphereShape
 })
 
+world.addBody(sphereBody)
+
 /**
  * Test sphere
  */
