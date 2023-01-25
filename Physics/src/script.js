@@ -44,6 +44,18 @@ world.gravity.set(0, -9.82, 0)
 const concreteMaterial = new CANNON.Material('concrete')
 const plasticMaterial = new CANNON.Material('plastic')
 
+// Contact Material
+const concretePlasticContactMaterial = new CANNON.ContactMaterial(
+    concreteMaterial,
+    plasticMaterial,
+    {
+        friction: 0.1,
+        restitution: 0.7
+    }
+)
+
+world.addContactMaterial(concretePlasticContactMaterial)
+
 // Sphere
 const sphereShape = new CANNON.Sphere(0.5)
 const sphereBody = new CANNON.Body({
