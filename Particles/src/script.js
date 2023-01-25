@@ -128,6 +128,11 @@ const tick = () =>
     // Update particles
     // particles.rotation.y = elapsedTime * 0.2
 
+    for (let i = 0; i < count; i++)
+    {
+
+    }
+
     // Update controls
     controls.update()
 
