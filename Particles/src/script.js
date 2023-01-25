@@ -34,6 +34,8 @@ const textureLoader = new THREE.TextureLoader()
 const particlesGeometry = new THREE.BufferGeometry(1, 32, 32)
 const count = 500
 
+const positions = new Float32Array(count * 3)
+
 const particlesMaterial = new THREE.PointsMaterial()
 particlesMaterial.size = 0.02
 particlesMaterial.sizeAttenuation = true
