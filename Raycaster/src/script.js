@@ -115,6 +115,8 @@ const tick = () =>
 
     raycaster.set(rayOrigin, rayDirection)
 
+    const objects = [object1, object2, object3]
+
     // Update controls
     controls.update()
 
