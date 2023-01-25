@@ -52,7 +52,7 @@ particlesGeometry.setAttribute(
 
 particlesGeometry.setAttribute(
     'color',
-    new THREE.BufferAttribute(positions, 3)
+    new THREE.BufferAttribute(colors, 3)
 )
 
 const particlesMaterial = new THREE.PointsMaterial()
