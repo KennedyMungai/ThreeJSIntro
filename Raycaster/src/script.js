@@ -82,8 +82,6 @@ window.addEventListener('mousemove', (e) =>
 {
     mouse.x = (e.clientX / window.innerWidth) * 2 - 1
     mouse.y = (e.clientY / window.innerHeight) * 2 - 1
-
-    console.log(mouse)
 })
 
 /**
@@ -124,8 +122,8 @@ const tick = () =>
     // Ray stuff
     raycaster.setFromCamera(mouse, camera)
 
-    // const objects = [object1, object2, object3]
-    // const intersects = raycaster.intersectObjects(objects)
+    const objects = [object1, object2, object3]
+    const intersects = raycaster.intersectObjects(objects)
 
     // objects.forEach((object) =>
     // {
