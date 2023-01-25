@@ -80,8 +80,8 @@ const mouse = new THREE.Vector2()
 
 window.addEventListener('mousemove', (e) =>
 {
-    mouse.x = (e.clientX / window.innerWidth) - 0.5
-    mouse.y = (e.clientY / window.innerHeight) - 0.5
+    mouse.x = (e.clientX / window.innerWidth) * 2 - 1
+    mouse.y = (e.clientY / window.innerHeight) * 2 - 1
 
     console.log(mouse)
 })
