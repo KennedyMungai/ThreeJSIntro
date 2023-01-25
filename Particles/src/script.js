@@ -58,6 +58,7 @@ particlesMaterial.alphaMap = particleTexture
 // particlesMaterial.alphaTest = 0.001
 // particlesMaterial.depthTest = false
 particlesMaterial.depthWrite = false
+particlesMaterial.blending = THREE.AdditiveBlending
 
 // Points
 const particles = new THREE.Points(particlesGeometry, particlesMaterial)
