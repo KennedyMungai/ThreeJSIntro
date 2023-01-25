@@ -37,6 +37,7 @@ const particlesGeometry = new THREE.BufferGeometry(1, 32, 32)
 const count = 5000
 
 const positions = new Float32Array(count * 3)
+const colors = new Float32Array(count * 3)
 
 for (let i = 0; i < count * 3; i++)
 {
