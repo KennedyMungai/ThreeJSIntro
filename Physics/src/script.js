@@ -152,6 +152,8 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 /**
  * Utils
  */
+const objectsToUpdate = []
+
 //Sphere
 const createSphere = (radius, position) =>
 {
