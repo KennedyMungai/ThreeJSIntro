@@ -163,7 +163,10 @@ const tick = () =>
     previousTime = elapsedTime
 
     // Update Mixer
-    mixer.update(deltaTime)
+    if (mixer)
+    {
+        mixer.update(deltaTime)
+    }
 
     // Update controls
     controls.update()
