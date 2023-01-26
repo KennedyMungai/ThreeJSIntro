@@ -24,8 +24,16 @@ gltfLoader.load(
     '/models/Duck/glTF/Duck.gltf',
     (gltf) =>
     {
-        scene.add(gltf.scene.children[0])
+        // scene.add(gltf.scene.children[0])
     },
+)
+
+gltfLoader.load(
+    '/models/FlightHelmet/glTF/FlightHelmet.gltf',
+    (helmet) => 
+    {
+        scene.add(helmet.scene)
+    }
 )
 
 /**
