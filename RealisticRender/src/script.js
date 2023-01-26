@@ -28,7 +28,7 @@ scene.add(gridHelper)
  */
 const testSphere = new THREE.Mesh(
     new THREE.SphereBufferGeometry(1, 32, 32),
-    new THREE.MeshBasicMaterial()
+    new THREE.MeshStandardMaterial()
 )
 scene.add(testSphere)
 
