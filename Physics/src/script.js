@@ -187,8 +187,8 @@ const createSphere = (radius, position) =>
 {
     // Three js mesh
     const mesh = new THREE.Mesh(
-        sphereGeometry,
-        sphereMaterial
+        boxGeometry,
+        boxMaterial
     )
 
     mesh.scale.set(radius, radius, radius)
