@@ -62,6 +62,8 @@ gltfLoader.load(
         const walkAnimation = mixer.clipAction(fox.animations[1])
         const runAnimation = mixer.clipAction(fox.animations[2])
 
+        surveyAnimation.play()
+
         fox.scene.scale.set(0.025, 0.025, 0.025)
         scene.add(fox.scene)
     }
