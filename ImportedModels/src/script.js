@@ -17,6 +17,11 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 /**
+ * Models
+ */
+const gltfLoader = new GLTFLoader()
+
+/**
  * Floor
  */
 const floor = new THREE.Mesh(
