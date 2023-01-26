@@ -10,6 +10,7 @@
       "bbox",
       "broadphase",
       "fontloader",
+      "GLTF",
       "gsap",
       "GSAP",
       "helvetiker",
