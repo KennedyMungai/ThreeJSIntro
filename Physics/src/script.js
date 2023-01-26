@@ -36,8 +36,22 @@ debugObject.createBox = () =>
     )
 }
 
+debugObject.reset = () =>
+{
+    objectsToUpdate.forEach((object) =>
+    {
+        // Removed the physics bodies from the physics world
+        world.removeBody(object.body)
+        // Removed the object listener from the window
+        window.removeEventListener('click', playHitSound)
+        // Remove the mesh from the three JS world
+        scene.remove(object.mesh)
+    })
+}
+
 gui.add(debugObject, 'createSphere')
 gui.add(debugObject, 'createBox')
+gui.add(debugObject, 'reset')
 
 /**
  * Sound
