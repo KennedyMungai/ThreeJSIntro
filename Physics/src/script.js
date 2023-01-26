@@ -269,7 +269,7 @@ const createBox = (length, width, height, position) =>
     })
 
     body.position.copy(mesh.position)
-
+    boxGeometry.addEventListener('collide', playSound)
     world.addBody(body)
 
     // Save in projects to update
