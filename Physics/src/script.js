@@ -40,6 +40,16 @@ gui.add(debugObject, 'createSphere')
 gui.add(debugObject, 'createBox')
 
 /**
+ * Sound
+ */
+const hitSound = new Audio('/sounds/hit.mp3')
+
+const playSound = () => 
+{
+    hitSound.play()
+}
+
+/**
  * Base
  */
 // Canvas
