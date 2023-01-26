@@ -237,7 +237,7 @@ const createBox = (length, width, height, position) =>
     scene.add(mesh)
 
     // Cannon JS Body
-    const shape = new CANNON.Box()
+    const shape = new CANNON.Box(length * 0.5, width * 0.5, height * 0.5)
     const body = new CANNON.Body({
         mass: 1,
         position: new Vec3(0, 3, 0),
