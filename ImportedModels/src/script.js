@@ -40,7 +40,7 @@ gltfLoader.load(
         //     scene.add(object)
         // })
 
-        scene.add(gltf.scene)
+        scene.add(helmet.scene)
     }
 )
 
