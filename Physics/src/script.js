@@ -44,8 +44,10 @@ gui.add(debugObject, 'createBox')
  */
 const hitSound = new Audio('/sounds/hit.mp3')
 
-const playSound = () => 
+const playSound = (collision) => 
 {
+    const impactStrength = collision.contact.getImpactVelocityAlongNormal()
+
     hitSound.currentTime = 0
     hitSound.play()
 }
