@@ -285,6 +285,7 @@ const tick = () =>
     objectsToUpdate.forEach((object) =>
     {
         object.mesh.position.copy(object.body.position)
+        object.mesh.quaternion.copy(object.body.quaternion)
     })
 
     // Update controls
