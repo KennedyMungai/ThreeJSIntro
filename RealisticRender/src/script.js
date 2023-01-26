@@ -37,7 +37,7 @@ scene.add(directionalLight)
 gui
     .add(directionalLight, 'intensity')
     .min(0)
-    .max(10)
+    .max(20)
     .step(0.01)
     .name("Light Intensity")
 
