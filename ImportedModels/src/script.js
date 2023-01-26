@@ -56,7 +56,8 @@ gltfLoader.load(
     '/models/Fox/glTF/Fox.gltf',
     (fox) =>
     {
-        console.log(fox)
+        const mixer = new THREE.AnimationMixer(fox.scene)
+
         fox.scene.scale.set(0.025, 0.025, 0.025)
         scene.add(fox.scene)
     }
