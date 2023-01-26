@@ -176,6 +176,13 @@ const sphereMaterial = new THREE.MeshStandardMaterial({
 })
 
 //Sphere
+const boxGeometry = new THREE.SphereBufferGeometry(1, 32, 32)
+const boxMaterial = new THREE.MeshStandardMaterial({
+    metalness: 0.3,
+    roughness: 0.4,
+    envMap: environmentMapTexture
+})
+
 const createSphere = (radius, position) =>
 {
     // Three js mesh
@@ -213,6 +220,8 @@ const createSphere = (radius, position) =>
 createSphere(0.5, { x: 0, y: 3, z: 0 })
 
 // Boxes
+
+
 const createBox = (length, width, height, position) =>
 {
     // Three js mesh
