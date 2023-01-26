@@ -23,6 +23,10 @@ scene.add(axesHelper)
 const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 scene.add(gridHelper)
 
+// Lights
+const ambientLight = new THREE.AmbientLight(0xffffff, 1)
+scene.add(ambientLight)
+
 /**
  * Test sphere
  */
