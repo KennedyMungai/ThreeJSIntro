@@ -3,7 +3,6 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
 
 /**
  * Base
@@ -20,16 +19,16 @@ const scene = new THREE.Scene()
 /**
  * Loaders
  */
-const dracoLoader = new DRACOLoader()
+const gltfLoader = new GLTFLoader()
 
 /**
  * Models
  */
-dracoLoader.load(
-    '/models/HamburgerWithCompression.glb',
-    (hamburger) => 
+gltfLoader.load(
+    '/models/FlightHelmet/glTF/FlightHelmet.gltf',
+    (helmet) => 
     {
-        scene.add(hamburger)
+        scene.add(helmet.scene)
     }
 )
 
@@ -83,11 +82,11 @@ gui
 /**
  * Test sphere
  */
-const testSphere = new THREE.Mesh(
-    new THREE.SphereBufferGeometry(1, 32, 32),
-    new THREE.MeshStandardMaterial()
-)
-scene.add(testSphere)
+// const testSphere = new THREE.Mesh(
+//     new THREE.SphereBufferGeometry(1, 32, 32),
+//     new THREE.MeshStandardMaterial()
+// )
+// scene.add(testSphere)
 
 /**
  * Sizes
