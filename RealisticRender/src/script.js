@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
 
 /**
  * Base
@@ -19,7 +20,18 @@ const scene = new THREE.Scene()
 /**
  * Loaders
  */
-const gltfLoader = new GLTFLoader()
+const dracoLoader = new DRACOLoader()
+
+/**
+ * Models
+ */
+dracoLoader.load(
+    '/models/HamburgerWithCompression.glb',
+    (hamburger) => 
+    {
+        scene.add(hamburger)
+    }
+)
 
 // Axes Helper
 const axesHelper = new THREE.AxesHelper(50)
