@@ -1,0 +1,344 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.4.50",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Bottom Bun",
+            "translation" : [
+                0,
+                0.34195399284362793,
+                0
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Top Bun",
+            "rotation" : [
+                0,
+                0,
+                1,
+                1.6292068494294654e-07
+            ],
+            "translation" : [
+                0,
+                7.384997844696045,
+                0
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Cheese",
+            "scale" : [
+                4.175130844116211,
+                4.175130844116211,
+                4.175130844116211
+            ],
+            "translation" : [
+                0,
+                4.329042434692383,
+                0
+            ]
+        },
+        {
+            "mesh" : 2,
+            "name" : "Patty",
+            "scale" : [
+                0.9117405414581299,
+                1,
+                0.9117405414581299
+            ],
+            "translation" : [
+                0.11230674386024475,
+                2.4392611980438232,
+                0.12346172332763672
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Bun",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.28100666403770447,
+                    0.16025087237358093,
+                    0.03679228201508522,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Cheese",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.8000000715255737,
+                    0.6488125324249268,
+                    0.04135250300168991,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Patty",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.10653308779001236,
+                    0.04651017487049103,
+                    0.0046022566966712475,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1,
+                        "NORMAL" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Plane.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "TEXCOORD_0" : 5,
+                        "NORMAL" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        },
+        {
+            "name" : "Cube.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "TEXCOORD_0" : 9,
+                        "NORMAL" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 2
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 2689,
+            "max" : [
+                4.5833330154418945,
+                2.9238171577453613,
+                4.583333492279053
+            ],
+            "min" : [
+                -4.5833330154418945,
+                -0.27816349267959595,
+                -4.5833330154418945
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 2689,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 2689,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 15360,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 36864,
+            "max" : [
+                1.0200300216674805,
+                0.07694119215011597,
+                1.0115926265716553
+            ],
+            "min" : [
+                -0.9988245368003845,
+                -0.15229257941246033,
+                -1.0076024532318115
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 36864,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 36864,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 55296,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 3729,
+            "max" : [
+                4.583333492279053,
+                1.7076740264892578,
+                4.583333969116211
+            ],
+            "min" : [
+                -4.583333492279053,
+                0.8343876600265503,
+                -4.583333492279053
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 3729,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 3729,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5123,
+            "count" : 21504,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 32268,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 21512,
+            "byteOffset" : 32268,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 32268,
+            "byteOffset" : 53780,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 30720,
+            "byteOffset" : 86048,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 442368,
+            "byteOffset" : 116768,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 294912,
+            "byteOffset" : 559136,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 442368,
+            "byteOffset" : 854048,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 110592,
+            "byteOffset" : 1296416,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 44748,
+            "byteOffset" : 1407008,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 29832,
+            "byteOffset" : 1451756,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 44748,
+            "byteOffset" : 1481588,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 43008,
+            "byteOffset" : 1526336,
+            "target" : 34963
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1569344,
+            "uri" : "Hamburger.bin"
+        }
+    ]
+}
