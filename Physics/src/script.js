@@ -48,8 +48,11 @@ const playSound = (collision) =>
 {
     const impactStrength = collision.contact.getImpactVelocityAlongNormal()
 
-    hitSound.currentTime = 0
-    hitSound.play()
+    if (impactStrength > 1.5)
+    {
+        hitSound.currentTime = 0
+        hitSound.play()
+    }
 }
 
 /**
