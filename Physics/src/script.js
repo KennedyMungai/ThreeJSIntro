@@ -50,7 +50,7 @@ const playSound = (collision) =>
 
     if (impactStrength > 1.5)
     {
-        hitSound.volume = Math.random()
+        hitSound.volume = Math.random() * impactStrength
         hitSound.currentTime = 0
         hitSound.play()
     }
