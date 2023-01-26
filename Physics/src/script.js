@@ -22,7 +22,22 @@ debugObject.createSphere = () =>
     )
 }
 
+debugObject.createBox = () =>
+{
+    createBox(
+        Math.random(),
+        Math.random(),
+        Math.random(),
+        {
+            x: (Math.random() - 0.5) * 3,
+            y: 3,
+            z: (Math.random() - 0.5) * 3
+        }
+    )
+}
+
 gui.add(debugObject, 'createSphere')
+gui.add(debugObject, 'createBox')
 
 /**
  * Base
