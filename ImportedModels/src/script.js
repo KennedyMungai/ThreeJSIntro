@@ -20,7 +20,21 @@ const scene = new THREE.Scene()
  * Models
  */
 const gltfLoader = new GLTFLoader()
-const duck = gltfLoader.load('/models/Duck/glTF/Duck.gltf')
+const duck = gltfLoader.load(
+    '/models/Duck/glTF/Duck.gltf',
+    () =>
+    {
+        console.log('Success')
+    },
+    () =>
+    {
+        console.log('Progress')
+    },
+    () =>
+    {
+        console.log('Error')
+    },
+)
 
 /**
  * Floor
