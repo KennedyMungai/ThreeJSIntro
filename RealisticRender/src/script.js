@@ -24,8 +24,12 @@ const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
 scene.add(gridHelper)
 
 // Lights
-const ambientLight = new THREE.AmbientLight(0xffffff, 1)
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.1)
 scene.add(ambientLight)
+
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
+directionalLight.position.set(-1, 8, 4)
+scene.add(directionalLight)
 
 /**
  * Test sphere
