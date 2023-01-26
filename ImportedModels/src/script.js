@@ -56,6 +56,7 @@ gltfLoader.load(
     '/models/Fox/glTF/Fox.gltf',
     (fox) =>
     {
+        console.log(fox)
         fox.scene.scale.set(0.025, 0.025, 0.025)
         scene.add(fox.scene)
     }
