@@ -25,9 +25,9 @@ debugObject.createSphere = () =>
 debugObject.createBox = () =>
 {
     createBox(
-        Math.random(),
-        Math.random(),
-        Math.random(),
+        Math.random() + 0.5,
+        Math.random() + 0.5,
+        Math.random() + 0.5,
         {
             x: (Math.random() - 0.5) * 3,
             y: 3,
