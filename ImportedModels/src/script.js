@@ -35,10 +35,12 @@ gltfLoader.load(
         // scene.add(helmet.scene)
         const children = [...helmet.scene.children]
 
-        children.forEach((object) =>
-        {
-            scene.add(object)
-        })
+        // children.forEach((object) =>
+        // {
+        //     scene.add(object)
+        // })
+
+        scene.add(gltf.scene)
     }
 )
 
