@@ -213,6 +213,42 @@ const createSphere = (radius, position) =>
 createSphere(0.5, { x: 0, y: 3, z: 0 })
 
 // Boxes
+const createBox = (length, width, height, position) =>
+{
+    // Three js mesh
+    const mesh = new THREE.Mesh(
+        sphereGeometry,
+        sphereMaterial
+    )
+
+    mesh.scale.set(radius, radius, radius)
+    mesh.castShadow = true
+    mesh.position.copy(position)
+
+    scene.add(mesh)
+
+    // Cannon JS Body
+    const shape = new CANNON.Sphere(radius)
+    const body = new CANNON.Body({
+        mass: 1,
+        position: new Vec3(0, 3, 0),
+        shape,
+        material: defaultMaterial
+    })
+
+    body.position.copy(mesh.position)
+
+    world.addBody(body)
+
+    // Save in projects to update
+    objectsToUpdate.push({
+        mesh,
+        body
+    })
+}
+
+createBox(0.5, { x: 0, y: 3, z: 0 })
+
 
 /**
  * Animate
