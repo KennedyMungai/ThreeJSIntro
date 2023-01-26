@@ -19,30 +19,30 @@ const scene = new THREE.Scene()
 /**
  * Models
  */
-const gltfLoader = new GLTFLoader()
-gltfLoader.load(
-    '/models/Duck/glTF/Duck.gltf',
-    (gltf) =>
-    {
-        // scene.add(gltf.scene.children[0])
-    },
-)
+// const gltfLoader = new GLTFLoader()
+// gltfLoader.load(
+//     '/models/Duck/glTF/Duck.gltf',
+//     (gltf) =>
+//     {
+//         scene.add(gltf.scene.children[0])
+//     },
+// )
 
-gltfLoader.load(
-    '/models/FlightHelmet/glTF/FlightHelmet.gltf',
-    (helmet) => 
-    {
-        // scene.add(helmet.scene)
-        const children = [...helmet.scene.children]
+// gltfLoader.load(
+//     '/models/FlightHelmet/glTF/FlightHelmet.gltf',
+//     (helmet) => 
+//     {
+//         scene.add(helmet.scene)
+//         const children = [...helmet.scene.children]
 
-        // children.forEach((object) =>
-        // {
-        //     scene.add(object)
-        // })
+//         children.forEach((object) =>
+//         {
+//             scene.add(object)
+//         })
 
-        // scene.add(helmet.scene)
-    }
-)
+//         scene.add(helmet.scene)
+//     }
+// )
 
 // gltfLoader.load(
 //     '/models/Suzanne/Suzanne.gltf',
