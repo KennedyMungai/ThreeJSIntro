@@ -28,6 +28,7 @@ gltfLoader.load(
     '/models/FlightHelmet/glTF/FlightHelmet.gltf',
     (helmet) => 
     {
+        helmet.scene.scale.set(10, 10, 10)
         scene.add(helmet.scene)
     }
 )
