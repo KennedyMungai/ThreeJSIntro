@@ -58,7 +58,6 @@ gltfLoader.load(
     '/models/Fox/glTF/Fox.gltf',
     (fox) =>
     {
-        console.log(fox)
         mixer = new THREE.AnimationMixer(fox.scene)
         const surveyAnimation = mixer.clipAction(fox.animations[0])
         const walkAnimation = mixer.clipAction(fox.animations[1])
