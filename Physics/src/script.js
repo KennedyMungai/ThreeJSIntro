@@ -232,11 +232,7 @@ const createSphere = (radius, position) =>
     })
 }
 
-createSphere(0.5, { x: 0, y: 3, z: 0 })
-
 // Boxes
-
-
 const createBox = (length, width, height, position) =>
 {
     // Three js mesh
