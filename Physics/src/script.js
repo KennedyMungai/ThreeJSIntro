@@ -44,7 +44,7 @@ gui.add(debugObject, 'createBox')
  */
 const hitSound = new Audio('/sounds/hit.mp3')
 
-const playSound = (collision) => 
+const playHitSound = (collision) => 
 {
     const impactStrength = collision.contact.getImpactVelocityAlongNormal()
 
@@ -241,7 +241,7 @@ const createSphere = (radius, position) =>
     })
 
     body.position.copy(mesh.position)
-
+    body.addEventListener('collide', playHitSound)
     world.addBody(body)
 
     // Save in projects to update
@@ -276,7 +276,7 @@ const createBox = (length, width, height, position) =>
     })
 
     body.position.copy(mesh.position)
-    boxGeometry.addEventListener('collide', playSound)
+    boxGeometry.addEventListener('collide', playHitSound)
     world.addBody(body)
 
     // Save in projects to update
