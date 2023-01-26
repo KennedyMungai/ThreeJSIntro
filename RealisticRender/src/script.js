@@ -50,8 +50,8 @@ gui
 
 gui
     .add(directionalLight.position, 'y')
-    .min(-10)
-    .max(10)
+    .min(0)
+    .max(20)
     .step(0.01)
     .name("Light Y coordinate")
 
