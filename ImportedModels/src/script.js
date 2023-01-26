@@ -40,7 +40,7 @@ gltfLoader.load(
         //     scene.add(object)
         // })
 
-        scene.add(helmet.scene)
+        // scene.add(helmet.scene)
     }
 )
 
@@ -51,6 +51,14 @@ gltfLoader.load(
 //         scene.add(monkey.scene.children[0])
 //     }
 // )
+
+gltfLoader.load(
+    '/models/Fox/glTF/Fox.gltf',
+    (fox) =>
+    {
+        scene.add(fox.scene)
+    }
+)
 
 /**
  * Floor
