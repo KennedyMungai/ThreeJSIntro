@@ -32,7 +32,13 @@ gltfLoader.load(
     '/models/FlightHelmet/glTF/FlightHelmet.gltf',
     (helmet) => 
     {
-        scene.add(helmet.scene)
+        // scene.add(helmet.scene)
+        const children = [...helmet.scene.children]
+
+        children.forEach((object) =>
+        {
+            scene.add(object)
+        })
     }
 )
 
