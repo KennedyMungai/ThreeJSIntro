@@ -29,7 +29,7 @@ gltfLoader.setDRACOLoader(dracoLoader)
 let mixer = null
 
 gltfLoader.load(
-    '/models/hamburger.glb',
+    '/MyModels/glTF/HamburgerWithCompression.glb',
     (gltf) =>
     {
         scene.add(gltf.scene)
@@ -127,7 +127,7 @@ const tick = () =>
     const deltaTime = elapsedTime - previousTime
     previousTime = elapsedTime
 
-    if(mixer)
+    if (mixer)
     {
         mixer.update(deltaTime)
     }
