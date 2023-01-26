@@ -46,6 +46,7 @@ const hitSound = new Audio('/sounds/hit.mp3')
 
 const playSound = () => 
 {
+    hitSound.currentTime = 0
     hitSound.play()
 }
 
