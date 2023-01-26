@@ -16,6 +16,11 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 
+/**
+ * Loaders
+ */
+const gltfLoader = new GLTFLoader()
+
 // Axes Helper
 const axesHelper = new THREE.AxesHelper(50)
 scene.add(axesHelper)
