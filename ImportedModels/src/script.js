@@ -26,14 +26,6 @@ const duck = gltfLoader.load(
     {
         console.log('Success')
     },
-    () =>
-    {
-        console.log('Progress')
-    },
-    () =>
-    {
-        console.log('Error')
-    },
 )
 
 /**
