@@ -32,6 +32,15 @@ directionalLight.position.set(-1, 8, 4)
 scene.add(directionalLight)
 
 /**
+ * GUI debug menu
+ */
+gui
+    .add(directionalLight, 'intensity')
+    .min(0)
+    .max(10)
+    .step(0.01)
+
+/**
  * Test sphere
  */
 const testSphere = new THREE.Mesh(
