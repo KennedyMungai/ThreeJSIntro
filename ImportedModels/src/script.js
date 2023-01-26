@@ -52,12 +52,14 @@ const gltfLoader = new GLTFLoader()
 //     }
 // )
 
+let mixer = null
+
 gltfLoader.load(
     '/models/Fox/glTF/Fox.gltf',
     (fox) =>
     {
         console.log(fox)
-        const mixer = new THREE.AnimationMixer(fox.scene)
+        mixer = new THREE.AnimationMixer(fox.scene)
         const surveyAnimation = mixer.clipAction(fox.animations[0])
         const walkAnimation = mixer.clipAction(fox.animations[1])
         const runAnimation = mixer.clipAction(fox.animations[2])
@@ -159,6 +161,9 @@ const tick = () =>
     const elapsedTime = clock.getElapsedTime()
     const deltaTime = elapsedTime - previousTime
     previousTime = elapsedTime
+
+    // Update Mixer
+    mixer.update(deltaTime)
 
     // Update controls
     controls.update()
