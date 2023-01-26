@@ -19,7 +19,7 @@ const scene = new THREE.Scene()
 /**
  * Models
  */
-// const gltfLoader = new GLTFLoader()
+const gltfLoader = new GLTFLoader()
 // gltfLoader.load(
 //     '/models/Duck/glTF/Duck.gltf',
 //     (gltf) =>
