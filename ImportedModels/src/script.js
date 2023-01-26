@@ -35,20 +35,20 @@ gltfLoader.load(
         // scene.add(helmet.scene)
         const children = [...helmet.scene.children]
 
-        // children.forEach((object) =>
-        // {
-        //     scene.add(object)
-        // })
+        children.forEach((object) =>
+        {
+            scene.add(object)
+        })
     }
 )
 
-gltfLoader.load(
-    '/models/Suzanne/Suzanne.gltf',
-    (monkey) => 
-    {
-        scene.add(monkey.scene.children[0])
-    }
-)
+// gltfLoader.load(
+//     '/models/Suzanne/Suzanne.gltf',
+//     (monkey) => 
+//     {
+//         scene.add(monkey.scene.children[0])
+//     }
+// )
 
 /**
  * Floor
