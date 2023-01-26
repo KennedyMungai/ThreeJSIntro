@@ -44,21 +44,21 @@ gui
 gui
     .add(directionalLight.position, 'x')
     .min(-10)
-    .max(-10)
+    .max(10)
     .step(0.01)
     .name("Light X coordinate")
 
 gui
     .add(directionalLight.position, 'y')
     .min(-10)
-    .max(-10)
+    .max(10)
     .step(0.01)
     .name("Light Y coordinate")
 
 gui
     .add(directionalLight.position, 'z')
     .min(-10)
-    .max(-10)
+    .max(10)
     .step(0.01)
     .name("Light Z coordinate")
 
