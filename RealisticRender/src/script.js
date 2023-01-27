@@ -27,7 +27,10 @@ const cubeTextureLoader = new THREE.CubeTextureLoader()
  */
 const updateAllMaterials = () => 
 {
-
+    scene.traverse((child) =>
+    {
+        console.log(child)
+    })
 }
 
 /**
