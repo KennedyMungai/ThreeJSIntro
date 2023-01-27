@@ -23,6 +23,14 @@ const gltfLoader = new GLTFLoader()
 const cubeTextureLoader = new THREE.CubeTextureLoader()
 
 /**
+ * Update all materials
+ */
+const updateAllMaterials = () => 
+{
+
+}
+
+/**
  * Environment Textures
  */
 const environmentMap = cubeTextureLoader.load([
