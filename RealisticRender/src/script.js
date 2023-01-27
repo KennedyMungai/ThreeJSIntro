@@ -75,14 +75,14 @@ scene.environment = environmentMap
  */
 gltfLoader.load(
     '/models/Hamburger.gltf',
-    (helmet) => 
+    (hamburger) => 
     {
-        helmet.scene.scale.set(10, 10, 10)
-        scene.add(helmet.scene)
-        helmet.scene.rotation.y = Math.PI * 0.5
+        hamburger.scene.scale.set(10, 10, 10)
+        scene.add(hamburger.scene)
+        hamburger.scene.rotation.y = Math.PI * 0.5
 
         gui
-            .add(helmet.scene.rotation, 'y')
+            .add(hamburger.scene.rotation, 'y')
             .min(-Math.PI)
             .max(Math.PI)
             .step(0.001)
