@@ -90,12 +90,12 @@ gltfLoader.load(
 )
 
 // Axes Helper
-const axesHelper = new THREE.AxesHelper(50)
-scene.add(axesHelper)
+// const axesHelper = new THREE.AxesHelper(50)
+// scene.add(axesHelper)
 
 // Grid Helper
-const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
-scene.add(gridHelper)
+// const gridHelper = new THREE.GridHelper(50, 50, 'red', 'gray')
+// scene.add(gridHelper)
 
 // Lights
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.1)
