@@ -109,8 +109,7 @@ directionalLight.shadow.camera.far = 10
 directionalLight.castShadow = true
 
 // const directionalLightCameraHelper = new THREE.CameraHelper(directionalLight.shadow.camera)
-directionalLightCameraHelper.needsUpdate = true
-scene.add(directionalLightCameraHelper)
+// scene.add(directionalLightCameraHelper)
 
 scene.add(directionalLight)
 
