@@ -47,7 +47,7 @@ gui
     .max(15)
     .step(0.001)
     .name("Environment Intensity")
-    .onFinishChange(updateAllMaterials)
+    .onChange(updateAllMaterials)
 
 /**
  * Environment Textures
