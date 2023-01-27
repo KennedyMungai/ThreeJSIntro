@@ -79,7 +79,7 @@ gltfLoader.load(
     {
         hamburger.scene.scale.set(0.3, 0.3, 0.3)
         scene.add(hamburger.scene)
-        hamburger.scene.rotation.y = Math.PI * 0.5
+        // hamburger.scene.rotation.y = Math.PI * 0.5
 
         gui
             .add(hamburger.scene.rotation, 'y')
