@@ -20,6 +20,7 @@ const scene = new THREE.Scene()
  * Loaders
  */
 const gltfLoader = new GLTFLoader()
+const cubeTextureLoader = new THREE.CubeTextureLoader()
 
 /**
  * Models
