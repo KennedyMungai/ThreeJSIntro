@@ -32,6 +32,7 @@ const updateAllMaterials = () =>
         if (child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMaterial)
         {
             child.material.envMap = environmentMap
+            child.material.envMapIntensity = 10
         }
     })
 }
