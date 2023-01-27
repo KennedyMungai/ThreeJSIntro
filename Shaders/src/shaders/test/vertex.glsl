@@ -3,6 +3,7 @@ uniform mat4 modelMatrix;
 uniform mat4 viewMatrix;
 
 attribute vec3 position;
+attribute float aRandom;
 
 void main() {
     vec4 modelPosition = modelMatrix * vec4(position, 1.0);
