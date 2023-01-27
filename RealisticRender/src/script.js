@@ -77,7 +77,7 @@ gltfLoader.load(
     '/models/Hamburger.gltf',
     (hamburger) => 
     {
-        hamburger.scene.scale.set(10, 10, 10)
+        hamburger.scene.scale.set(0.3, 0.3, 0.3)
         scene.add(hamburger.scene)
         hamburger.scene.rotation.y = Math.PI * 0.5
 
