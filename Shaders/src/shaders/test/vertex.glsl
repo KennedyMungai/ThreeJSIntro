@@ -9,5 +9,4 @@ void main() {
     vec4 viewPosition = viewMatrix * modelPosition;
     vec4 projectionPosition = projectionMatrix * viewPosition;
 
-    // gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-}
+    gl_Position = projectionPosition }
