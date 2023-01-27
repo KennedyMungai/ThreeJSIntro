@@ -11,6 +11,7 @@
       "broadphase",
       "Cineon",
       "fontloader",
+      "glsl",
       "GLTF",
       "gsap",
       "GSAP",
