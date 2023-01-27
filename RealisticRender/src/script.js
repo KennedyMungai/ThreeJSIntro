@@ -198,6 +198,14 @@ gui
         updateAllMaterials()
     })
 
+gui
+    .add(renderer, 'toneMappingExposure')
+    .min(0)
+    .max(10)
+    .step(0.001)
+    .name('Tone Mapping Exposure')
+    .onFinishChange(updateAllMaterials)
+
 /**
  * Animate
  */
