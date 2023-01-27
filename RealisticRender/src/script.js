@@ -104,9 +104,12 @@ scene.add(ambientLight)
 
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
 directionalLight.position.set(-1, 8, 4)
+directionalLight.shadow.camera.near = 1
+directionalLight.shadow.camera.far = 10
 directionalLight.castShadow = true
 
-const directionalLightCameraHelper = new THREE.CameraHelper(directionalLight.shadow.camera)
+// const directionalLightCameraHelper = new THREE.CameraHelper(directionalLight.shadow.camera)
+directionalLightCameraHelper.needsUpdate = true
 scene.add(directionalLightCameraHelper)
 
 scene.add(directionalLight)
