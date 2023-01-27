@@ -194,6 +194,7 @@ gui
     .onFinishChange(() =>
     {
         renderer.toneMapping = Number(renderer.toneMapping)
+        updateAllMaterials()
     })
 
 /**
