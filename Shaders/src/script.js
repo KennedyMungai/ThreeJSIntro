@@ -37,7 +37,7 @@ const material = new THREE.RawShaderMaterial({
 
         void main()
         {
-            gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4(position, 1.0)
+            gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4(position, 1.0);
         }
     `,
     fragmentShader: `
@@ -45,7 +45,7 @@ const material = new THREE.RawShaderMaterial({
 
         void main()
         {
-            gl_FlagColor = vec4(1.0,0.0,0.0,1.0)
+            gl_FragColor = vec4(1.0,0.0,0.0,1.0);
         }
     `
 })
