@@ -63,6 +63,8 @@ gltfLoader.load(
             .min(-Math.PI)
             .max(Math.PI)
             .step(0.001)
+
+        updateAllMaterials()
     }
 )
 
