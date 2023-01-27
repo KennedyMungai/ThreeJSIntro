@@ -38,6 +38,7 @@ const updateAllMaterials = () =>
             child.material.envMap = environmentMap
             child.material.envMapIntensity = debugObject.envMapIntensity
             child.material.needsUpdate = true
+            child.castShadow = true
         }
     })
 }
