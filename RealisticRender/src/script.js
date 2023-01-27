@@ -30,6 +30,7 @@ gltfLoader.load(
     {
         helmet.scene.scale.set(10, 10, 10)
         scene.add(helmet.scene)
+        helmet.scene.rotation.y = Math.PI * 0.5
     }
 )
 
