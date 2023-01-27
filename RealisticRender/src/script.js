@@ -182,6 +182,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 renderer.physicallyCorrectLights = true
 renderer.outputEncoding = THREE.sRGBEncoding
 renderer.toneMapping = THREE.ACESFilmicToneMapping
+renderer.toneMappingExposure = 3
 
 gui
     .add(renderer, 'toneMapping', {
