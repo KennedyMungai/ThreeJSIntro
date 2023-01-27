@@ -26,6 +26,9 @@ const cubeTextureLoader = new THREE.CubeTextureLoader()
 /**
  * Update all materials
  */
+
+debugObject.envMapIntensity = 5
+
 const updateAllMaterials = () => 
 {
     scene.traverse((child) =>
@@ -33,10 +36,18 @@ const updateAllMaterials = () =>
         if (child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMaterial)
         {
             child.material.envMap = environmentMap
-            child.material.envMapIntensity = 10
+            child.material.envMapIntensity = debugObject.envMapIntensity
         }
     })
 }
+
+gui
+    .add(debugObject, 'envMapIntensity')
+    .min(0)
+    .max(15)
+    .step(0.001)
+    .name("Environment Intensity")
+    .onFinishChange(updateAllMaterials)
 
 /**
  * Environment Textures
@@ -52,13 +63,6 @@ const environmentMap = cubeTextureLoader.load([
 
 scene.background = environmentMap
 
-debugObject.envMapIntensity = 5
-
-gui
-    .add(debugObject, 'envMapIntensity')
-    .min(0)
-    .max(15)
-    .steo(0.001)
 
 /**
  * Models
