@@ -190,6 +190,10 @@ gui
         Filmic: THREE.ACESFilmicToneMapping,
         Cineon: THREE.CineonToneMapping
     })
+    .onFinishChange(() =>
+    {
+        renderer.toneMapping = Number(renderer.toneMapping)
+    })
 
 /**
  * Animate
