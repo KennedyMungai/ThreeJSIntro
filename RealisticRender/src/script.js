@@ -103,6 +103,7 @@ scene.add(ambientLight)
 
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
 directionalLight.position.set(-1, 8, 4)
+directionalLight.castShadow = true
 scene.add(directionalLight)
 
 /**
