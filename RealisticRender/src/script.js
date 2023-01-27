@@ -52,6 +52,14 @@ const environmentMap = cubeTextureLoader.load([
 
 scene.background = environmentMap
 
+debugObject.envMapIntensity = 5
+
+gui
+    .add(debugObject, 'envMapIntensity')
+    .min(0)
+    .max(15)
+    .steo(0.001)
+
 /**
  * Models
  */
