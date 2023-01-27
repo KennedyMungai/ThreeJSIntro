@@ -27,7 +27,10 @@ const textureLoader = new THREE.TextureLoader()
 const geometry = new THREE.PlaneBufferGeometry(1, 1, 32, 32)
 
 // Material
-const material = new THREE.RawShaderMaterial()
+const material = new THREE.RawShaderMaterial({
+    vertexShader: '',
+    fragmentShader: ''
+})
 
 // Mesh
 const mesh = new THREE.Mesh(geometry, material)
