@@ -74,7 +74,7 @@ scene.environment = environmentMap
  * Models
  */
 gltfLoader.load(
-    '/models/FlightHelmet/glTF/FlightHelmet.gltf',
+    '/models/Hamburger.gltf',
     (helmet) => 
     {
         helmet.scene.scale.set(10, 10, 10)
