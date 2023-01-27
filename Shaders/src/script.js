@@ -28,12 +28,8 @@ const geometry = new THREE.PlaneBufferGeometry(1, 1, 32, 32)
 
 // Material
 const material = new THREE.RawShaderMaterial({
-    vertexShader: `
-        
-    `,
-    fragmentShader: `
-        
-    `
+    vertexShader: ``,
+    fragmentShader: ``
 })
 
 // Mesh
