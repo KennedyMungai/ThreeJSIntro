@@ -62,6 +62,7 @@ const environmentMap = cubeTextureLoader.load([
 ])
 
 scene.background = environmentMap
+scene.environment = environmentMap
 
 
 /**
