@@ -107,8 +107,17 @@ void main() {
     // float strength = 0.01 / distance(vUv, vec2(0.5));
 
     // A dark plane with a white center stretched on the x axis
-    vec2 lightUv = vec2(vUv.x * 0.5 + 0.25, vUv.y);
-    float strength = 0.01 / distance(lightUv, vec2(0.5));
+    // vec2 lightUv = vec2(vUv.x * 0.5 + 0.25, vUv.y);
+    // float strength = 0.01 / distance(lightUv, vec2(0.5));
+
+    // Star shaped thing on a black surface
+    vec2 lightUvX = vec2(vUv.x * 0.5 + 0.25, vUv.y);
+    float lightX = 0.01 / distance(lightUvX, vec2(0.5));
+
+    vec2 lightUvY = vec2(vUv.y * 0.5 + 0.25, vUv.x);
+    float lightY = 0.01 / distance(lightUvY, vec2(0.5));
+
+    float strength = lightX * lightY;
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
