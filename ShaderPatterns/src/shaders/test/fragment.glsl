@@ -95,7 +95,10 @@ void main() {
     // float strength = random(gridUv);
 
     // A white plane with a dark lower corner
-    float strength = length(vUv);
+    // float strength = length(vUv);
+
+    // A white plane with a dark center
+    float strength = distance(vUv, vec2(0.5));
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
