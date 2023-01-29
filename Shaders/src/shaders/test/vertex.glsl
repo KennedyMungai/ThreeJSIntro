@@ -3,6 +3,7 @@ uniform mat4 modelMatrix;
 uniform mat4 viewMatrix;
 
 uniform vec2 uFrequency;
+uniform float uTime;
 
 attribute vec3 position;
 
