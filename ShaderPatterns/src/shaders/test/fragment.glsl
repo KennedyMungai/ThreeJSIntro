@@ -143,7 +143,10 @@ void main() {
     // float strength = abs(distance(vUv, vec2(0.5)) - 0.25);
 
     // A crisp black ring inside a white plane
-    float strength = step(0.01, abs(distance(vUv, vec2(0.5)) - 0.25));
+    // float strength = step(0.01, abs(distance(vUv, vec2(0.5)) - 0.25));
+
+    // A crisp white ring inside a black plane
+    float strength = 1.0 - step(0.01, abs(distance(vUv, vec2(0.5)) - 0.25));
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
