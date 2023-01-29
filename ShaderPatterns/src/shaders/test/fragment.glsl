@@ -25,8 +25,11 @@ void main() {
     // strength = step(0.75, strength);
 
     // Gray scale banded pattern with more pronounced banding and greater dark separation
-    float strength = mod(vUv.x * 10.0, 1.0);
-    strength = step(0.75, strength);
+    // float strength = mod(vUv.x * 10.0, 1.0);
+    // strength = step(0.75, strength);
+
+    // Gray scale checkered pattern
+    float strength = step(0.75, mod(vUv.x * 10.0, 1.0));
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
