@@ -124,7 +124,8 @@ void main() {
     // float strength = lightX * lightY;
 
     // Star shaped thing on a black surface but rotated by 45 degrees
-    vec2 rotatedUv = rotate(vUv, 45.0, vec2(0.5, 0.5));
+    float pi = 3.1415926535;
+    vec2 rotatedUv = rotate(vUv, pi * 0.25, vec2(0.5, 0.5));
 
     vec2 lightUvX = vec2(rotatedUv.x * 0.5 + 0.25, rotatedUv.y);
     float lightX = 0.01 / distance(lightUvX, vec2(0.5));
