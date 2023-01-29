@@ -9,6 +9,7 @@ attribute vec3 position;
 attribute vec2 uv;
 
 varying vec2 vUv;
+varying float vElevation;
 
 // varying float vRandom;   
 
@@ -26,4 +27,6 @@ void main() {
     gl_Position = projectionPosition;
 
     vUv = uv;
+    vElevation = el;
+    elevation;
 }
