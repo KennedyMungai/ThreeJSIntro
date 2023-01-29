@@ -41,11 +41,20 @@ void main() {
     // strength -= step(0.75, mod(vUv.x * 10.0, 1.0));
 
     // White right angles on the mesh
+    // float barX = step(0.4, mod(vUv.x * 10.0, 1.0));
+    // barX *= step(0.75, mod(vUv.y * 10.0, 1.0));
+
+    // float barY = step(0.4, mod(vUv.y * 10.0, 1.0));
+    // barY *= step(0.75, mod(vUv.x * 10.0, 1.0));
+
+    // float strength = barX + barY;
+
+    // White crosses on the mesh
     float barX = step(0.4, mod(vUv.x * 10.0, 1.0));
     barX *= step(0.75, mod(vUv.y * 10.0, 1.0));
 
-    float barY = step(0.4, mod(vUv.y * 10.0, 1.0));
-    barY *= step(0.75, mod(vUv.x * 10.0, 1.0));
+    float barY = step(0.4, mod(vUv.y * 10.0 - 0.175, 1.0));
+    barY *= step(0.75, mod(vUv.x * 10.0 + 0.175, 1.0));
 
     float strength = barX + barY;
 
