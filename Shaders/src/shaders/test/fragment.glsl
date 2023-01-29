@@ -4,6 +4,7 @@ uniform vec3 uColor;
 uniform sampler2D uTexture;
 
 varying vec2 vUv;
+varying float vElevation;
 
 // varying float vRandom;
 
