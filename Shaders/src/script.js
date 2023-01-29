@@ -44,7 +44,8 @@ const material = new THREE.RawShaderMaterial({
     fragmentShader: testFragmentShader,
     uniforms:
     {
-        uFrequency: { value: new THREE.Vector2(10, 5) }
+        uFrequency: { value: new THREE.Vector2(10, 5) },
+        uTime: { value: 0 }
     }
 })
 
