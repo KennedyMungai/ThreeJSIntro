@@ -6,6 +6,7 @@ uniform vec2 uFrequency;
 uniform float uTime;
 
 attribute vec3 position;
+attribute vec2 uv;
 
 // varying float vRandom;   
 
