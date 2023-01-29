@@ -120,6 +120,9 @@ const tick = () =>
 {
     const elapsedTime = clock.getElapsedTime()
 
+    // Update Material
+    material.uniforms.uTime.value = elapsedTime
+
     // Update controls
     controls.update()
 
