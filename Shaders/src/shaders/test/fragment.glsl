@@ -1,5 +1,7 @@
 precision mediump float;
 
+uniform vec3 uColor;
+
 // varying float vRandom;
 
 void main() {
