@@ -4,6 +4,9 @@ float random(vec2 st) {
     return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
 }
 
+vec2 rotate(vec2 uv, float rotation, vec2 mid) {
+    return vec2(cos(rotation) * (uv.x - mid.x) + sin(rotation) * (uv.y - mid.y) + mid.x, cos(rotation) * (uv.y - mid.y) - sin(rotation) * (uv.x - mid.x) + mid.y) }
+
 void main() {
     // Gray scale banded pattern
     // float strength = vUv.x;
@@ -111,6 +114,15 @@ void main() {
     // float strength = 0.01 / distance(lightUv, vec2(0.5));
 
     // Star shaped thing on a black surface
+    // vec2 lightUvX = vec2(vUv.x * 0.5 + 0.25, vUv.y);
+    // float lightX = 0.01 / distance(lightUvX, vec2(0.5));
+
+    // vec2 lightUvY = vec2(vUv.y * 0.5 + 0.25, vUv.x);
+    // float lightY = 0.01 / distance(lightUvY, vec2(0.5));
+
+    // float strength = lightX * lightY;
+
+    // Star shaped thing on a black surface but rotated by 45 degrees
     vec2 lightUvX = vec2(vUv.x * 0.5 + 0.25, vUv.y);
     float lightX = 0.01 / distance(lightUvX, vec2(0.5));
 
