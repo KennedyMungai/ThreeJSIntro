@@ -22,6 +22,9 @@ const scene = new THREE.Scene()
  */
 const textureLoader = new THREE.TextureLoader()
 
+// Load textures
+const frenchFlag = textureLoader.load('/textures/flag-french.jpg')
+
 /**
  * Test mesh
  */
