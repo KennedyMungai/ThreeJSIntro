@@ -27,6 +27,5 @@ void main() {
     gl_Position = projectionPosition;
 
     vUv = uv;
-    vElevation = el;
-    elevation;
+    vElevation = elevation;
 }
