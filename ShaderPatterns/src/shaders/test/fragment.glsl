@@ -37,7 +37,7 @@ void main() {
     // strength *= step(0.75, mod(vUv.y * 10.0, 1.0));
 
     // White lines on a black surface
-    // float strength = step(0.75, mod(vUv.y * 10.0, 1.0));
+    // float strength  = step(0.75, mod(vUv.y * 10.0, 1.0));
     // strength -= step(0.75, mod(vUv.x * 10.0, 1.0));
 
     // White right angles on the mesh
@@ -50,13 +50,16 @@ void main() {
     // float strength = barX + barY;
 
     // White crosses on the mesh
-    float barX = step(0.4, mod(vUv.x * 10.0, 1.0));
-    barX *= step(0.75, mod(vUv.y * 10.0, 1.0));
+    // float barX = step(0.4, mod(vUv.x * 10.0, 1.0));
+    // barX *= step(0.75, mod(vUv.y * 10.0, 1.0));
 
-    float barY = step(0.4, mod(vUv.y * 10.0 - 0.175, 1.0));
-    barY *= step(0.75, mod(vUv.x * 10.0 + 0.175, 1.0));
+    // float barY = step(0.4, mod(vUv.y * 10.0 - 0.175, 1.0));
+    // barY *= step(0.75, mod(vUv.x * 10.0 + 0.175, 1.0));
 
-    float strength = barX + barY;
+    // float strength = barX + barY;
+
+    // Banding with a black bar in the middle
+    float strength = abs(vUv.x - 0.5);
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
