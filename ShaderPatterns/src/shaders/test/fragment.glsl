@@ -1,5 +1,9 @@
 varying vec2 vUv;
 
+float random(vec2 st) {
+    return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
+}
+
 void main() {
     // Gray scale banded pattern
     // float strength = vUv.x;
@@ -77,7 +81,10 @@ void main() {
     // float strength = floor(vUv.x * 10.0) / 10.0;
 
     // Better crisp banding on two dimensions
-    float strength = floor(vUv.x * 10.0) / 10.0 * floor(vUv.y * 10.0) / 10.0;
+    // float strength = floor(vUv.x * 10.0) / 10.0 * floor(vUv.y * 10.0) / 10.0;
+
+    // Noise
+    float strength = random(vUv);
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
