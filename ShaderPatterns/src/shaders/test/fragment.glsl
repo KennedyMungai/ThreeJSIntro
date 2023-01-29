@@ -91,8 +91,11 @@ void main() {
     // float strength = random(gridUv);
 
     // SkewedCrisp Noise
-    vec2 gridUv = vec2(floor(vUv.x * 10.0) / 10.0, (floor((vUv.y + vUv.x) * 10.0) / 10.0));
-    float strength = random(gridUv);
+    // vec2 gridUv = vec2(floor(vUv.x * 10.0) / 10.0, (floor((vUv.y + vUv.x) * 10.0) / 10.0));
+    // float strength = random(gridUv);
+
+    // A white plane with a dark lower corner
+    float strength = length(vUv);
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
