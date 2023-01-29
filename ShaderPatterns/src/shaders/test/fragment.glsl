@@ -71,7 +71,10 @@ void main() {
     // float strength = step(0.2, max(abs(vUv.x - 0.5), abs(vUv.y - 0.5)));
 
     // White square with a larger inset black square
-    float strength = step(0.4, max(abs(vUv.x - 0.5), abs(vUv.y - 0.5)));
+    // float strength = step(0.4, max(abs(vUv.x - 0.5), abs(vUv.y - 0.5)));
+
+    // Better crisp banding on the plane
+    float strength = vUv.x;
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
