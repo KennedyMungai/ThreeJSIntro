@@ -126,15 +126,18 @@ void main() {
     // float strength = lightX * lightY;
 
     // Star shaped thing on a black surface but rotated by 45 degrees
-    vec2 rotatedUv = rotate(vUv, PI * 0.25, vec2(0.5, 0.5));
+    // vec2 rotatedUv = rotate(vUv, PI * 0.25, vec2(0.5, 0.5));
 
-    vec2 lightUvX = vec2(rotatedUv.x * 0.5 + 0.25, rotatedUv.y);
-    float lightX = 0.01 / distance(lightUvX, vec2(0.5));
+    // vec2 lightUvX = vec2(rotatedUv.x * 0.5 + 0.25, rotatedUv.y);
+    // float lightX = 0.01 / distance(lightUvX, vec2(0.5));
 
-    vec2 lightUvY = vec2(rotatedUv.y * 0.5 + 0.25, rotatedUv.x);
-    float lightY = 0.01 / distance(lightUvY, vec2(0.5));
+    // vec2 lightUvY = vec2(rotatedUv.y * 0.5 + 0.25, rotatedUv.x);
+    // float lightY = 0.01 / distance(lightUvY, vec2(0.5));
 
-    float strength = lightX * lightY;
+    // float strength = lightX * lightY;
+
+    // A small black circle inside a whiyte surface
+    float strength = step(0.25, distance(vUv, vec2(0.5)));
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
