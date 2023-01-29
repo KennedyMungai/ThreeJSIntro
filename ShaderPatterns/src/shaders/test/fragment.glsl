@@ -30,6 +30,7 @@ void main() {
 
     // Gray scale checkered pattern
     float strength = step(0.75, mod(vUv.x * 10.0, 1.0));
+    strength += step(0.75, mod(vUv.y * 10.0, 1.0));
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
