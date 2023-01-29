@@ -137,7 +137,10 @@ void main() {
     // float strength = lightX * lightY;
 
     // A small black circle inside a whiyte surface
-    float strength = step(0.25, distance(vUv, vec2(0.5)));
+    // float strength = step(0.25, distance(vUv, vec2(0.5)));
+
+    // A black ring inside a gray plane
+    float strength = abs(distance(vUv, vec2(0.5)) - 0.25);
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
