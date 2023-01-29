@@ -48,6 +48,13 @@ const material = new THREE.RawShaderMaterial({
     }
 })
 
+gui
+    .add(material.uniforms.uFrequency.value, "x")
+    .min(0)
+    .max(20)
+    .step(0.01)
+    .name("Frequency X")
+
 // Mesh
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
