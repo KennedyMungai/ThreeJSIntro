@@ -3,7 +3,6 @@ uniform mat4 modelMatrix;
 uniform mat4 viewMatrix;
 
 attribute vec3 position;
-attribute float aRandom;
 
 // varying float vRandom;   
 
