@@ -101,7 +101,10 @@ void main() {
     // float strength = distance(vUv, vec2(0.5));
 
     // A dark plane with a white center
-    float strength = 1.0 - distance(vUv, vec2(0.5));
+    // float strength = 1.0 - distance(vUv, vec2(0.5));
+
+    // A dark plane with a white center
+    float strength = 0.01 / distance(vUv, vec2(0.5));
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
