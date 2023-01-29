@@ -8,7 +8,10 @@ void main() {
     // float strength = vUv.y;
 
     // Gray scale banded pattern on the y axis inverted
-    float strength = 1.0 - vUv.y;
+    // float strength = 1.0 - vUv.y;
+
+    // Gray scale banded pattern on the y axis but with some uneven distribution
+    float strength = vUv.y * 10.0;
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
