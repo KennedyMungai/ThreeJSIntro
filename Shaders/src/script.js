@@ -55,6 +55,13 @@ gui
     .step(0.01)
     .name("Frequency X")
 
+gui
+    .add(material.uniforms.uFrequency.value, "y")
+    .min(0)
+    .max(20)
+    .step(0.01)
+    .name("Frequency Y")
+
 // Mesh
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
