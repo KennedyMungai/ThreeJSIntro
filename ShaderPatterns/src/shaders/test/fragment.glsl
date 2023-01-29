@@ -67,8 +67,11 @@ void main() {
     // Diagonal banding
     // float strength = max(abs(vUv.x - 0.5), abs(vUv.y - 0.5));
 
-    // Diagonal banding
-    float strength = step(0.2, max(abs(vUv.x - 0.5), abs(vUv.y - 0.5)));
+    // White square with an inset black square
+    // float strength = step(0.2, max(abs(vUv.x - 0.5), abs(vUv.y - 0.5)));
+
+    // White square with a larger inset black square
+    float strength = step(0.4, max(abs(vUv.x - 0.5), abs(vUv.y - 0.5)));
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
