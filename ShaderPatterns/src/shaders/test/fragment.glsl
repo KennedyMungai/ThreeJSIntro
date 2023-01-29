@@ -209,7 +209,10 @@ void main() {
     // float strength = angle;
 
     // Perlin Noise
-    float strength = vUv.x;
+    // float strength = cnoise(vUv * 10.0);
+
+    // Crisper Perlin Noise
+    float strength = step(0.0, cnoise(vUv * 10.0));
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
