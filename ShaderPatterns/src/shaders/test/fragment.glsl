@@ -74,7 +74,7 @@ void main() {
     // float strength = step(0.4, max(abs(vUv.x - 0.5), abs(vUv.y - 0.5)));
 
     // Better crisp banding on the plane
-    float strength = vUv.x;
+    float strength = round(vUv.x * 10.0) / 10.0;
 
     gl_FragColor = vec4(vec3(strength), 1.0);
 }
