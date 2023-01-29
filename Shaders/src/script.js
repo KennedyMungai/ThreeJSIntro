@@ -42,7 +42,19 @@ for (let i = 0; i < count; i++)
 geometry.setAttribute('aRandom', new THREE.BufferAttribute(randoms, 1))
 
 // Material
-const material = new THREE.RawShaderMaterial({
+// const material = new THREE.RawShaderMaterial({
+//     vertexShader: testVertexShader,
+//     fragmentShader: testFragmentShader,
+//     uniforms:
+//     {
+//         uFrequency: { value: new THREE.Vector2(10, 5) },
+//         uTime: { value: 0 },
+//         uColor: { value: new THREE.Color('#ff8855') },
+//         uTexture: { value: frenchFlag }
+//     }
+// })
+
+const material = new THREE.ShaderMaterial({
     vertexShader: testVertexShader,
     fragmentShader: testFragmentShader,
     uniforms:
