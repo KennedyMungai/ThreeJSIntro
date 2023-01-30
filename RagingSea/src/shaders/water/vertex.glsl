@@ -8,5 +8,5 @@ void main() {
     // projection matrix
     vec4 projectionPosition = projectionMatrix * viewPosition;
 
-    vec4 gl_Position = projectionPosition;
+    gl_Position = projectionPosition;
 }
