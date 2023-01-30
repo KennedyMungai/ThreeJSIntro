@@ -43,8 +43,8 @@ const waterMaterial = new THREE.ShaderMaterial({
 
         // Small waves
         uSmallWavesElevation: { value: 0.15 },
-        uSmallWavesFrequency: { value: 2.0 },
-        uSmallWavesSpeed: { value: 0.2 },
+        uSmallWavesFrequency: { value: 4.5 },
+        uSmallWavesSpeed: { value: 0.05 },
         uSmallWavesIterations: { value: 4.0 },
 
         // Color stuff
