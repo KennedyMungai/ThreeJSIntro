@@ -99,7 +99,7 @@ const generateGalaxy = () =>
         vertexShader: galaxyVertexShader,
         fragmentShader: galaxyFragmentShader,
         uniforms: {
-            uSize: { value: 2 }
+            uSize: { value: 2 * renderer.getPixelRatio() }
         }
     })
 
@@ -110,7 +110,6 @@ const generateGalaxy = () =>
     scene.add(points)
 }
 
-generateGalaxy()
 
 gui
     .add(parameters, 'count')
@@ -154,12 +153,12 @@ gui
     .addColor(parameters, 'outsideColor')
     .onFinishChange(generateGalaxy)
 
-gui
-    .add(material.uniforms.uSize, 'value')
-    .min(0.01)
-    .max(5.0)
-    .step(0.001)
-    .name('Particle Size')
+// gui
+//     .add(material.uniforms.uSize, 'value')
+//     .min(0.01)
+//     .max(5.0)
+//     .step(0.001)
+//     .name('Particle Size')
 
 /**
  * Sizes
@@ -206,6 +205,8 @@ const renderer = new THREE.WebGLRenderer({
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+
+generateGalaxy()
 
 /**
  * Animate
