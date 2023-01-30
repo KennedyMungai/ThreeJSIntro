@@ -1,5 +1,6 @@
 uniform float uBigWaveElevation;
 uniform vec2 uBigWaveFrequency;
+uniform float uTime;
 
 void main() {
     // model matrix
