@@ -115,7 +115,7 @@ const tick = () =>
     const elapsedTime = clock.getElapsedTime()
 
     // Animating the wave
-
+    waterMaterial.uniforms.uTime.value = elapsedTime;
 
     // Update controls
     controls.update()
