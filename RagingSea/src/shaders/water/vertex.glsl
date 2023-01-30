@@ -20,4 +20,6 @@ void main() {
     vec4 projectionPosition = projectionMatrix * viewPosition;
 
     gl_Position = projectionPosition;
+
+    vElevation = elevation;
 }
