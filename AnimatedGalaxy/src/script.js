@@ -80,6 +80,9 @@ const generateGalaxy = () =>
         colors[i3] = mixedColor.r
         colors[i3 + 1] = mixedColor.g
         colors[i3 + 2] = mixedColor.b
+
+        // Scale
+        scales[i] = Math.random()
     }
 
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
