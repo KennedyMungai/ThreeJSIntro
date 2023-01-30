@@ -39,7 +39,7 @@ gui
     .min(0)
     .max(1.0)
     .step(0.01)
-    .name('Elevation')
+    .name('Amplitude')
 
 // Mesh
 const water = new THREE.Mesh(waterGeometry, waterMaterial)
