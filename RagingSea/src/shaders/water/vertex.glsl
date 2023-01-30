@@ -3,6 +3,8 @@ uniform vec2 uBigWaveFrequency;
 uniform float uTime;
 uniform float uBigWavesSpeed;
 
+varying float vElevation;
+
 void main() {
     // model matrix
     vec4 modelPosition = modelMatrix * vec4(position, 1.0);
