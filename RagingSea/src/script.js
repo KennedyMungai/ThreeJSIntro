@@ -41,6 +41,13 @@ gui
     .step(0.01)
     .name('Amplitude')
 
+gui
+    .add(waterMaterial.uniforms.uBigWaveFrequency, 'value')
+    .min(1)
+    .max(10)
+    .step(1)
+    .name('Frequency')
+
 // Mesh
 const water = new THREE.Mesh(waterGeometry, waterMaterial)
 water.rotation.x = - Math.PI * 0.5
