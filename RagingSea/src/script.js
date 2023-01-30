@@ -30,7 +30,7 @@ const waterMaterial = new THREE.ShaderMaterial({
     uniforms:
     {
         uBigWaveElevation: { value: 0.1 },
-        uBigWaveFrequency: { value: 10.0 }
+        uBigWaveFrequency: { value: new THREE.Vector2(4, 1.5) }
     }
 })
 
@@ -42,11 +42,18 @@ gui
     .name('Amplitude')
 
 gui
-    .add(waterMaterial.uniforms.uBigWaveFrequency, 'value')
+    .add(waterMaterial.uniforms.uBigWaveFrequency.value, 'x')
     .min(1)
     .max(10)
     .step(1)
-    .name('Frequency')
+    .name('Frequency on X')
+
+gui
+    .add(waterMaterial.uniforms.uBigWaveFrequency.value, 'y')
+    .min(1)
+    .max(10)
+    .step(1)
+    .name('Frequency on Y')
 
 // Mesh
 const water = new THREE.Mesh(waterGeometry, waterMaterial)
