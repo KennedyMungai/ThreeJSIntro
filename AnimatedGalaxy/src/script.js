@@ -35,7 +35,7 @@ let points = null
 
 const generateGalaxy = () =>
 {
-    if(points !== null)
+    if (points !== null)
     {
         geometry.dispose()
         material.dispose()
@@ -53,7 +53,7 @@ const generateGalaxy = () =>
     const insideColor = new THREE.Color(parameters.insideColor)
     const outsideColor = new THREE.Color(parameters.outsideColor)
 
-    for(let i = 0; i < parameters.count; i++)
+    for (let i = 0; i < parameters.count; i++)
     {
         const i3 = i * 3
 
@@ -66,7 +66,7 @@ const generateGalaxy = () =>
         const randomY = Math.pow(Math.random(), parameters.randomnessPower) * (Math.random() < 0.5 ? 1 : - 1) * parameters.randomness * radius
         const randomZ = Math.pow(Math.random(), parameters.randomnessPower) * (Math.random() < 0.5 ? 1 : - 1) * parameters.randomness * radius
 
-        positions[i3    ] = Math.cos(branchAngle) * radius + randomX
+        positions[i3] = Math.cos(branchAngle) * radius + randomX
         positions[i3 + 1] = randomY
         positions[i3 + 2] = Math.sin(branchAngle) * radius + randomZ
 
@@ -74,7 +74,7 @@ const generateGalaxy = () =>
         const mixedColor = insideColor.clone()
         mixedColor.lerp(outsideColor, radius / parameters.radius)
 
-        colors[i3    ] = mixedColor.r
+        colors[i3] = mixedColor.r
         colors[i3 + 1] = mixedColor.g
         colors[i3 + 2] = mixedColor.b
     }
@@ -85,13 +85,7 @@ const generateGalaxy = () =>
     /**
      * Material
      */
-    material = new THREE.PointsMaterial({
-        size: parameters.size,
-        sizeAttenuation: true,
-        depthWrite: false,
-        blending: THREE.AdditiveBlending,
-        vertexColors: true
-    })
+    material = new THREE.ShaderMaterial()
 
     /**
      * Points
