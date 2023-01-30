@@ -4,4 +4,6 @@ void main() {
     vec4 projectionPosition = projectionMatrix * viewPosition;
 
     gl_Position = projectionPosition;
+
+    gl_PointSize = 2.0;
 }
