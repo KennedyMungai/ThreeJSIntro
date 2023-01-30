@@ -100,6 +100,13 @@ gui
     .step(0.01)
     .name('Color Offset')
 
+gui
+    .add(waterMaterial.uniforms.uColorMultiplier, 'value')
+    .min(1.0)
+    .max(10.0)
+    .step(0.01)
+    .name('Color Multiplier')
+
 // Mesh
 const water = new THREE.Mesh(waterGeometry, waterMaterial)
 water.rotation.x = - Math.PI * 0.5
