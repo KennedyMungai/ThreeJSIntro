@@ -2,6 +2,7 @@ uniform float uSize;
 uniform float uTime;
 
 attribute float aScale;
+attribute vec3 aRandomness;
 
 varying vec3 vColor;
 
