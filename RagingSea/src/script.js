@@ -76,10 +76,18 @@ gui
 gui
     .addColor(debugObject, 'surfaceColor')
     .name('Surface Color')
+    .onChange(() => 
+    {
+        waterMaterial.uniforms.uSurfaceColor = debugObject.surfaceColor
+    })
 
 gui
     .addColor(debugObject, 'depthColor')
     .name('Depth Color')
+    .onChange(() =>
+    {
+        waterMaterial.uniforms.uDepthColor = debugObject.depthColor
+    })
 
 // Mesh
 const water = new THREE.Mesh(waterGeometry, waterMaterial)
