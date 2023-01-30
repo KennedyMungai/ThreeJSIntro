@@ -23,6 +23,10 @@ const scene = new THREE.Scene()
 // Geometry
 const waterGeometry = new THREE.PlaneBufferGeometry(2, 2, 128, 128)
 
+// Color
+debugObject.depthColor = '#0000ff'
+debugObject.surfaceColor = '#8888ff'
+
 // Material
 const waterMaterial = new THREE.ShaderMaterial({
     vertexShader: waterVertexShader,
