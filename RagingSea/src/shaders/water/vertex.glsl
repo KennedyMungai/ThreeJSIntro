@@ -98,7 +98,7 @@ void main() {
     float elevation = sin(modelPosition.x * uBigWaveFrequency.x + (uTime * uBigWavesSpeed)) * sin(modelPosition.z * uBigWaveFrequency.y + (uTime * uBigWavesSpeed)) * uBigWaveElevation;
 
     for(float i = 1.0; i <= uSmallWavesIterations; i++) {
-        elevation -= abs(cnoise(vec3(modelPosition.xz * uSmallWaveElevation * i, uTime * uSmallWavesSpeed)) * uSmallWavesFrequency/ i);
+        elevation -= abs(cnoise(vec3(modelPosition.xz * uSmallWavesFrequency * i, uTime * uSmallWavesSpeed)) * uSmallWavesSpeed / i);
     }
 
     modelPosition.y += elevation;
