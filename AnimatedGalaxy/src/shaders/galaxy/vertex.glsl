@@ -9,5 +9,5 @@ void main() {
 
     gl_Position = projectionPosition;
 
-    gl_PointSize = uSize;
+    gl_PointSize = uSize * aScale;
 }
