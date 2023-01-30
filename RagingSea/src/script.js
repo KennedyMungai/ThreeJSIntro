@@ -36,10 +36,12 @@ const waterMaterial = new THREE.ShaderMaterial({
     {
         uTime: { value: 0.0 },
 
+        // Vertex stuff
         uBigWaveElevation: { value: 0.1 },
         uBigWaveFrequency: { value: new THREE.Vector2(4, 1.5) },
         uBigWavesSpeed: { value: 1.0 },
 
+        // Color stuff
         uDepthColor: { value: new THREE.Color(debugObject.depthColor) },
         uSurfaceColor: { value: new THREE.Color(debugObject.surfaceColor) }
     }
