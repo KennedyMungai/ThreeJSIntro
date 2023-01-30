@@ -113,6 +113,34 @@ gui
     .step(0.01)
     .name('Color Multiplier')
 
+gui
+    .add(waterMaterial.uniforms.uSmallWavesElevation, 'value')
+    .min(0.0)
+    .max(1.0)
+    .step(0.001)
+    .name('Small Waves Elevation')
+
+gui
+    .add(waterMaterial.uSmallWavesFrequency, 'value')
+    .min(1.0)
+    .max(5.0)
+    .step(0.01)
+    .name('Small Waves Frequency')
+
+gui
+    .add(waterMaterial.uSmallWavesSpeed, 'value')
+    .min(0.0)
+    .max(1.0)
+    .step(0.001)
+    .name('Small Waves Speed')
+
+gui
+    .add(waterMaterial.uSmallWavesIterations, 'value')
+    .min(1.0)
+    .max(5.0)
+    .step(1.0)
+    .name('Small Waves Iteration')
+
 // Mesh
 const water = new THREE.Mesh(waterGeometry, waterMaterial)
 water.rotation.x = - Math.PI * 0.5
