@@ -1,4 +1,5 @@
 uniform float uSize;
+uniform float uTime;
 
 attribute float aScale;
 
