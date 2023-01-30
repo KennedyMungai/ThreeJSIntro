@@ -3,7 +3,7 @@ void main() {
     vec4 modelPosition = modelMatrix * vec4(position, 1.0);
 
     // view matrix
-    vec4 viewPosition = viewMarix * modelPosition;
+    vec4 viewPosition = viewMatrix * modelPosition;
 
     // projection matrix
     vec4 projectionPosition = projectionMatrix * viewPosition;
