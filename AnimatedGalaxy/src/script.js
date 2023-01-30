@@ -149,6 +149,13 @@ gui
     .addColor(parameters, 'outsideColor')
     .onFinishChange(generateGalaxy)
 
+gui
+    .add(material.uniforms.uSize, 'value')
+    .min(0.01)
+    .max(5.0)
+    .step(0.001)
+    .name('Particle Size')
+
 /**
  * Sizes
  */
