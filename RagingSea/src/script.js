@@ -78,7 +78,7 @@ gui
     .name('Surface Color')
     .onChange(() => 
     {
-        waterMaterial.uniforms.uSurfaceColor = debugObject.surfaceColor
+        waterMaterial.uniforms.uSurfaceColor.value.set(debugObject.surfaceColor)
     })
 
 gui
@@ -86,7 +86,7 @@ gui
     .name('Depth Color')
     .onChange(() =>
     {
-        waterMaterial.uniforms.uDepthColor = debugObject.depthColor
+        waterMaterial.uniforms.uDepthColor.value.set(debugObject.depthColor)
     })
 
 // Mesh
