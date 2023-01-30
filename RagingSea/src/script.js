@@ -73,6 +73,14 @@ gui
     .step(0.01)
     .name('Wave speed')
 
+gui
+    .addColor(debugObject, 'surfaceColor')
+    .name('Surface Color')
+
+gui
+    .addColor(debugObject, 'depthColor')
+    .name('Depth Color')
+
 // Mesh
 const water = new THREE.Mesh(waterGeometry, waterMaterial)
 water.rotation.x = - Math.PI * 0.5
