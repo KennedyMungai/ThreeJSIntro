@@ -1,3 +1,5 @@
+varying vec3 vColor;
+
 void main() {
     // Disc
     // float strength = distance(gl_PointCoord, vec2(0.5));
