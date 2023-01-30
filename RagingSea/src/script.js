@@ -29,7 +29,7 @@ const waterMaterial = new THREE.ShaderMaterial({
     fragmentShader: waterFragmentShader,
     uniforms:
     {
-        uBigWaveElevation: { value: 0.2 }
+        uBigWaveElevation: { value: 0.1 }
     }
 })
 
