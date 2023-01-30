@@ -121,24 +121,24 @@ gui
     .name('Small Waves Elevation')
 
 gui
-    .add(waterMaterial.uSmallWavesFrequency, 'value')
-    .min(1.0)
-    .max(5.0)
+    .add(waterMaterial.uniforms.uSmallWavesFrequency, 'value')
+    .min(1)
+    .max(5)
     .step(0.01)
     .name('Small Waves Frequency')
 
 gui
-    .add(waterMaterial.uSmallWavesSpeed, 'value')
-    .min(0.0)
-    .max(1.0)
+    .add(waterMaterial.uniforms.uSmallWavesSpeed, 'value')
+    .min(0)
+    .max(1)
     .step(0.001)
     .name('Small Waves Speed')
 
 gui
-    .add(waterMaterial.uSmallWavesIterations, 'value')
-    .min(1.0)
-    .max(5.0)
-    .step(1.0)
+    .add(waterMaterial.uniforms.uSmallWavesIterations, 'value')
+    .min(1)
+    .max(5)
+    .step(1)
     .name('Small Waves Iteration')
 
 // Mesh
