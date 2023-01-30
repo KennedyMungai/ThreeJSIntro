@@ -93,6 +93,13 @@ gui
         waterMaterial.uniforms.uDepthColor.value.set(debugObject.depthColor)
     })
 
+gui
+    .add(waterMaterial.uniforms.uColorOffset, 'value')
+    .min(0.1)
+    .max(0.9)
+    .step(0.01)
+    .name('Color Offset')
+
 // Mesh
 const water = new THREE.Mesh(waterGeometry, waterMaterial)
 water.rotation.x = - Math.PI * 0.5
