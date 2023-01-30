@@ -33,6 +33,13 @@ const waterMaterial = new THREE.ShaderMaterial({
     }
 })
 
+gui
+    .add(waterMaterial.uniforms.uBigWaveElevation, 'value')
+    .min(0)
+    .max(1.0)
+    .step(0.01)
+    .name('Elevation')
+
 // Mesh
 const water = new THREE.Mesh(waterGeometry, waterMaterial)
 water.rotation.x = - Math.PI * 0.5
