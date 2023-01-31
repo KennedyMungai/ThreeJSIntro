@@ -9,6 +9,7 @@ import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass'
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass'
 import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass'
 import { AfterimagePass } from 'three/examples/jsm/postprocessing/AfterimagePass'
+import { OutlinePass } from 'three/examples/jsm/postprocessing/OutlinePass'
 import * as dat from 'dat.gui'
 
 /**
