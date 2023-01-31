@@ -7,6 +7,7 @@ import Stats from 'stats.js'
  * Stats
  */
 const stats = new Stats()
+stats.showPanel(0)
 
 /**
  * Base
