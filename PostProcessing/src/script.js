@@ -19,8 +19,6 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 
-// Render Pass
-// const renderPass = new RenderPass()
 
 /**
  * Loaders
@@ -143,6 +141,9 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 const effectComposer = new EffectComposer(renderer)
 effectComposer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 effectComposer.setSize(sizes.width, sizes.height)
+
+// Render Pass
+const renderPass = new RenderPass()
 
 /**
  * Animate
