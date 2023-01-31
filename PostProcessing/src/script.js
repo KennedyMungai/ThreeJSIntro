@@ -11,6 +11,7 @@ import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass'
 import { AfterimagePass } from 'three/examples/jsm/postprocessing/AfterimagePass'
 import { OutlinePass } from 'three/examples/jsm/postprocessing/OutlinePass'
 import { AdaptiveToneMappingPass } from 'three/examples/jsm/postprocessing/AdaptiveToneMappingPass'
+import { BokehPass } from 'three/examples/jsm/postprocessing/BokehPass'
 import * as dat from 'dat.gui'
 
 /**
@@ -187,6 +188,11 @@ effectComposer.addPass(outlinePass)
 const adaptiveTonemapPass = new AdaptiveToneMappingPass()
 adaptiveTonemapPass.enabled = false
 effectComposer.addPass(adaptiveTonemapPass)
+
+// Bokeh Pass
+const bokehPass = new BokehPass(scene, camera)
+bokehPass.enabled = false
+effectComposer.addPass(bokehPass)
 
 /**
  * Animate
