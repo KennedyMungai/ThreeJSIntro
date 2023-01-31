@@ -205,7 +205,8 @@ glitchPass.enabled = false
 effectComposer.addPass(glitchPass)
 
 // Unreal Bloom Pass
-const unrealBloomPass = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.5)
+const unrealBloomPass = new UnrealBloomPass()
+unrealBloomPass.strength = 0.5
 // unrealBloomPass.enabled = false
 effectComposer.addPass(unrealBloomPass)
 
