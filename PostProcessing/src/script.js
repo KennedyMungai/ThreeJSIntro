@@ -7,6 +7,7 @@ import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
 import { DotScreenPass } from 'three/examples/jsm/postprocessing/DotScreenPass'
 import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass'
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass'
+import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass'
 import * as dat from 'dat.gui'
 
 /**
@@ -163,6 +164,10 @@ effectComposer.addPass(glitchPass)
 const unrealBloomPass = new UnrealBloomPass()
 unrealBloomPass.enabled = false
 effectComposer.addPass(unrealBloomPass)
+
+// Film Pass
+const filmPass = new FilmPass(30, 3, 3, 10)
+effectComposer.addPass(filmPass)
 
 /**
  * Animate
