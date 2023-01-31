@@ -305,7 +305,7 @@ const TintShader = {
     `,
     fragmentShader: `
         uniform sampler2D tDiffuse;
-        uniform float uTint;
+        uniform vec3 uTint;
 
         varying vec2 vUv;
 
