@@ -8,6 +8,7 @@ import { DotScreenPass } from 'three/examples/jsm/postprocessing/DotScreenPass'
 import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass'
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass'
 import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass'
+import { AfterimagePass } from 'three/examples/jsm/postprocessing/AfterimagePass'
 import * as dat from 'dat.gui'
 
 /**
@@ -169,6 +170,11 @@ effectComposer.addPass(unrealBloomPass)
 const filmPass = new FilmPass(30, 3, 3, 10)
 filmPass.enabled = false
 effectComposer.addPass(filmPass)
+
+// Afterimage Pass
+const afterimagePass = new AfterimagePass()
+afterimagePass.enabled = false
+effectComposer.addPass(afterimagePass)
 
 /**
  * Animate
