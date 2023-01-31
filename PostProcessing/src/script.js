@@ -345,41 +345,41 @@ gui
     .name('Blue Tint')
 
 // Displacement pass
-const DisplacementShader = {
-    uniforms: {
-        tDiffuse: { value: null },
-    },
-    vertexShader: `
-        varying vec2 vUv;
+// const DisplacementShader = {
+//     uniforms: {
+//         tDiffuse: { value: null },
+//     },
+//     vertexShader: `
+//         varying vec2 vUv;
 
-        void main()
-        {
-            // vec4 modelPosition = modelMatrix * vec4(position, 1.0);
-            // vec4 viewPosition = viewMatrix * modelPosition;
-            // vec4 projectionPosition = projectionMatrix * viewPosition;
+//         void main()
+//         {
+//             // vec4 modelPosition = modelMatrix * vec4(position, 1.0);
+//             // vec4 viewPosition = viewMatrix * modelPosition;
+//             // vec4 projectionPosition = projectionMatrix * viewPosition;
 
-            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+//             gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
 
-            vUv = uv;
-        }
-    `,
-    fragmentShader: `
-        uniform sampler2D tDiffuse;
+//             vUv = uv;
+//         }
+//     `,
+//     fragmentShader: `
+//         uniform sampler2D tDiffuse;
 
-        varying vec2 vUv;
+//         varying vec2 vUv;
 
-        void main()
-        {
-            vec2 newUv = vUv;
-            vec4 color = texture2D(tDiffuse, newUv);
+//         void main()
+//         {
+//             vec2 newUv = vUv;
+//             vec4 color = texture2D(tDiffuse, newUv);
 
-            gl_FragColor = color;
-        }
-    `
-}
+//             gl_FragColor = color;
+//         }
+//     `
+// }
 
-const displacementPass = new ShaderPass(DisplacementShader)
-effectComposer.addPass(displacementPass)
+// const displacementPass = new ShaderPass(DisplacementShader)
+// effectComposer.addPass(displacementPass)
 
 /**
  * Animate
