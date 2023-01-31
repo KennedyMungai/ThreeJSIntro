@@ -287,7 +287,7 @@ effectComposer.addPass(smaaPass)
 const TintShader = {
     uniforms: {
         tDiffuse: { value: null },
-        uTintRed: { value: null },
+        uTint: { value: null },
     },
     vertexShader: `
         varying vec2 vUv;
@@ -320,7 +320,7 @@ const TintShader = {
 }
 
 const tintPass = new ShaderPass(TintShader)
-// tintPass.uniforms.uTintRed.value =
+tintPass.uniforms.uTint.value = new THREE.Vector3()
 effectComposer.addPass(tintPass)
 
 // gui
