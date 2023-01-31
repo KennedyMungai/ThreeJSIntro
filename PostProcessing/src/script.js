@@ -11,8 +11,8 @@ import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass'
 import { AfterimagePass } from 'three/examples/jsm/postprocessing/AfterimagePass'
 import { OutlinePass } from 'three/examples/jsm/postprocessing/OutlinePass'
 import { AdaptiveToneMappingPass } from 'three/examples/jsm/postprocessing/AdaptiveToneMappingPass'
-import { BokehPass } from 'three/examples/jsm/postprocessing/BokehPass'
 import { ClearPass } from 'three/examples/jsm/postprocessing/ClearPass'
+import { CubeTexturePass } from 'three/examples/jsm/postprocessing/CubeTexturePass'
 import * as dat from 'dat.gui'
 
 /**
@@ -199,6 +199,11 @@ effectComposer.addPass(adaptiveTonemapPass)
 const clearPass = new ClearPass('#ff8855', 0.1)
 clearPass.enabled = false
 effectComposer.addPass(clearPass)
+
+// Cube Texture Pass
+const cubeTexturePass = new CubeTexturePass(camera, environmentMap)
+cubeTexturePass.enabled = false
+effectComposer.addPass(cubeTexturePass)
 
 /**
  * Animate
