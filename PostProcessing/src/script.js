@@ -15,8 +15,9 @@ import { ClearPass } from 'three/examples/jsm/postprocessing/ClearPass'
 import { CubeTexturePass } from 'three/examples/jsm/postprocessing/CubeTexturePass'
 import { HalftonePass } from 'three/examples/jsm/postprocessing/HalftonePass'
 import { LUTPass } from 'three/examples/jsm/postprocessing/LUTPass'
-import { RGBShiftShader } from 'three/examples/jsm/shaders/RGBShiftShader'
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass'
+import { RGBShiftShader } from 'three/examples/jsm/shaders/RGBShiftShader'
+import { FilmShader } from 'three/examples/jsm/shaders/FilmShader'
 import * as dat from 'dat.gui'
 
 /**
@@ -222,7 +223,13 @@ effectComposer.addPass(lutpass)
 
 // RGBShiftShader
 const rgbShiftPass = new ShaderPass(RGBShiftShader)
+rgbShiftPass.enabled = false
 effectComposer.addPass(rgbShiftPass)
+
+// Film Shader
+const filmShaderPass = new ShaderPass(FilmShader)
+filmShaderPass.enabled = false
+effectComposer.addPass(filmShaderPass)
 
 /**
  * Animate
