@@ -143,7 +143,7 @@ effectComposer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 effectComposer.setSize(sizes.width, sizes.height)
 
 // Render Pass
-const renderPass = new RenderPass()
+const renderPass = new RenderPass(scene, camera)
 
 /**
  * Animate
