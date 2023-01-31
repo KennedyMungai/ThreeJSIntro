@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import * as dat from 'dat.gui'
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer'
 
 /**
  * Base
@@ -30,7 +31,7 @@ const updateAllMaterials = () =>
 {
     scene.traverse((child) =>
     {
-        if(child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMaterial)
+        if (child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMaterial)
         {
             child.material.envMapIntensity = 5
             child.material.needsUpdate = true
