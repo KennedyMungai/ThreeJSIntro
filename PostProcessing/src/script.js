@@ -177,6 +177,11 @@ const afterimagePass = new AfterimagePass()
 afterimagePass.enabled = false
 effectComposer.addPass(afterimagePass)
 
+// Outline Pass
+const outlinePass = new OutlinePass(new THREE.Vector2(512, 512), scene, camera)
+outlinePass.enabled = false
+effectComposer.addPass(outlinePass)
+
 /**
  * Animate
  */
