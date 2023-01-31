@@ -167,6 +167,7 @@ effectComposer.addPass(unrealBloomPass)
 
 // Film Pass
 const filmPass = new FilmPass(30, 3, 3, 10)
+filmPass.enabled = false
 effectComposer.addPass(filmPass)
 
 /**
