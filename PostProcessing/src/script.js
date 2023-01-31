@@ -370,7 +370,8 @@ const DisplacementShader = {
 
         void main()
         {
-            vec4 color = texture2D(tDiffuse, vUv);
+            vec2 newUv = vUv;
+            vec4 color = texture2D(tDiffuse, newUv);
 
             gl_FragColor = color;
         }
