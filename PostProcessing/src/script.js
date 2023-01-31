@@ -323,12 +323,12 @@ const tintPass = new ShaderPass(TintShader)
 tintPass.uniforms.uTintRed.value =
     effectComposer.addPass(tintPass)
 
-gui
-    .add(TintShader.uniforms.uTint, 'value')
-    .min(0)
-    .max(1)
-    .step(0.01)
-    .name('Tint Red')
+// gui
+//     .add(TintShader.uniforms.uTint, 'value')
+//     .min(0)
+//     .max(1)
+//     .step(0.01)
+//     .name('Tint Red')
 
 /**
  * Animate
