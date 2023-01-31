@@ -221,7 +221,8 @@ lutpass.enabled = false
 effectComposer.addPass(lutpass)
 
 // RGBShiftShader
-
+const rgbShiftPass = new ShaderPass(RGBShiftShader)
+effectComposer.addPass(rgbShiftPass)
 
 /**
  * Animate
