@@ -20,7 +20,7 @@ const scene = new THREE.Scene()
 
 
 // Render Pass
-const renderPass = new RenderPass()
+// const renderPass = new RenderPass()
 
 /**
  * Loaders
