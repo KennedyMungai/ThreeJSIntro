@@ -205,8 +205,8 @@ glitchPass.enabled = false
 effectComposer.addPass(glitchPass)
 
 // Unreal Bloom Pass
-const unrealBloomPass = new UnrealBloomPass()
-unrealBloomPass.enabled = false
+const unrealBloomPass = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.5)
+// unrealBloomPass.enabled = false
 effectComposer.addPass(unrealBloomPass)
 
 // Film Pass
