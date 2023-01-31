@@ -286,8 +286,22 @@ effectComposer.addPass(smaaPass)
 // Custom Effects Shader Pass
 const TintShader = {
     uniforms: {},
-    vertexShader: ``,
-    fragmentShader: ``
+    vertexShader: `
+        void main()
+        {
+            vec4 modelPosition = modelMatrix * vec4(position, 1.0);
+            vec4 viewPosition = viewMatrix * modelPosition;
+            vec4 projectionPosition = projectionMatrix * viewPosition;
+
+            gl_Position = projectionPosition;
+        }
+    `,
+    fragmentShader: `
+        void main()
+        {
+            gl_Frag = vec4(1.0, 1.0, 1.0, 1.0);
+        }
+    `
 }
 
 const tintPass = new ShaderPass(TintShader)
