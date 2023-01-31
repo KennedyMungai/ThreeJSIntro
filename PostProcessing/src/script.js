@@ -285,7 +285,9 @@ effectComposer.addPass(smaaPass)
 
 // Custom Effects Shader Pass
 const TintShader = {
-    uniforms: {},
+    uniforms: {
+        tDiffuse: { value: null }
+    },
     vertexShader: `
         void main()
         {
