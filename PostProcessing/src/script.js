@@ -180,7 +180,6 @@ const renderTarget = new THREE.WebGLMultisampleRenderTarget(
         magFilter: THREE.LinearFilter,
         format: THREE.RGBAFormat,
         encoding: THREE.sRGBEncoding,
-        antialias: true
     }
 )
 
