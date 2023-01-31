@@ -18,8 +18,6 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 
-// Effect Composer
-const effectCompoer = new EffectComposer()
 
 // Render Pass
 const renderPass = new RenderPass()
@@ -140,6 +138,9 @@ renderer.toneMapping = THREE.ReinhardToneMapping
 renderer.toneMappingExposure = 1.5
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+
+// Effect Composer
+const effectComposer = new EffectComposer()
 
 /**
  * Animate
