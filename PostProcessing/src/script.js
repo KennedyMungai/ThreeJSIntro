@@ -319,36 +319,35 @@ const TintShader = {
     `
 }
 
-const tintPass = new ShaderPass(TintShader)
-tintPass.uniforms.uTint.value = new THREE.Vector3()
-effectComposer.addPass(tintPass)
+const displacementPass = new ShaderPass(TintShader)
+displacementPass.uniforms.uTint.value = new THREE.Vector3()
+effectComposer.addPass(displacementPass)
 
 gui
-    .add(tintPass.uniforms.uTint.value, 'x')
+    .add(displacementPass.uniforms.uTint.value, 'x')
     .min(-1)
     .max(1)
     .step(0.01)
     .name('Red Tint')
 
 gui
-    .add(tintPass.uniforms.uTint.value, 'y')
+    .add(displacementPass.uniforms.uTint.value, 'y')
     .min(-1)
     .max(1)
     .step(0.01)
     .name('Green Tint')
 
 gui
-    .add(tintPass.uniforms.uTint.value, 'z')
+    .add(displacementPass.uniforms.uTint.value, 'z')
     .min(-1)
     .max(1)
     .step(0.01)
     .name('Blue Tint')
 
 // Displacement pass
-const TintShader = {
+const DisplacementShader = {
     uniforms: {
         tDiffuse: { value: null },
-        uTint: { value: null },
     },
     vertexShader: `
         varying vec2 vUv;
@@ -366,23 +365,20 @@ const TintShader = {
     `,
     fragmentShader: `
         uniform sampler2D tDiffuse;
-        uniform vec3 uTint;
 
         varying vec2 vUv;
 
         void main()
         {
             vec4 color = texture2D(tDiffuse, vUv);
-            color.rgb += uTint;
 
             gl_FragColor = color;
         }
     `
 }
 
-const tintPass = new ShaderPass(TintShader)
-tintPass.uniforms.uTint.value = new THREE.Vector3()
-effectComposer.addPass(tintPass)
+const displacementPass = new ShaderPass(DisplacementShader)
+effectComposer.addPass(displacementPass)
 
 /**
  * Animate
