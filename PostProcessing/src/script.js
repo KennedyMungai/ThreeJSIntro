@@ -21,6 +21,9 @@ const scene = new THREE.Scene()
 // Effect Composer
 const effectCompoer = new EffectComposer()
 
+// Render Pass
+const renderPass = new RenderPass()
+
 /**
  * Loaders
  */
