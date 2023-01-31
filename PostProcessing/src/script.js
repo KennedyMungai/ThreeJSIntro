@@ -166,7 +166,8 @@ const renderTarget = new THREE.WebGLRenderTarget(
         minFilter: THREE.LinearFilter,
         magFilter: THREE.LinearFilter,
         format: THREE.RGBAFormat,
-        encoding: THREE.sRGBEncoding
+        encoding: THREE.sRGBEncoding,
+        antialias: true
     }
 )
 
