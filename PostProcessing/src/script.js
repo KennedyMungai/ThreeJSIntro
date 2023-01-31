@@ -159,7 +159,20 @@ renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 // Render Target
-const renderTarget = new THREE.WebGLRenderTarget(
+// const renderTarget = new THREE.WebGLRenderTarget(
+//     800,
+//     600,
+//     {
+//         minFilter: THREE.LinearFilter,
+//         magFilter: THREE.LinearFilter,
+//         format: THREE.RGBAFormat,
+//         encoding: THREE.sRGBEncoding,
+//         antialias: true
+//     }
+// )
+
+// Multisample Render Target
+const renderTarget = new THREE.WebGLMultisampleRenderTarget(
     800,
     600,
     {
