@@ -21,6 +21,7 @@ import { FilmShader } from 'three/examples/jsm/shaders/FilmShader'
 import { VignetteShader } from 'three/examples/jsm/shaders/VignetteShader'
 import { ToonShader } from 'three/examples/jsm/shaders/ToonShader'
 import { WaterRefractionShader } from 'three/examples/jsm/shaders/WaterRefractionShader'
+import { SMAAPass } from 'three/examples/jsm/postprocessing/SMAAPass'
 import * as dat from 'dat.gui'
 
 /**
