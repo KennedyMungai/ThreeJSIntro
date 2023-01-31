@@ -140,7 +140,7 @@ renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 // Effect Composer
-const effectComposer = new EffectComposer()
+const effectComposer = new EffectComposer(renderer)
 
 /**
  * Animate
