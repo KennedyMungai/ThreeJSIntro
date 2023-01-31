@@ -165,7 +165,7 @@ effectComposer.addPass(dotScreenPass)
 // Glitch pass
 const glitchPass = new GlitchPass()
 glitchPass.goWild = true
-// glitchPass.enabled = false
+glitchPass.enabled = false
 effectComposer.addPass(glitchPass)
 
 // Unreal Bloom Pass
