@@ -14,6 +14,7 @@ import { AdaptiveToneMappingPass } from 'three/examples/jsm/postprocessing/Adapt
 import { ClearPass } from 'three/examples/jsm/postprocessing/ClearPass'
 import { CubeTexturePass } from 'three/examples/jsm/postprocessing/CubeTexturePass'
 import { HalftonePass } from 'three/examples/jsm/postprocessing/HalftonePass'
+import { LUTPass } from 'three/examples/jsm/postprocessing/LUTPass'
 import * as dat from 'dat.gui'
 
 /**
@@ -210,6 +211,11 @@ effectComposer.addPass(cubeTexturePass)
 const halftonePass = new HalftonePass()
 halftonePass.enabled = false
 effectComposer.addPass(halftonePass)
+
+// LUTPass
+const lutpass = new LUTPass()
+lutpass.enabled = false
+effectComposer.addPass(lutpass)
 
 /**
  * Animate
