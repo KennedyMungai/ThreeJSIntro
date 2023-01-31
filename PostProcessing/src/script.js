@@ -224,10 +224,10 @@ effectComposer.addPass(halftonePass)
 // lutpass.enabled = false
 // effectComposer.addPass(lutpass)
 
-// // RGBShiftShader
-// const rgbShiftPass = new ShaderPass(RGBShiftShader)
+// RGBShiftShader
+const rgbShiftPass = new ShaderPass(RGBShiftShader)
 // rgbShiftPass.enabled = false
-// effectComposer.addPass(rgbShiftPass)
+effectComposer.addPass(rgbShiftPass)
 
 // // Film Shader
 // const filmShaderPass = new ShaderPass(FilmShader)
