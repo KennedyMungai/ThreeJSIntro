@@ -323,12 +323,12 @@ const tintPass = new ShaderPass(TintShader)
 tintPass.uniforms.uTint.value = new THREE.Vector3()
 effectComposer.addPass(tintPass)
 
-// gui
-//     .add(TintShader.uniforms.uTint, 'value')
-//     .min(0)
-//     .max(1)
-//     .step(0.01)
-//     .name('Tint Red')
+gui
+    .add(tintPass.uniforms.uTint.value, 'x')
+    .min(-1)
+    .max(1)
+    .step(0.01)
+    .name('Red Tint')
 
 /**
  * Animate
