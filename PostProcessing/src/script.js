@@ -147,9 +147,9 @@ effectComposer.setSize(sizes.width, sizes.height)
 const renderPass = new RenderPass(scene, camera)
 effectComposer.addPass(renderPass)
 
-// Dotscreen pass
-const dotscreenPass = new DotScreenPass()
-effectComposer.addPass(dotscreenPass)
+// Dot Screen pass
+const dotScreenPass = new DotScreenPass()
+effectComposer.addPass(dotScreenPass)
 
 /**
  * Animate
