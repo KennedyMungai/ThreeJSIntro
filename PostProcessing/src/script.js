@@ -256,7 +256,7 @@ effectComposer.addPass(halftonePass)
 
 // RGBShiftShader
 const rgbShiftPass = new ShaderPass(RGBShiftShader)
-// rgbShiftPass.enabled = false
+rgbShiftPass.enabled = false
 effectComposer.addPass(rgbShiftPass)
 
 // // Film Shader
@@ -278,6 +278,9 @@ effectComposer.addPass(rgbShiftPass)
 // const waterRefractionShaderPass = new ShaderPass(WaterRefractionShader)
 // waterRefractionShaderPass.enabled = false
 // effectComposer.addPass(WaterRefractionShader)
+
+const smaaPass = new SMAAPass()
+effectComposer.addPass(smaaPass)
 
 /**
  * Animate
