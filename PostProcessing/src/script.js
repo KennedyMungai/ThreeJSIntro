@@ -330,6 +330,20 @@ gui
     .step(0.01)
     .name('Red Tint')
 
+gui
+    .add(tintPass.uniforms.uTint.value, 'y')
+    .min(-1)
+    .max(1)
+    .step(0.01)
+    .name('Green Tint')
+
+gui
+    .add(tintPass.uniforms.uTint.value, 'z')
+    .min(-1)
+    .max(1)
+    .step(0.01)
+    .name('Blue Tint')
+
 /**
  * Animate
  */
