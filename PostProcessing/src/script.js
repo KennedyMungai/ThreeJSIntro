@@ -283,6 +283,16 @@ effectComposer.addPass(rgbShiftPass)
 const smaaPass = new SMAAPass()
 effectComposer.addPass(smaaPass)
 
+// Custom Effects Shader Pass
+const TintShader = {
+    uniforms: {},
+    vertexShader: ``,
+    fragmentShader: ``
+}
+
+const tintPass = new ShaderPass(TintShader)
+effectComposer.addPass(tintPass)
+
 /**
  * Animate
  */
