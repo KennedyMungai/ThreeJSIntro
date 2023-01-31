@@ -16,6 +16,7 @@ import { CubeTexturePass } from 'three/examples/jsm/postprocessing/CubeTexturePa
 import { HalftonePass } from 'three/examples/jsm/postprocessing/HalftonePass'
 import { LUTPass } from 'three/examples/jsm/postprocessing/LUTPass'
 import { RGBShiftShader } from 'three/examples/jsm/shaders/RGBShiftShader'
+import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass'
 import * as dat from 'dat.gui'
 
 /**
@@ -218,6 +219,9 @@ effectComposer.addPass(halftonePass)
 const lutpass = new LUTPass()
 lutpass.enabled = false
 effectComposer.addPass(lutpass)
+
+// RGBShiftShader
+
 
 /**
  * Animate
