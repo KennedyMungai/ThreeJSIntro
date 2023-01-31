@@ -289,6 +289,8 @@ const TintShader = {
         tDiffuse: { value: null }
     },
     vertexShader: `
+        varying vec2 vUv;
+
         void main()
         {
             // vec4 modelPosition = modelMatrix * vec4(position, 1.0);
@@ -296,11 +298,18 @@ const TintShader = {
             // vec4 projectionPosition = projectionMatrix * viewPosition;
 
             gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+
+            vUv = uv;
         }
     `,
     fragmentShader: `
+        uniform sampler2D tDiffuse;
+
+        varying vec2 vUv;
+
         void main()
         {
+            vec4 color = texture2D(tDiffuse, vUv);
             gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
         }
     `
