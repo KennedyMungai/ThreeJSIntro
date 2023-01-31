@@ -13,6 +13,7 @@ import { OutlinePass } from 'three/examples/jsm/postprocessing/OutlinePass'
 import { AdaptiveToneMappingPass } from 'three/examples/jsm/postprocessing/AdaptiveToneMappingPass'
 import { ClearPass } from 'three/examples/jsm/postprocessing/ClearPass'
 import { CubeTexturePass } from 'three/examples/jsm/postprocessing/CubeTexturePass'
+import { HalftonePass } from 'three/examples/jsm/postprocessing/HalftonePass'
 import * as dat from 'dat.gui'
 
 /**
@@ -204,6 +205,11 @@ effectComposer.addPass(clearPass)
 const cubeTexturePass = new CubeTexturePass(camera, environmentMap)
 cubeTexturePass.enabled = false
 effectComposer.addPass(cubeTexturePass)
+
+// Halftone pass
+const halftonePass = new HalftonePass()
+halftonePass.enabled = false
+effectComposer.addPass(halftonePass)
 
 /**
  * Animate
