@@ -207,7 +207,7 @@ effectComposer.addPass(glitchPass)
 // Unreal Bloom Pass
 const unrealBloomPass = new UnrealBloomPass()
 unrealBloomPass.strength = 0.5
-// unrealBloomPass.enabled = false
+unrealBloomPass.enabled = false
 effectComposer.addPass(unrealBloomPass)
 
 // Film Pass
