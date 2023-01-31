@@ -131,6 +131,7 @@ const clock = new THREE.Clock()
 
 const tick = () =>
 {
+    stats.begin()
     const elapsedTime = clock.getElapsedTime()
 
     // Update test mesh
@@ -144,6 +145,7 @@ const tick = () =>
 
     // Call tick again on the next frame
     window.requestAnimationFrame(tick)
+    stats.end()
 }
 
 tick()
