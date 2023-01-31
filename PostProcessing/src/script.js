@@ -286,7 +286,10 @@ effectComposer.addPass(smaaPass)
 // Custom Effects Shader Pass
 const TintShader = {
     uniforms: {
-        tDiffuse: { value: null }
+        tDiffuse: { value: null },
+        uTintRed: { value: 0.0 },
+        uTintGreen: { value: 0.0 },
+        uTintBlue: { value: 0.0 }
     },
     vertexShader: `
         varying vec2 vUv;
@@ -304,15 +307,18 @@ const TintShader = {
     `,
     fragmentShader: `
         uniform sampler2D tDiffuse;
+        uniform float uTintRed;
+        uniform float uTintGreen;
+        uniform float uTintBlue;
 
         varying vec2 vUv;
 
         void main()
         {
             vec4 color = texture2D(tDiffuse, vUv);
-            color.r += 0.5;
-            color.g += 0.5;
-            color.b += 0.5;
+            color.r += uTintRed;
+            color.g += uTintGreen;
+            color.b += uTintBlue;
 
             gl_FragColor = color;
         }
@@ -321,6 +327,27 @@ const TintShader = {
 
 const tintPass = new ShaderPass(TintShader)
 effectComposer.addPass(tintPass)
+
+gui
+    .add(TintShader.uniforms.uTintRed, 'value')
+    .min(0)
+    .max(1)
+    .step(0.01)
+    .name('Tint Red')
+
+gui
+    .add(TintShader.uniforms.uTintGreen, 'value')
+    .min(0)
+    .max(1)
+    .step(0.01)
+    .name('Tint Green')
+
+gui
+    .add(TintShader.uniforms.uTintBlue, 'value')
+    .min(0)
+    .max(1)
+    .step(0.01)
+    .name('Tint Blue')
 
 /**
  * Animate
