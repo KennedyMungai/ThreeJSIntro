@@ -15,6 +15,7 @@ import { ClearPass } from 'three/examples/jsm/postprocessing/ClearPass'
 import { CubeTexturePass } from 'three/examples/jsm/postprocessing/CubeTexturePass'
 import { HalftonePass } from 'three/examples/jsm/postprocessing/HalftonePass'
 import { LUTPass } from 'three/examples/jsm/postprocessing/LUTPass'
+import { RGBShiftShader } from 'three/examples/jsm/shaders/RGBShiftShader'
 import * as dat from 'dat.gui'
 
 /**
