@@ -10,6 +10,7 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass'
 import { AfterimagePass } from 'three/examples/jsm/postprocessing/AfterimagePass'
 import { OutlinePass } from 'three/examples/jsm/postprocessing/OutlinePass'
+import { AdaptiveToneMappingPass } from 'three/examples/jsm/postprocessing/AdaptiveToneMappingPass'
 import * as dat from 'dat.gui'
 
 /**
@@ -181,6 +182,11 @@ effectComposer.addPass(afterimagePass)
 const outlinePass = new OutlinePass(new THREE.Vector2(512, 512), scene, camera)
 outlinePass.enabled = false
 effectComposer.addPass(outlinePass)
+
+// Adaptive Tonemap pass
+const adaptiveTonemapPass = new AdaptiveToneMappingPass()
+adaptiveTonemapPass.enabled = false
+effectComposer.addPass(adaptiveTonemapPass)
 
 /**
  * Animate
