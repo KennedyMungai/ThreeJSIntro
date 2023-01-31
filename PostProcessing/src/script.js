@@ -20,6 +20,7 @@ import { RGBShiftShader } from 'three/examples/jsm/shaders/RGBShiftShader'
 import { FilmShader } from 'three/examples/jsm/shaders/FilmShader'
 import { VignetteShader } from 'three/examples/jsm/shaders/VignetteShader'
 import { ToonShader } from 'three/examples/jsm/shaders/ToonShader'
+import { WaterRefractionShader } from 'three/examples/jsm/shaders/WaterRefractionShader'
 import * as dat from 'dat.gui'
 
 /**
@@ -218,30 +219,35 @@ const halftonePass = new HalftonePass()
 halftonePass.enabled = false
 effectComposer.addPass(halftonePass)
 
-// LUTPass
-const lutpass = new LUTPass()
-lutpass.enabled = false
-effectComposer.addPass(lutpass)
+// // LUTPass
+// const lutpass = new LUTPass()
+// lutpass.enabled = false
+// effectComposer.addPass(lutpass)
 
-// RGBShiftShader
-const rgbShiftPass = new ShaderPass(RGBShiftShader)
-rgbShiftPass.enabled = false
-effectComposer.addPass(rgbShiftPass)
+// // RGBShiftShader
+// const rgbShiftPass = new ShaderPass(RGBShiftShader)
+// rgbShiftPass.enabled = false
+// effectComposer.addPass(rgbShiftPass)
 
-// Film Shader
-const filmShaderPass = new ShaderPass(FilmShader)
-filmShaderPass.enabled = false
-effectComposer.addPass(filmShaderPass)
+// // Film Shader
+// const filmShaderPass = new ShaderPass(FilmShader)
+// filmShaderPass.enabled = false
+// effectComposer.addPass(filmShaderPass)
 
-// Vignette Shader
-const vignetteShaderPass = new ShaderPass(VignetteShader)
-vignetteShaderPass.enabled = false
-effectComposer.addPass(vignetteShaderPass)
+// // Vignette Shader
+// const vignetteShaderPass = new ShaderPass(VignetteShader)
+// vignetteShaderPass.enabled = false
+// effectComposer.addPass(vignetteShaderPass)
 
-// Toon Shader Pass
-const toonShaderPass = new ShaderPass(ToonShader)
-toonShaderPass.enabled = false
-effectComposer.addPass(toonShaderPass)
+// // Toon Shader Pass
+// const toonShaderPass = new ShaderPass(ToonShader)
+// toonShaderPass.enabled = false
+// effectComposer.addPass(toonShaderPass)
+
+// // Water refraction shader
+// const waterRefractionShaderPass = new ShaderPass(WaterRefractionShader)
+// waterRefractionShaderPass.enabled = false
+// effectComposer.addPass(WaterRefractionShader)
 
 /**
  * Animate
