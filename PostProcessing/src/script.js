@@ -19,6 +19,7 @@ import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass'
 import { RGBShiftShader } from 'three/examples/jsm/shaders/RGBShiftShader'
 import { FilmShader } from 'three/examples/jsm/shaders/FilmShader'
 import { VignetteShader } from 'three/examples/jsm/shaders/VignetteShader'
+import { ToonShader } from 'three/examples/jsm/shaders/ToonShader'
 import * as dat from 'dat.gui'
 
 /**
@@ -236,6 +237,11 @@ effectComposer.addPass(filmShaderPass)
 const vignetteShaderPass = new ShaderPass(VignetteShader)
 vignetteShaderPass.enabled = false
 effectComposer.addPass(vignetteShaderPass)
+
+// Toon Shader Pass
+const toonShaderPass = new ShaderPass(ToonShader)
+toonShaderPass.enabled = false
+effectComposer.addPass(toonShaderPass)
 
 /**
  * Animate
