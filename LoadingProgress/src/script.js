@@ -22,13 +22,23 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 /**
+ * Overlay
+ */
+const overlayGeometry = new THREE.PlaneBufferGeometry(1, 1, 1, 1)
+const overlayMaterial = new THREE.MeshBasicMaterial({
+    color: 0xff0000
+})
+const overlayMesh = new THREE.Mesh(overlayGeometry, overlayMaterial)
+scene.add(overlayMesh)
+
+/**
  * Update all materials
  */
 const updateAllMaterials = () =>
 {
     scene.traverse((child) =>
     {
-        if(child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMaterial)
+        if (child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMaterial)
         {
             // child.material.envMap = environmentMap
             child.material.envMapIntensity = debugObject.envMapIntensity
