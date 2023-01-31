@@ -312,7 +312,7 @@ const TintShader = {
         void main()
         {
             vec4 color = texture2D(tDiffuse, vUv);
-            color.rgd += uTint;
+            color.rgb += uTint;
 
             gl_FragColor = color;
         }
@@ -320,8 +320,8 @@ const TintShader = {
 }
 
 const tintPass = new ShaderPass(TintShader)
-tintPass.uniforms.uTintRed.value =
-    effectComposer.addPass(tintPass)
+// tintPass.uniforms.uTintRed.value =
+effectComposer.addPass(tintPass)
 
 // gui
 //     .add(TintShader.uniforms.uTint, 'value')
