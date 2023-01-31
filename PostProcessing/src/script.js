@@ -149,6 +149,7 @@ effectComposer.addPass(renderPass)
 
 // Dot Screen pass
 const dotScreenPass = new DotScreenPass()
+dotScreenPass.enabled = false
 effectComposer.addPass(dotScreenPass)
 
 /**
