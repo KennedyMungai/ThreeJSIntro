@@ -310,6 +310,8 @@ const TintShader = {
         void main()
         {
             vec4 color = texture2D(tDiffuse, vUv);
+            color.r += 0.5;
+
             gl_FragColor = color;
         }
     `
