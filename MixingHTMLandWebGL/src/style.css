@@ -37,3 +37,7 @@ body {
     top: 50%;
     left: 50%;
 }
+
+.point .text {
+    display: none;
+}
