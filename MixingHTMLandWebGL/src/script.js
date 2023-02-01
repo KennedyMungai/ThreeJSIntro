@@ -227,6 +227,7 @@ const tick = () =>
         else
         {
             const intersectionDistance = intersects[0].distance
+            console.log(intersectionDistance)
             point.element.classList.remove('visible')
         }
 
