@@ -25,7 +25,10 @@ const loadingManager = new THREE.LoadingManager(
             loadingBarElement.style.transform = ''
         }, 500)
 
-        isSceneReady = true
+        window.setTimeout(() =>
+        {
+            isSceneReady = true
+        }, 3000)
     },
 
     // Progress
