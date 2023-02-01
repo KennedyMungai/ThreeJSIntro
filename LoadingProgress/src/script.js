@@ -4,6 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import * as dat from 'dat.gui'
 import { LoadingManager } from 'three'
+import { gsap } from 'gsap'
 
 // Loading Manager
 const loadingManager = new LoadingManager(
