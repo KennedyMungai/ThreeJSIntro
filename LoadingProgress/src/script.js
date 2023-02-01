@@ -14,12 +14,13 @@ const loadingManager = new LoadingManager(
     () => 
     {
         gsap.to(overlayMaterial.uniforms.uOpacity, { duration: 3, value: 0 })
+        loadingBar.remove()
     },
     // Progress (The params are itemsUrl, itemsLoaded and itemsTotal)
     (itemsUrl, itemsLoaded, itemsTotal) => 
     {
         const progressRatio = itemsLoaded / itemsTotal
-        loadingBar.style.transform = 'scaleX(0.5)'
+        loadingBar.style.transform = `scaleX(${progressRatio})`
     },
     // Error
     () => 
