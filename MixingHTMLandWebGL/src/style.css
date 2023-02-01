@@ -70,3 +70,8 @@ body {
     padding: 0.5rem;
     opacity: 0;
 }
+
+.point:hover .text {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
