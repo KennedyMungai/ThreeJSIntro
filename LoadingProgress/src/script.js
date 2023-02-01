@@ -18,9 +18,7 @@ const loadingManager = new LoadingManager(
     // Progress (The params are itemsUrl, itemsLoaded and itemsTotal)
     (itemsUrl, itemsLoaded, itemsTotal) => 
     {
-        // console.log(Math.floor((itemsLoaded / itemsTotal) * 100) + '%')
-        console.log(itemsLoaded / itemsTotal)
-        loadingBar.style.transform = ((itemsLoaded / itemsTotal), 0)
+        const progressRatio = itemsLoaded / itemsTotal
     },
     // Error
     () => 
