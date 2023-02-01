@@ -25,7 +25,14 @@ const scene = new THREE.Scene()
  * Overlay
  */
 const overlayGeometry = new THREE.PlaneBufferGeometry(1, 1, 1, 1)
-const overlayMaterial = new THREE.ShaderMaterial()
+const overlayMaterial = new THREE.ShaderMaterial({
+    vertexShader: `
+        void main()
+        {
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+    `
+})
 const overlayMesh = new THREE.Mesh(overlayGeometry, overlayMaterial)
 scene.add(overlayMesh)
 
