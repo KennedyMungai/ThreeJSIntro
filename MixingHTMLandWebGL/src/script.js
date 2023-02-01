@@ -218,6 +218,7 @@ const tick = () =>
         screenPosition.project(camera)
 
         raycaster.setFromCamera(screenPosition, camera)
+        raycaster.intersectObjects(scene.children, true)
 
         const translateX = screenPosition.x * sizes.width * 0.5
         const translateY = screenPosition.y * sizes.height * 0.5
