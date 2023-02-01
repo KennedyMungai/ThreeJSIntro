@@ -214,6 +214,9 @@ const tick = () =>
     {
         const screenPosition = point.position.clone()
         screenPosition.project(camera)
+
+        const translateX = screenPosition.x * sizes.width * 0.5
+        console.log(translateX)
     })
 
     // Render
