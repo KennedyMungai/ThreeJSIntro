@@ -22,4 +22,5 @@ body {
     height: 2px;
     background: #ffffff;
     transform: scaleX(0.3);
+    transform-origin: top left;
 }
