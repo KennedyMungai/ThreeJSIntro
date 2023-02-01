@@ -228,7 +228,7 @@ const tick = () =>
         {
             const intersectionDistance = intersects[0].distance
             const pointDistance = camera.position.distanceTo(point.position)
-            console.log(pointDistance)
+            // console.log(pointDistance)
             // console.log(intersectionDistance)
             point.element.classList.remove('visible')
         }
