@@ -55,6 +55,7 @@ body {
     font-size: 1.2rem;
     transition: scale 0.3s ease-in-out;
     will-change: scale;
+    cursor: help;
 }
 
 .point .label:hover {
