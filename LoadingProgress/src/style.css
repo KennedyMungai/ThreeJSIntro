@@ -23,5 +23,11 @@ body {
     background: #ffffff;
     transform: scaleX(0.0);
     transform-origin: top left;
-    transition: transform 0.5s;
+    transition: transform 0.5s ease-in-out;
+}
+
+.loading-bar .ended {
+    transform: scaleX(0);
+    transform-origin: top right;
+    transition: transform 0.5s ease-in-out;
 }
