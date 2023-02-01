@@ -24,7 +24,7 @@ const scene = new THREE.Scene()
 /**
  * Overlay
  */
-const overlayGeometry = new THREE.PlaneBufferGeometry(1, 1, 1, 1)
+const overlayGeometry = new THREE.PlaneBufferGeometry(2, 2, 1, 1)
 const overlayMaterial = new THREE.ShaderMaterial({
     vertexShader: `
         void main()
