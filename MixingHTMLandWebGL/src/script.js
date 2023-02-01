@@ -132,6 +132,8 @@ gltfLoader.load(
 /**
  * Points of Interest
  */
+const raycaster = new Raycaster()
+
 const points = [
     {
         position: new Vector3(1.55, 0.3, -0.6),
