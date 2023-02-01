@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { gsap } from 'gsap'
+import { Vector3 } from 'three'
 
 /**
  * Loaders
@@ -131,7 +132,12 @@ gltfLoader.load(
 /**
  * Points of Interest
  */
-const points = []
+const points = [
+    {
+        position: new Vector3(1.55, 0.3, -0.6),
+        element: document.querySelector('.point-0')
+    }
+]
 
 /**
  * Lights
