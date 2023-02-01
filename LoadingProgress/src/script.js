@@ -28,14 +28,17 @@ const gui = new dat.GUI()
 
 // Loading Manager
 const loadingManager = new LoadingManager(
+    // Loaded
     () => 
     {
         console.log('On load')
     },
+    // Progress
     () => 
     {
         console.log('On progress')
     },
+    // Error
     () => 
     {
         console.log('On error')
