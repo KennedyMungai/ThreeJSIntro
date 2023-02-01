@@ -51,6 +51,7 @@ body {
     border-radius: 50%;
     opacity: 75%;
     line-height: 40px;
+    font-weight: 100;
 }
 
 .point .text {
