@@ -56,5 +56,14 @@ body {
 }
 
 .point .text {
-    display: none;
+    color: white;
+    position: absolute;
+    top: 30px;
+    width: 200px;
+    background-color: #00000077;
+    opacity: 75%;
+    border-radius: 0.5rem;
+    line-height: 1.3rem;
+    font-weight: 100;
+    padding: 0.5rem;
 }
