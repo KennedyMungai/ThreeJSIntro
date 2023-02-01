@@ -233,6 +233,10 @@ const tick = () =>
             {
                 point.element.classList.remove('visible')
             }
+            else
+            {
+                point.element.classList.add('visible')
+            }
 
             point.element.classList.remove('visible')
         }
