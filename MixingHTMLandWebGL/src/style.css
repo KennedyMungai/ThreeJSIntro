@@ -58,6 +58,7 @@ body {
 .point .text {
     color: white;
     position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
     top: 30px;
     left: -100px;
     width: 200px;
