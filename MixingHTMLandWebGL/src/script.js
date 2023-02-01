@@ -216,7 +216,8 @@ const tick = () =>
         screenPosition.project(camera)
 
         const translateX = screenPosition.x * sizes.width * 0.5
-        console.log(translateX)
+        const translateY = screenPosition.y * sizes.width * 0.5
+        point.element.style.transform = `translateX(${translateX}px)`
     })
 
     // Render
