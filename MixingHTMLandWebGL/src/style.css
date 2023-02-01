@@ -59,6 +59,7 @@ body {
     color: white;
     position: absolute;
     top: 30px;
+    left: -100px;
     width: 200px;
     background-color: #00000077;
     opacity: 75%;
