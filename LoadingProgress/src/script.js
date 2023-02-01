@@ -13,9 +13,12 @@ const loadingManager = new LoadingManager(
     // Loaded
     () => 
     {
-        gsap.to(overlayMaterial.uniforms.uOpacity, { duration: 3, value: 0 })
-        loadingBar.classList.add('ended')
-        loadingBar.style.transform = ''
+        window.setTimeout(() =>
+        {
+            gsap.to(overlayMaterial.uniforms.uOpacity, { duration: 3, value: 0 })
+            loadingBar.classList.add('ended')
+            loadingBar.style.transform = ''
+        }, 500)
     },
     // Progress (The params are itemsUrl, itemsLoaded and itemsTotal)
     (itemsUrl, itemsLoaded, itemsTotal) => 
