@@ -24,6 +24,8 @@ const loadingManager = new THREE.LoadingManager(
             loadingBarElement.classList.add('ended')
             loadingBarElement.style.transform = ''
         }, 500)
+
+        isSceneReady = true
     },
 
     // Progress
