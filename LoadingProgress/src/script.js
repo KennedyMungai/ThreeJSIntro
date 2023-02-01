@@ -2,6 +2,7 @@ import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import * as dat from 'dat.gui'
 
 /**
  * Loaders
@@ -21,11 +22,17 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 
+// GUI
+const gui = new dat.GUI()
+
 /**
  * Overlay
  */
 const overlayGeometry = new THREE.PlaneBufferGeometry(2, 2, 1, 1)
 const overlayMaterial = new THREE.ShaderMaterial({
+    uniforms: {
+        uOpacity: { value: 1.0 }
+    },
     vertexShader: `
         void main()
         {
@@ -34,15 +41,23 @@ const overlayMaterial = new THREE.ShaderMaterial({
         }
     `,
     fragmentShader: `
+        uniform float uOpacity;
+
         void main()
         {
-            gl_FragColor = vec4(0.0, 0.0, 0.0, 0.5);
+            gl_FragColor = vec4(0.0, 0.0, 0.0, uOpacity);
         }
     `,
     transparent: true
 })
 const overlayMesh = new THREE.Mesh(overlayGeometry, overlayMaterial)
 scene.add(overlayMesh)
+
+gui
+    .add(overlayMaterial.uniforms.uOpacity, 'value')
+    .min(0.0)
+    .max(1.0)
+    .step(0.01)
 
 /**
  * Update all materials
