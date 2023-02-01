@@ -212,7 +212,8 @@ const tick = () =>
     // Go through each point
     points.forEach((point) =>
     {
-
+        const screenPosition = point.position.clone()
+        screenPosition.project(camera)
     })
 
     // Render
