@@ -209,6 +209,12 @@ const tick = () =>
     // Update controls
     controls.update()
 
+    // Go through each point
+    points.forEach((point) =>
+    {
+        console.log(point)
+    })
+
     // Render
     renderer.render(scene, camera)
 
