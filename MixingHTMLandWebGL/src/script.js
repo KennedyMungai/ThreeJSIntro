@@ -212,7 +212,7 @@ const tick = () =>
     // Go through each point
     points.forEach((point) =>
     {
-        console.log(point)
+
     })
 
     // Render
