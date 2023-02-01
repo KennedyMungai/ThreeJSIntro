@@ -6,6 +6,8 @@ import * as dat from 'dat.gui'
 import { LoadingManager } from 'three'
 import { gsap } from 'gsap'
 
+const loadingBar = document.querySelector('.loading-bar')
+
 // Loading Manager
 const loadingManager = new LoadingManager(
     // Loaded
@@ -16,7 +18,9 @@ const loadingManager = new LoadingManager(
     // Progress (The params are itemsUrl, itemsLoaded and itemsTotal)
     (itemsUrl, itemsLoaded, itemsTotal) => 
     {
-        console.log(Math.floor((itemsLoaded / itemsTotal) * 100) + '%')
+        // console.log(Math.floor((itemsLoaded / itemsTotal) * 100) + '%')
+        console.log(itemsLoaded / itemsTotal)
+        loadingBar.style.transform = ((itemsLoaded / itemsTotal), 0)
     },
     // Error
     () => 
