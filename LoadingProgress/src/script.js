@@ -19,6 +19,7 @@ const loadingManager = new LoadingManager(
     (itemsUrl, itemsLoaded, itemsTotal) => 
     {
         const progressRatio = itemsLoaded / itemsTotal
+        loadingBar.style.transform = 'scaleX(0.5)'
     },
     // Error
     () => 
