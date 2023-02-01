@@ -11,7 +11,7 @@ const loadingManager = new LoadingManager(
     // Loaded
     () => 
     {
-        console.log('On load')
+        gsap.to(overlayMaterial.uniforms.uOpacity, { duration: 3, value: 0 })
     },
     // Progress
     () => 
