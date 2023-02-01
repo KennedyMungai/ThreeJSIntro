@@ -64,6 +64,10 @@ body {
     scale: 1.2;
 }
 
+.point.visible .label {
+    transform: scale(1, 1);
+}
+
 .point .text {
     color: white;
     position: absolute;
