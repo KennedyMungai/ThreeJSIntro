@@ -16,7 +16,7 @@ const loadingManager = new LoadingManager(
     // Progress (The params are itemsUrl, itemsLoaded and itemsTotal)
     (itemsUrl, itemsLoaded, itemsTotal) => 
     {
-        console.log('On progress')
+        console.log(itemsUrl, itemsLoaded, itemsTotal)
     },
     // Error
     () => 
