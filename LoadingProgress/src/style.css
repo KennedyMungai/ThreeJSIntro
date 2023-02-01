@@ -27,7 +27,6 @@ body {
 }
 
 .ended {
-    transform: scaleX(0);
     transform-origin: top right;
     transition: transform 1.5s ease-in-out;
 }
