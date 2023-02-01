@@ -14,7 +14,7 @@ const loadingManager = new LoadingManager(
     () => 
     {
         gsap.to(overlayMaterial.uniforms.uOpacity, { duration: 3, value: 0 })
-        loadingBar.remove()
+        loadingBar.classList.add('ended')
     },
     // Progress (The params are itemsUrl, itemsLoaded and itemsTotal)
     (itemsUrl, itemsLoaded, itemsTotal) => 
