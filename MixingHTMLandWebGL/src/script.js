@@ -217,7 +217,7 @@ const tick = () =>
 
         const translateX = screenPosition.x * sizes.width * 0.5
         const translateY = screenPosition.y * sizes.height * 0.5
-        point.element.style.transform = `translateX(${translateX}px) translateY(${translateY})`
+        point.element.style.transform = `translate(${translateX}px, ${translateY})`
     })
 
     // Render
