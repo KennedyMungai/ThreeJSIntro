@@ -26,7 +26,7 @@ body {
     transition: transform 0.5s ease-in-out;
 }
 
-.loading-bar .ended {
+.ended {
     transform: scaleX(0);
     transform-origin: top right;
     transition: transform 1.5s ease-in-out;
