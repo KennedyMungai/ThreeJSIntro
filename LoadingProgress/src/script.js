@@ -5,6 +5,25 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import * as dat from 'dat.gui'
 import { LoadingManager } from 'three'
 
+// Loading Manager
+const loadingManager = new LoadingManager(
+    // Loaded
+    () => 
+    {
+        console.log('On load')
+    },
+    // Progress
+    () => 
+    {
+        console.log('On progress')
+    },
+    // Error
+    () => 
+    {
+        console.log('On error')
+    }
+)
+
 /**
  * Loaders
  */
@@ -25,25 +44,6 @@ const scene = new THREE.Scene()
 
 // GUI
 const gui = new dat.GUI()
-
-// Loading Manager
-const loadingManager = new LoadingManager(
-    // Loaded
-    () => 
-    {
-        console.log('On load')
-    },
-    // Progress
-    () => 
-    {
-        console.log('On progress')
-    },
-    // Error
-    () => 
-    {
-        console.log('On error')
-    }
-)
 
 /**
  * Overlay
